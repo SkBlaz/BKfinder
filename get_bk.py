@@ -70,7 +70,50 @@ class make_request:
 
         return G
         
+    def execute_query(self,sourceterms,targetterms, maxnodes,grouping):
+        
+        # ##additional source and target nodes can be added.
 
+        # #params2 = urllib.parse.urlencode({'sourceTerms': 'InterPro:IPR011364, EntrezGene:672','graph_type': 'json'}).encode('utf-8')
+
+        # params = urllib.parse.urlencode({'database': self.databases['biomine'][0],
+        #                             'sourceTerms': 'EntrezGene:27086',
+        #                             'targetTerms': 'EntrezGene:93986',
+        #                             'maxnodes': 500,
+        #                             'grouping': 5,
+        #                                   'graph_type': 'json'}).encode("utf-8")
+
+
+        # json_graph =  json.loads(urllib.request.urlopen(self.bm_api, params).read().decode())['graph']
+        
+        # ## save for possible further use..
+        # print ("Data obtained, constructing the graph..")
+        # nodes = json.loads(json_graph)['nodes']
+        # edges = json.loads(json_graph)['links']
+        # ## colors
+
+        # ## lets create a graph..
+
+        # G = nx.Graph()
+
+        # ## those are the names..
+        # labels = {}
+        # for id,node in enumerate(nodes):
+        #     #print (id, node['id'])
+        #     G.add_node(id)
+        #     labels[id] = node['id']
+        # for id,edge in enumerate(edges):
+        #     #print (id, edge['source'],edge['target'])
+        #     G.add_edge(int(edge['source']),int(edge['target']))
+            
+        
+        # print ("Finished")
+        # pos = nx.spring_layout(G)
+        # nx.draw(G,pos)
+        # nx.draw_networkx_labels(G,pos,labels,font_size=16)
+        # plt.show()
+
+        # return G
         
 
 
