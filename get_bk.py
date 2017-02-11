@@ -143,7 +143,9 @@ class make_request:
         nsize = [deg*0.1 for deg in self.graph_node_degree]
 
         if weights == False:
+
             if labs == True:
+
                 nx.draw(self.graph,self.pos,node_size=nsize, node_color = self.graph_node_colors)
                 nx.draw_networkx_labels(self.graph,self.pos,self.labels,font_size=16)
                 plt.show()
@@ -179,7 +181,7 @@ def read_example_data(max):
 
 if __name__ == '__main__':
     
-    source, target = read_example_data(200)
+    source, target = read_example_data(400)
 
     ## init a request
     request = make_request()
