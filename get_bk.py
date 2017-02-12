@@ -69,8 +69,8 @@ class make_request:
         plt.show()
 
         return G
-        
-    def execute_query(self,sourceterms,targetterms=None, maxnodes=200,grouping=0):
+    
+    def execute_query_orto(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0,omit='hsa'):
         
         
         print ("Search executed..")
@@ -103,8 +103,80 @@ class make_request:
         ## lets create a graph..
 
         G = nx.Graph()
-
+        #Go = nx.Graph()
+        
         ## those are the names..
+        
+        labels1 = {}
+
+        for id,node in enumerate(nodes):
+
+            if node['organism'] == omit:
+
+                G.add_node(id, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'r')
+
+            labels1[id] = node['id']
+
+        for id,edge in enumerate(edges):
+
+            G.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
+            #Go.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
+                    
+        ## color according to db entry at least.
+
+        edgesG = G.edges()
+        nodesG = G.nodes(data=True)
+
+        for u in nodesG:
+            print (int(u[1]['degree']))
+        # ## assign values to the object for further use
+        # nx.draw(G,nx.spring_layout(G))
+        # self.graph_node_degree_ortolog = [int(u[1]['degree']) for u in nodesG]
+        # self.graph_node_colors_ortolog = [u[1]['color'] for u in nodesG]
+        # self.graph_weights_ortolog = [G[u][v]['weight'] for u,v in edgesG]
+        # self.graph_ortolog = G        
+        # self.labels_ortolog = labels1
+        # self.pos_ortolog = nx.spring_layout(G)
+        #self.pos = nx.circular_layout(G)
+        return G
+    
+    def execute_query(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0):
+        
+        
+        print ("Search executed..")
+        
+        ## decide on search type
+
+        if targetterms == None:
+            params = urllib.parse.urlencode({'database': self.databases['biomine'][0],
+                                             'sourceTerms': sourceterms,
+                                             'maxnodes': maxnodes,
+                                             'grouping': grouping,
+                                             'graph_type': 'json'}).encode("utf-8")
+        else:
+            params = urllib.parse.urlencode({'database': self.databases['biomine'][0],
+                                             'sourceTerms': sourceterms,
+                                             'targetTerms': targetterms,
+                                             'maxnodes': maxnodes,
+                                             'grouping': grouping,
+                                             'graph_type': 'json'}).encode("utf-8")
+
+        
+        json_graph =  json.loads(urllib.request.urlopen(self.bm_api, params).read().decode())['graph']
+        
+        ## save for possible further use..
+        print ("Data obtained, constructing the graph..")
+        nodes = json.loads(json_graph)['nodes']
+        edges = json.loads(json_graph)['links']
+        ## colors
+
+        ## lets create a graph..
+
+        G = nx.Graph()
+        #Go = nx.Graph()
+        
+        ## those are the names..
+        
         labels1 = {}
 
         for id,node in enumerate(nodes):
@@ -114,6 +186,9 @@ class make_request:
                 G.add_node(id, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'r')
 
             else:
+
+                #Go.add_node(id, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'g')
+                
                 G.add_node(id, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'g')
 
             labels1[id] = node['id']
@@ -121,6 +196,7 @@ class make_request:
         for id,edge in enumerate(edges):
 
             G.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
+            #Go.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
                     
         ## color according to db entry at least.
 
@@ -137,6 +213,12 @@ class make_request:
         self.pos = nx.spring_layout(G)
         #self.pos = nx.circular_layout(G)
         return G
+
+    def trim_graph(self, degreetrim):
+
+        print ("Trimming the graph..")
+        to_remove = [n if self.graph.degree(n) < degreetrim else None  for n in self.graph.nodes()]
+        self.graph.remove_nodes_from(to_remove)
 
     def draw_graph(self, labs = False, weights = True, fsize = 10):
         
@@ -161,6 +243,31 @@ class make_request:
             else:
                 nx.draw(self.graph,self.pos, width=self.graph_weights,node_size=nsize,node_color = self.graph_node_colors)
                 nx.draw_networkx_labels(self.graph,self.pos,font_size=fsize)
+                plt.show()
+
+    def draw_graph_ortolog(self, labs = False, weights = True, fsize = 10):
+        
+        nsize = [deg*0.1 for deg in self.graph_node_degree_ortolog]
+
+        if weights == False:
+
+            if labs == True:
+
+                nx.draw(self.graph_ortolog,self.pos,node_size_ortolog=nsize, node_color = self.graph_node_colors_ortolog)
+                nx.draw_networkx_labels(self.graph_ortolog,self.pos_ortolog,self.labels_ortolog,font_size=16)
+                plt.show()
+            else:
+                nx.draw(self.graph_ortolog,self.pos_ortolog,node_size=nsize,node_color = self.graph_node_colors_ortolog)
+                nx.draw_networkx_labels(self.graph_ortolog,self.pos_ortolog,font_size=16)
+                plt.show()
+        else:
+            if labs == True:
+                nx.draw(self.graph_ortolog,self.pos_ortolog, width=self.graph_weights_ortolog,node_size=nsize,node_color = self.graph_node_colors_ortolog)
+                nx.draw_networkx_labels(self.graph_ortolog,self.pos_ortolog,self.labels_ortolog,font_size=fsize)
+                plt.show()
+            else:
+                nx.draw(self.graph_ortolog,self.pos_ortolog, width=self.graph_weights_ortolog,node_size=nsize,node_color = self.graph_node_colors_ortolog)
+                nx.draw_networkx_labels(self.graph_ortolog,self.pos_ortolog,font_size=fsize)
                 plt.show() 
 
 def read_example_data(max):
@@ -176,17 +283,19 @@ def read_example_data(max):
         for line in cl:
            outlist2.append("UniProt:"+line.replace("\n",""))
 
-    return (",".join(outlist[1:max]),",".join(outlist2))
+    return (",".join(outlist[1:max]),",".join(outlist2[1:max]))
 
-
+ 
 if __name__ == '__main__':
     
-    source, target = read_example_data(400)
+    source, target = read_example_data(1000)
 
     ## init a request
     request = make_request()
     
     ## this returns graph for further reduction use..
     request.execute_query(source)
+    request.trim_graph(5)
     request.draw_graph()
+#    request.execute_query_orto(source)
 
