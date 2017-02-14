@@ -103,10 +103,9 @@ class make_request:
         ## lets create a graph..
 
         G = nx.Graph()
-<<<<<<< HEAD
-=======
+
         #Go = nx.Graph()
->>>>>>> eec07dfe3dcd792b84fb0ba0c92afaf8a6d99676
+
         
         ## those are the names..
         
@@ -114,7 +113,7 @@ class make_request:
 
         for id,node in enumerate(nodes):
 
-<<<<<<< HEAD
+
             if node['organism'] != omit:
 
                 G.add_node(id, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'b')
@@ -124,24 +123,26 @@ class make_request:
         for id,edge in enumerate(edges):
             if edge['source'] in G.nodes() and edge['target'] in G.nodes():
                 G.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
-=======
+
             if node['organism'] == omit:
 
                 G.add_node(id, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'r')
 
-            labels1[id] = node['id']
+                labels1[id] = node['id']
 
         for id,edge in enumerate(edges):
-
-            G.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
+            
+            if edge['source'] in G.nodes() and edge['target'] in G.nodes():
+            
+                G.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
             #Go.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
->>>>>>> eec07dfe3dcd792b84fb0ba0c92afaf8a6d99676
+
                     
         ## color according to db entry at least.
 
         edgesG = G.edges()
         nodesG = G.nodes(data=True)
-<<<<<<< HEAD
+
         
 
         # ## assign values to the object for further use
@@ -152,20 +153,19 @@ class make_request:
         self.labels_ortolog = labels1
         self.pos_ortolog = nx.spring_layout(G)
 
-=======
 
-        for u in nodesG:
-            print (int(u[1]['degree']))
-        # ## assign values to the object for further use
-        # nx.draw(G,nx.spring_layout(G))
-        # self.graph_node_degree_ortolog = [int(u[1]['degree']) for u in nodesG]
-        # self.graph_node_colors_ortolog = [u[1]['color'] for u in nodesG]
-        # self.graph_weights_ortolog = [G[u][v]['weight'] for u,v in edgesG]
-        # self.graph_ortolog = G        
-        # self.labels_ortolog = labels1
-        # self.pos_ortolog = nx.spring_layout(G)
-        #self.pos = nx.circular_layout(G)
->>>>>>> eec07dfe3dcd792b84fb0ba0c92afaf8a6d99676
+
+
+        ## assign values to the object for further use
+
+        self.graph_node_degree_ortolog = [int(u[1]['degree']) for u in nodesG]
+        self.graph_node_colors_ortolog = [u[1]['color'] for u in nodesG]
+        self.graph_weights_ortolog = [G[u][v]['weight'] for u,v in edgesG]
+        self.graph_ortolog = G        
+        self.labels_ortolog = labels1
+        self.pos_ortolog = nx.spring_layout(G)
+        self.pos = nx.circular_layout(G)
+
         return G
     
     def execute_query(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0):
@@ -290,10 +290,7 @@ class make_request:
                 plt.show()
         else:
             if labs == True:
-<<<<<<< HEAD
 
-=======
->>>>>>> eec07dfe3dcd792b84fb0ba0c92afaf8a6d99676
                 nx.draw(self.graph_ortolog,self.pos_ortolog, width=self.graph_weights_ortolog,node_size=nsize,node_color = self.graph_node_colors_ortolog)
                 nx.draw_networkx_labels(self.graph_ortolog,self.pos_ortolog,self.labels_ortolog,font_size=fsize)
                 plt.show()
@@ -317,11 +314,7 @@ def read_example_data(max):
 
     return (",".join(outlist[1:max]),",".join(outlist2[1:max]))
 
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> eec07dfe3dcd792b84fb0ba0c92afaf8a6d99676
 if __name__ == '__main__':
     
     source, target = read_example_data(1000)
@@ -332,13 +325,8 @@ if __name__ == '__main__':
     ## this returns graph for further reduction use..
     request.execute_query(source)
     request.trim_graph(5)
-<<<<<<< HEAD
     request.draw_graph(labs=False)
 
  #   request.execute_query_orto(source)
   #  request.draw_graph_ortolog(labs=True)
-=======
-    request.draw_graph()
 #    request.execute_query_orto(source)
-
->>>>>>> eec07dfe3dcd792b84fb0ba0c92afaf8a6d99676
