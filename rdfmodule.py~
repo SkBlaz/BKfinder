@@ -1,0 +1,6 @@
+## this is the RDF to NetworkX converter class..
+
+
+class rdfconverter:
+    def __init__(self, nxgraph):
+        self.nxgraph = nxgraph
