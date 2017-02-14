@@ -8,6 +8,7 @@ import urllib
 import networkx as nx
 import numpy as np
 import matplotlib.pyplot as plt
+import rdfmodule as rm
 
 class make_request:
 
@@ -240,8 +241,12 @@ class make_request:
         self.labels = labels1
         self.pos = nx.spring_layout(G)
         #self.pos = nx.circular_layout(G)
-        return G
 
+    def get_graph(self):
+
+        return self.graph
+    
+    
     def trim_graph(self, degreetrim):
 
         print ("Trimming the graph..")
@@ -316,18 +321,28 @@ def read_example_data(max):
 
 
 if __name__ == '__main__':
+
+
+    ## A thypical workflow representation
     
-    source, target = read_example_data(1000)
+    source, target = read_example_data(100)
 
     ## init a request
+    
     request = make_request()
     
     ## this returns graph for further reduction use..
+    
     request.execute_query(source)
     request.trim_graph(5)
-    request.draw_graph(labs=False)
+    
+    #request.draw_graph(labs=False)
 
-
+    ## do the rdf stuff
+    
+    rdfpart = rm.rdfconverter(request.get_graph(),"data")    
+    rdfpart.return_background_knowledge("BK/autogen.n3")
+    
     ## get rdf and run Hedwig!
 
     
