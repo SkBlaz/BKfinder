@@ -325,7 +325,7 @@ if __name__ == '__main__':
 
     ## A thypical workflow representation
     
-    source, target = read_example_data(100)
+    source, target = read_example_data(400)
 
     ## init a request
     
@@ -340,7 +340,8 @@ if __name__ == '__main__':
 
     ## do the rdf stuff
     
-    rdfpart = rm.rdfconverter(request.get_graph(),"data")    
+    rdfpart = rm.rdfconverter(request.get_graph(),"data")
+    rdfpart.return_target_n3("samples/dataset.n3")
     rdfpart.return_background_knowledge("BK/autogen.n3")
     
     ## get rdf and run Hedwig!
