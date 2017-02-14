@@ -327,6 +327,10 @@ if __name__ == '__main__':
     request.trim_graph(5)
     request.draw_graph(labs=False)
 
+
+    ## get rdf and run Hedwig!
+
+    
  #   request.execute_query_orto(source)
   #  request.draw_graph_ortolog(labs=True)
 #    request.execute_query_orto(source)
