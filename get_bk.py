@@ -7,8 +7,8 @@ import json
 import urllib
 import networkx as nx
 import numpy as np
-import matplotlib.pyplot as plt
 import rdfmodule as rm
+import sys
 
 class make_request:
 
@@ -254,7 +254,7 @@ class make_request:
         self.graph.remove_nodes_from(to_remove)
 
     def draw_graph(self, labs = False, weights = True, fsize = 10):
-        
+        import matplotlib.pyplot as plt
         nsize = [deg*0.1 for deg in self.graph_node_degree]
 
         if weights == False:
@@ -279,7 +279,7 @@ class make_request:
                 plt.show()
 
     def draw_graph_ortolog(self, labs = False, weights = True, fsize = 10):
-        
+        import matplotlib.pyplot as plt
         nsize = [deg*0.1 for deg in self.graph_node_degree_ortolog]
 
         if weights == False:
@@ -324,8 +324,8 @@ if __name__ == '__main__':
 
 
     ## A thypical workflow representation
-    
-    source, target = read_example_data(400)
+
+    source, target = read_example_data(int(sys.argv[1]))
 
     ## init a request
     
@@ -334,7 +334,7 @@ if __name__ == '__main__':
     ## this returns graph for further reduction use..
     
     request.execute_query(source)
-    request.trim_graph(5)
+    request.trim_graph(int(sys.argv[2]))
     
     #request.draw_graph(labs=False)
 
