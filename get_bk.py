@@ -304,6 +304,12 @@ class make_request:
                 nx.draw_networkx_labels(self.graph_ortolog,self.pos_ortolog,font_size=fsize)
                 plt.show() 
 
+    def export_graph(self,gname):
+
+        nx.write_gml(G, gname+".gml")
+        
+        return
+        
 def read_example_data(max):
 
     outlist = []
