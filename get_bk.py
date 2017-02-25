@@ -242,6 +242,13 @@ class make_request:
         self.pos = nx.spring_layout(G)
         #self.pos = nx.circular_layout(G)
 
+
+    def execute_query_inc(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0,step=10):
+
+        ##this is the main algorithm for incremental graph building..
+        ## using this, we can build the graph by parts using many requests.
+
+        
     def get_graph(self):
 
         return self.graph
