@@ -17,7 +17,8 @@ class make_request:
         self.db_url =  'http://biomine.ijs.si/list_databases'
         self.bm_api = 'http://biomine.ijs.si/api'
         self.databases = json.loads(urllib.request.urlopen(self.db_url).read().decode())['databases']
-
+        self.graph = nx.Graph()
+        
     def get_info(self):
 
         print ('databases:{}  API:{}'.format(self.db_url,self.bm_api))
@@ -241,13 +242,98 @@ class make_request:
         self.labels = labels1
         self.pos = nx.spring_layout(G)
         #self.pos = nx.circular_layout(G)
+        print (nx.info(G))
 
+    def execute_query_inc(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0, div=4):
+        
+        ## init the graph structure..
+        
+        G = self.graph
 
-    def execute_query_inc(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0,step=10):
+        step = int(len(sourceterms)/div)
+        print ("Initiating the graph construction phase with step: ",str(step))
+        
+        ## iteratively add data to the graph
+#        print (sourceterms)
 
-        ##this is the main algorithm for incremental graph building..
-        ## using this, we can build the graph by parts using many requests.
+        tmplist = []
 
+#        print (sourceterms)
+        
+        for e,k in enumerate(sourceterms):
+
+            tmplist.append(k)
+            
+            if e % step == 0 and e > 0:
+
+                #print (tmplist)
+
+                sterms = ",".join(tmplist)
+
+#                print (sterms)
+
+                tmplist = []                
+                
+                if targetterms == None:
+                    
+                    params = urllib.parse.urlencode({'database': self.databases['biomine'][0],
+                            'sourceTerms': sterms,
+                            'maxnodes': maxnodes,
+                            'grouping': grouping,
+                            'graph_type': 'json'}).encode("utf-8")
+                    
+                json_graph =  json.loads(urllib.request.urlopen(self.bm_api, params).read().decode())['graph']
+        
+                ## save for possible further use..
+                print ("Data obtained, incrementally constructing the graph..", str(int(e/len(sourceterms)*100)),"% complete." )
+
+                nodes = json.loads(json_graph)['nodes']
+                edges = json.loads(json_graph)['links']
+                labels1 = {}
+
+                for node in nodes:
+
+                    try:
+                        if node['organism'] == 'hsa':
+
+                            G.add_node(e, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'r')
+
+                        else:
+                
+                            G.add_node(e, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'g')
+                    except:
+                        
+                        pass
+#                        print (".........API call incomplete.......")
+
+                    labels1[e] = node['id']
+
+                for edge in edges:
+
+                    G.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
+
+                    
+        ## color according to db entry at least.
+           
+        edgesG = G.edges()
+        nodesG = G.nodes(data=True)
+        print (nx.info(G))
+
+        ## assign values to the object for further use
+
+#        self.graph_node_degree = [int(u[1]['degree']) for u in nodesG]
+#        self.graph_node_colors = [u[1]['color'] for u in nodesG]
+#        self.graph_weights = [G[u][v]['weight'] for u,v in edgesG]
+#        self.graph = G        
+#        self.labels = labels1
+#        self.pos = nx.spring_layout(G)
+        
+#        print (lenself.graph.nodes(), self.graph.edges())
+        
+        return 0
+    def reset_graph(self):
+
+        self.graph = nx.Graph()
         
     def get_graph(self):
 
@@ -332,13 +418,30 @@ def read_example_data(max):
 
     return (",".join(outlist[1:max]),",".join(outlist2[1:max]))
 
+def read_example_datalist(max):
+
+    outlist = []
+    outlist2 = []
+
+    with open("data/cancer.list") as cl:
+        for line in cl:
+           outlist.append("UniProt:"+line.replace("\n",""))
+
+    with open("data/alzheimer.list") as cl:
+        for line in cl:
+           outlist2.append("UniProt:"+line.replace("\n",""))
+
+    return (outlist[1:max],outlist2[1:max])
+
 
 if __name__ == '__main__':
 
 
     ## A thypical workflow representation
 
-    source, target = read_example_data(int(sys.argv[1]))
+#    source, target = read_example_data(int(sys.argv[1]))
+
+    source, target = read_example_datalist(int(sys.argv[1]))
 
     ## init a request
     
@@ -346,16 +449,19 @@ if __name__ == '__main__':
     
     ## this returns graph for further reduction use..
     
-    request.execute_query(source)
-    request.trim_graph(int(sys.argv[2]))
+ #   request.execute_query(source)
+
+    request.execute_query_inc(source,div=5)
     
-    #request.draw_graph(labs=False)
+#    request.trim_graph(int(sys.argv[2]))
+    
+#    request.draw_graph(labs=False)
 
     ## do the rdf stuff
     
-    rdfpart = rm.rdfconverter(request.get_graph(),"data")
-    rdfpart.return_target_n3("samples/dataset.n3")
-    rdfpart.return_background_knowledge("BK/autogen.n3")
+#    rdfpart = rm.rdfconverter(request.get_graph(),"data")
+#    rdfpart.return_target_n3("samples/dataset.n3")
+#    rdfpart.return_background_knowledge("BK/autogen.n3")
     
     ## get rdf and run Hedwig!
 
