@@ -1,72 +1,96 @@
 ## this is the RDF to NetworkX converter class..
 
 import rdflib
-
+import sys
+from collections import defaultdict
+import os
+import networkx as nx
 class rdfconverter:
-    def __init__(self, nxgraph):
+    
+    def __init__(self, nxgraph, classfolder):
+        
         self.nxgraph = nxgraph
-
-    def return_background_knowledge(self):
-        #code here returns knowledge..
+        self.cfile = classfolder
 
 
+    def test(self):
+        print ("Class called OK.")
+        
+    def return_background_knowledge(self, outfile):        
+        
+        ## construct the background knowledge..
+        
+        g = rdflib.graph.Graph()
+        KT = rdflib.Namespace('http://kt.ijs.si/hedwig#')
+        amp_uri = 'http://kt.ijs.si/ontology/hedwig#'
+        obo_uri = "http://purl.obolibrary.org/obo/"
+        AMP = rdflib.Namespace(amp_uri)        
+        ontology = defaultdict(list)
+        
+        terms = dict(nx.get_node_attributes(self.nxgraph, 'name'))
+        
+        for node in self.nxgraph.nodes():
+            
+            for node2 in self.nxgraph.neighbors(node):
+                ontology[ str(terms[node]).split(":")[1] ].append( str(terms[node2]).split(":")[1])
+                
+        for id, example1 in enumerate(ontology.keys()):
 
+            # Write to rdf graph                         
 
-# import sys
-# import rdflib
-# from collections import defaultdict
-# ## input files here..
+            u = rdflib.term.URIRef('%sTERM%s' % (obo_uri, example1))
 
+            #g.add((u, rdflib.RDF.type, KT.is_a))
 
-# data_file = 'candidates.csv'
-# mapping_file = 'gene_association.mgi'
-# targets = {}
+            for ex in ontology[example1]:
+                annotation_uri = rdflib.term.URIRef('%s%s' % (obo_uri, rdflib.Literal(ex)))
+                g.add((u, KT.is_a,annotation_uri ))
 
-# with open(data_file) as f:
-#     lines = f.readlines()
-#     for line in lines:
-#         targets[line.split(",")[0]] = line.split(",")[1].replace("\n","")
+        self.rdfgraph = g
 
-  
-# for k,v in targets.items():
-#     print(k,v)
-# tempGO = defaultdict(list)
-# for line in open(mapping_file,'r').readlines():
-#     if not line.startswith("!"):    
-#         parts = line.split("\t")[4]
-#         for k in targets.keys():
-#             if k != 'gene' and k in line:                
-#                 tempGO[k].append(line.split("\t")[4])
+        g.serialize(destination=outfile,format='n3')
 
-# #print(tempGO)
+        print ("BK constructed.")
+        
+    def return_target_n3(self, outfile):
 
-# ## from this point on, construct a rdf graph!
+        print ("Transforming the data..")
+        target_dict = defaultdict(list)
+        filenames = [self.cfile+"/"+f for f in os.listdir(self.cfile)]
+        for file in filenames:
+            with open(file) as f:
+                for line in f:
+                    target_dict[file].append( line.replace("\n","") )
 
+        ## generate query sample sets
+        
+        ## construct target class ontology
 
-# g = rdflib.graph.Graph()
-# KT = rdflib.Namespace('http://kt.ijs.si/hedwig#')
-# amp_uri = 'http://kt.ijs.si/ontology/hedwig#'
-# obo_uri = "http://purl.obolibrary.org/obo/"
-# AMP = rdflib.Namespace(amp_uri)
-
-
-# for id, example1 in enumerate(targets.keys()):
-#     # Write to rdf graph
-#     u = rdflib.term.URIRef('%sgene%s' % (amp_uri, example1))
-#     g.add((u, rdflib.RDF.type, KT.Example))
-#     g.add((u, KT.class_label, rdflib.Literal(targets[example1])))
-#     for ex in tempGO[example1]:
-#         annotation_uri = rdflib.term.URIRef('%s%s' % (obo_uri, rdflib.Literal(ex)))
-
-#         blank = rdflib.BNode()
-#         g.add((u, KT.annotated_with, blank))
-#         g.add((blank, KT.annotation, annotation_uri))
-
-
-# g.serialize(destination="backgroundONT4.n3",format='n3')
-
-# ## hedwig run> 
-
-# p#hedwig bk/ examples/chr1_clusters_fix.n3 -o 393_clusters_w_hierarchy_fix.txt -A 0.05 -a fwer -l
-
+        for id, example1 in enumerate(target_dict.keys()):
+            
+            # Write to rdf graph
+            g = rdflib.graph.Graph()
+            KT = rdflib.Namespace('http://kt.ijs.si/hedwig#')
+            amp_uri = 'http://kt.ijs.si/ontology/hedwig#'
+            obo_uri = "http://purl.obolibrary.org/obo/"
+            AMP = rdflib.Namespace(amp_uri)
+        
+            u = rdflib.term.URIRef('%sexample%s' % (amp_uri, id))
+            g.add((u, rdflib.RDF.type, KT.Example))
+            g.add((u, KT.class_label, rdflib.Literal(example1)))
+                        
+            for ex in target_dict[example1]:
+                  
+                annotation_uri = rdflib.term.URIRef('%s%s' % (obo_uri, rdflib.Literal(ex)))
+                blank = rdflib.BNode()
+                g.add((u, KT.annotated_with, blank))
+                g.add((blank, KT.annotation, annotation_uri))
+            
+        g.serialize(destination=outfile,format='n3')
+        print ("Data transformed.")
+        return 0
+    
+    def rdf_get_graph(self):
+        ## check if rdf graph is valid one
+        return self.rdfgraph
     

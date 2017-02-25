@@ -7,7 +7,8 @@ import json
 import urllib
 import networkx as nx
 import numpy as np
-import matplotlib.pyplot as plt
+import rdfmodule as rm
+import sys
 
 class make_request:
 
@@ -240,17 +241,12 @@ class make_request:
         self.labels = labels1
         self.pos = nx.spring_layout(G)
         #self.pos = nx.circular_layout(G)
-        return G
 
-    def increment_graph(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0,step=10):
+    def get_graph(self):
 
-        ## for each step from 1 to len(sourceterms), do construct the graph and add it to the main graph.
-        ## once the main graph is done, continue with additional step, add edges and nodes to self.G and continue building the graph.
-        ## once the increments are finished, return the graph and visualize it for example..
-        ## this  code will build the graph incrementally. Core algorithm will add nodes to the main self.G
-        
-        return G
-
+        return self.graph
+    
+    
     def trim_graph(self, degreetrim):
 
         print ("Trimming the graph..")
@@ -258,7 +254,7 @@ class make_request:
         self.graph.remove_nodes_from(to_remove)
 
     def draw_graph(self, labs = False, weights = True, fsize = 10):
-        
+        import matplotlib.pyplot as plt
         nsize = [deg*0.1 for deg in self.graph_node_degree]
 
         if weights == False:
@@ -283,7 +279,7 @@ class make_request:
                 plt.show()
 
     def draw_graph_ortolog(self, labs = False, weights = True, fsize = 10):
-        
+        import matplotlib.pyplot as plt
         nsize = [deg*0.1 for deg in self.graph_node_degree_ortolog]
 
         if weights == False:
@@ -308,6 +304,12 @@ class make_request:
                 nx.draw_networkx_labels(self.graph_ortolog,self.pos_ortolog,font_size=fsize)
                 plt.show() 
 
+    def export_graph(self,gname):
+
+        nx.write_gml(G, gname+".gml")
+        
+        return
+        
 def read_example_data(max):
 
     outlist = []
@@ -325,17 +327,32 @@ def read_example_data(max):
 
 
 if __name__ == '__main__':
-    
-    source, target = read_example_data(1000)
+
+
+    ## A thypical workflow representation
+
+    source, target = read_example_data(int(sys.argv[1]))
 
     ## init a request
+    
     request = make_request()
     
     ## this returns graph for further reduction use..
+    
     request.execute_query(source)
-    request.trim_graph(5)
-    request.draw_graph(labs=False)
+    request.trim_graph(int(sys.argv[2]))
+    
+    #request.draw_graph(labs=False)
 
+    ## do the rdf stuff
+    
+    rdfpart = rm.rdfconverter(request.get_graph(),"data")
+    rdfpart.return_target_n3("samples/dataset.n3")
+    rdfpart.return_background_knowledge("BK/autogen.n3")
+    
+    ## get rdf and run Hedwig!
+
+    
  #   request.execute_query_orto(source)
   #  request.draw_graph_ortolog(labs=True)
 #    request.execute_query_orto(source)
