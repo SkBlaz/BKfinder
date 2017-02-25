@@ -242,6 +242,15 @@ class make_request:
         #self.pos = nx.circular_layout(G)
         return G
 
+    def increment_graph(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0,step=10):
+
+        ## for each step from 1 to len(sourceterms), do construct the graph and add it to the main graph.
+        ## once the main graph is done, continue with additional step, add edges and nodes to self.G and continue building the graph.
+        ## once the increments are finished, return the graph and visualize it for example..
+        ## this  code will build the graph incrementally. Core algorithm will add nodes to the main self.G
+        
+        return G
+
     def trim_graph(self, degreetrim):
 
         print ("Trimming the graph..")
