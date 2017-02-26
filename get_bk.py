@@ -250,15 +250,16 @@ class make_request:
         
         G = self.graph
 
-        step = int(len(sourceterms)/div)
+        step = div
+
+#        step = int(len(sourceterms)/div)
+
+        if step > 1500:
+            step = 1000
+
         print ("Initiating the graph construction phase with step: ",str(step))
-        
-        ## iteratively add data to the graph
-#        print (sourceterms)
 
         tmplist = []
-
-#        print (sourceterms)
         
         for e,k in enumerate(sourceterms):
 
@@ -266,11 +267,7 @@ class make_request:
             
             if e % step == 0 and e > 0:
 
-                #print (tmplist)
-
                 sterms = ",".join(tmplist)
-
-#                print (sterms)
 
                 tmplist = []                
                 
@@ -285,32 +282,23 @@ class make_request:
                 json_graph =  json.loads(urllib.request.urlopen(self.bm_api, params).read().decode())['graph']
         
                 ## save for possible further use..
-                print ("Data obtained, incrementally constructing the graph..", str(int(e/len(sourceterms)*100)),"% complete." )
+                print ("Data obtained, incrementally constructing the graph..",str(round(float(e/int(sys.argv[1]))*100,2)),"% complete." )
 
                 nodes = json.loads(json_graph)['nodes']
-                edges = json.loads(json_graph)['links']
-                labels1 = {}
+                edges = json.loads(json_graph)['links']                
+                node_hash = {}
 
-                for node in nodes:
-
-                    try:
-                        if node['organism'] == 'hsa':
-
-                            G.add_node(e, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'r')
-
-                        else:
-                
-                            G.add_node(e, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'g')
-                    except:
-                        
-                        pass
-#                        print (".........API call incomplete.......")
-
-                    labels1[e] = node['id']
+                for id,node in enumerate(nodes):
+                    node_hash[id] = (node['id'], node['degree'],'r')
 
                 for edge in edges:
 
-                    G.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
+                    sourceterms = node_hash[int(edge['source'])]
+                    targets = node_hash[int(edge['target'])]
+
+                    G.add_node(sourceterms[0],degree=sourceterms[1],color=sourceterms[2])
+                    G.add_node(targets[0],degree=targets[1],color=targets[2])
+                    G.add_edge(sourceterms[0],targets[0],weight=edge['reliability'], key=edge['key'])
 
                     
         ## color according to db entry at least.
@@ -320,17 +308,15 @@ class make_request:
         print (nx.info(G))
 
         ## assign values to the object for further use
-
-#        self.graph_node_degree = [int(u[1]['degree']) for u in nodesG]
-#        self.graph_node_colors = [u[1]['color'] for u in nodesG]
-#        self.graph_weights = [G[u][v]['weight'] for u,v in edgesG]
-#        self.graph = G        
-#        self.labels = labels1
-#        self.pos = nx.spring_layout(G)
         
-#        print (lenself.graph.nodes(), self.graph.edges())
+        self.graph_node_degree = [int(u[1]['degree']) for u in nodesG]
+        self.graph_node_colors = [u[1]['color'] for u in nodesG]
+        self.graph_weights = [G[u][v]['weight'] for u,v in edgesG]
+        self.graph = G        
+        self.pos = nx.spring_layout(G)
         
         return 0
+
     def reset_graph(self):
 
         self.graph = nx.Graph()
