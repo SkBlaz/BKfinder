@@ -1,6 +1,7 @@
 ## This is some basic code used to obtain the data from the Biomine API
 ## and transform it into a graph, which will be further on processed.
 
+import matplotlib.pyplot as plt
 import urllib.request
 import urllib.parse
 import json
@@ -289,8 +290,14 @@ class make_request:
                 node_hash = {}
 
                 for id,node in enumerate(nodes):
-                    node_hash[id] = (node['id'], node['degree'],'r')
 
+                    if node['organism'] == 'hsa':
+                        col_value = "r"
+                    elif node['organism'] == 'mmu':
+                        col_value = "g"
+                    else:
+                        col_value = "y"
+                    node_hash[id] = (node['id'], node['degree'],col_value)
                 for edge in edges:
 
                     sourceterms = node_hash[int(edge['source'])]
@@ -314,7 +321,7 @@ class make_request:
         self.graph_weights = [G[u][v]['weight'] for u,v in edgesG]
         self.graph = G        
         self.pos = nx.spring_layout(G)
-        
+
         return 0
 
     def reset_graph(self):
@@ -333,7 +340,7 @@ class make_request:
         self.graph.remove_nodes_from(to_remove)
 
     def draw_graph(self, labs = False, weights = True, fsize = 10):
-        import matplotlib.pyplot as plt
+
         nsize = [deg*0.1 for deg in self.graph_node_degree]
 
         if weights == False:
@@ -345,7 +352,7 @@ class make_request:
                 plt.show()
             else:
                 nx.draw(self.graph,self.pos,node_size=nsize,node_color = self.graph_node_colors)
-                nx.draw_networkx_labels(self.graph,self.pos,font_size=16)
+                #nx.draw_networkx_labels(self.graph,self.pos,font_size=16)
                 plt.show()
         else:
             if labs == True:
@@ -354,7 +361,7 @@ class make_request:
                 plt.show()
             else:
                 nx.draw(self.graph,self.pos, width=self.graph_weights,node_size=nsize,node_color = self.graph_node_colors)
-                nx.draw_networkx_labels(self.graph,self.pos,font_size=fsize)
+                #nx.draw_networkx_labels(self.graph,self.pos,font_size=fsize)
                 plt.show()
 
     def draw_graph_ortolog(self, labs = False, weights = True, fsize = 10):
