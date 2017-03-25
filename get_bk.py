@@ -1,5 +1,6 @@
 ## This is some basic code used to obtain the data from the Biomine API
-## and transform it into a graph, which will be further on processed.
+from joblib import Parallel, delayed
+import multiprocessing## and transform it into a graph, which will be further on processed.
 
 import matplotlib.pyplot as plt
 import urllib.request
@@ -19,6 +20,7 @@ class make_request:
         self.bm_api = 'http://biomine.ijs.si/api'
         self.databases = json.loads(urllib.request.urlopen(self.db_url).read().decode())['databases']
         self.graph = nx.Graph()
+        self.graph_nodes = []
         
     def get_info(self):
 
@@ -245,10 +247,10 @@ class make_request:
         #self.pos = nx.circular_layout(G)
         print (nx.info(G))
 
-    def execute_query_inc(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0, div=4):
+    def execute_query_inc(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0, div=4,connected=False):
         
         ## init the graph structure..
-        
+
         G = self.graph
 
         step = div
@@ -257,10 +259,12 @@ class make_request:
 
         if step > 1500:
             step = 1000
-
+        # to make it run in parallel, simply divide sourceterms by step before this loop
+        
         print ("Initiating the graph construction phase with step: ",str(step))
 
         tmplist = []
+        iteration = 0
         
         for e,k in enumerate(sourceterms):
 
@@ -271,19 +275,24 @@ class make_request:
                 sterms = ",".join(tmplist)
 
                 tmplist = []                
-                
-                if targetterms == None:
+                try:
+                    if targetterms == None:
                     
-                    params = urllib.parse.urlencode({'database': self.databases['biomine'][0],
-                            'sourceTerms': sterms,
-                            'maxnodes': maxnodes,
-                            'grouping': grouping,
-                            'graph_type': 'json'}).encode("utf-8")
+                        params = urllib.parse.urlencode({'database': self.databases['biomine'][0],
+                                'sourceTerms': sterms,
+                                'maxnodes': maxnodes,
+                                'grouping': grouping,
+                                'graph_type': 'json'}).encode("utf-8")
                     
-                json_graph =  json.loads(urllib.request.urlopen(self.bm_api, params).read().decode())['graph']
+                        json_graph =  json.loads(urllib.request.urlopen(self.bm_api, params).read().decode())['graph']
+                except:
+                    print ("passing")
+                    pass
         
                 ## save for possible further use..
-                print ("Data obtained, incrementally constructing the graph..",str(round(float(e/int(sys.argv[1]))*100,2)),"% complete." )
+                print ("Progress: ",str(round(float(e/int(sys.argv[1]))*100,2)),"% complete.", nx.info(self.graph))
+
+                iteration += 1
 
                 nodes = json.loads(json_graph)['nodes']
                 edges = json.loads(json_graph)['links']                
@@ -291,23 +300,54 @@ class make_request:
 
                 for id,node in enumerate(nodes):
 
-                    if node['organism'] == 'hsa':
-                        col_value = "r"
-                    elif node['organism'] == 'mmu':
-                        col_value = "g"
-                    else:
-                        col_value = "y"
+                    col_value = "r"
+                    
+                    try:
+
+                        if node['organism'] == 'hsa':
+
+                            col_value = "r"
+                        
+                        elif node['organism'] == 'mmu':
+                        
+                            col_value = "g"
+                            
+                        else:
+
+                            col_value = "y"
+                            
+                    except:
+                        pass
+                        
                     node_hash[id] = (node['id'], node['degree'],col_value)
+                    if iteration == 1:
+                        self.graph_nodes.append(node['id'])
+                    
                 for edge in edges:
 
+#                    print (edge['source'],node_hash[int(edge['source'])])
                     sourceterms = node_hash[int(edge['source'])]
                     targets = node_hash[int(edge['target'])]
+                    if connected == False:
+                        
+                        G.add_node(sourceterms[0],degree=sourceterms[1],color=sourceterms[2])
+                        G.add_node(targets[0],degree=targets[1],color=targets[2])
+                        G.add_edge(sourceterms[0],targets[0],weight=edge['reliability'], key=edge['key'])
+                        
+                    else:
+                        if targets[0] in self.graph_nodes or sourceterms[0] in self.graph_nodes:
 
-                    G.add_node(sourceterms[0],degree=sourceterms[1],color=sourceterms[2])
-                    G.add_node(targets[0],degree=targets[1],color=targets[2])
-                    G.add_edge(sourceterms[0],targets[0],weight=edge['reliability'], key=edge['key'])
+                            if targets[0] not in self.graph_nodes:
+                                self.graph_nodes.append(targets[0])
+                            if sourceterms[0] not in self.graph_nodes:
+                                self.graph_nodes.append(sourceterms[0])
+                            
+                            G.add_node(sourceterms[0],degree=sourceterms[1],color=sourceterms[2])
+                            G.add_node(targets[0],degree=targets[1],color=targets[2])
+                            G.add_edge(sourceterms[0],targets[0],weight=edge['reliability'], key=edge['key'])
 
-                    
+
+#        Parallel(n_jobs=num_cores)(delayed(request.execute_query_inc(source,,connected=True))(i) for i in inputs)
         ## color according to db entry at least.
            
         edgesG = G.edges()
@@ -444,8 +484,8 @@ if __name__ == '__main__':
     
  #   request.execute_query(source)
 
-    request.execute_query_inc(source,div=int(sys.argv[2]))
-    
+    request.execute_query_inc(source,div=int(sys.argv[2]),connected=False)
+        
 #    request.trim_graph(int(sys.argv[2]))
     request.draw_graph(labs=False)
 
