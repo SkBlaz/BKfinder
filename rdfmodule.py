@@ -5,6 +5,9 @@ import sys
 from collections import defaultdict
 import os
 import networkx as nx
+from random import randint
+
+
 class rdfconverter:
     
     def __init__(self, nxgraph, classfolder):
@@ -32,7 +35,7 @@ class rdfconverter:
         for node in self.nxgraph.nodes():
             
             for node2 in self.nxgraph.neighbors(node):
-                ontology[ str(terms[node]).split(":")[1] ].append( str(terms[node2]).split(":")[1])
+                ontology[ str(node).split(":")[1] ].append( str(node2).split(":")[1])
                 
         for id, example1 in enumerate(ontology.keys()):
 
@@ -51,29 +54,35 @@ class rdfconverter:
         g.serialize(destination=outfile,format='n3')
 
         print ("BK constructed.")
+        return 0
         
-    def return_target_n3(self, outfile):
+    def return_target_n3(self, outfile,random=False):
 
         print ("Transforming the data..")
         target_dict = defaultdict(list)
         filenames = [self.cfile+"/"+f for f in os.listdir(self.cfile)]
         for file in filenames:
             with open(file) as f:
-                for line in f:
-                    target_dict[file].append( line.replace("\n","") )
+                for ind,line in enumerate(f):
+                    if random == True:
+                        if ind % randint(1,30) == 0:
+                            target_dict[file].append( line.replace("\n","") )
+                    else:
+                        target_dict[file].append( line.replace("\n","") )                        
 
         ## generate query sample sets
         
         ## construct target class ontology
-
+        g = rdflib.graph.Graph()
+        KT = rdflib.Namespace('http://kt.ijs.si/hedwig#')
+        amp_uri = 'http://kt.ijs.si/ontology/hedwig#'
+        obo_uri = "http://purl.obolibrary.org/obo/"
+        AMP = rdflib.Namespace(amp_uri)
+        
         for id, example1 in enumerate(target_dict.keys()):
             
             # Write to rdf graph
-            g = rdflib.graph.Graph()
-            KT = rdflib.Namespace('http://kt.ijs.si/hedwig#')
-            amp_uri = 'http://kt.ijs.si/ontology/hedwig#'
-            obo_uri = "http://purl.obolibrary.org/obo/"
-            AMP = rdflib.Namespace(amp_uri)
+            print("Processing: ",example1)
         
             u = rdflib.term.URIRef('%sexample%s' % (amp_uri, id))
             g.add((u, rdflib.RDF.type, KT.Example))

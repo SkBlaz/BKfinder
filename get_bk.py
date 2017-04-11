@@ -1,6 +1,6 @@
 ## This is some basic code used to obtain the data from the Biomine API
-from joblib import Parallel, delayed
-import multiprocessing## and transform it into a graph, which will be further on processed.
+#from joblib import Parallel, delayed
+#import multiprocessing## and transform it into a graph, which will be further on processed.
 
 import matplotlib.pyplot as plt
 import urllib.request
@@ -11,6 +11,7 @@ import networkx as nx
 import numpy as np
 import rdfmodule as rm
 import sys
+import os
 
 class make_request:
 
@@ -248,7 +249,8 @@ class make_request:
         print (nx.info(G))
 
     def execute_query_inc(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0, div=4,connected=False):
-        
+
+        max_terms = len(sourceterms)
         ## init the graph structure..
 
         G = self.graph
@@ -290,7 +292,7 @@ class make_request:
                     pass
         
                 ## save for possible further use..
-                print ("Progress: ",str(round(float(e/int(sys.argv[1]))*100,2)),"% complete.", nx.info(self.graph))
+                print ("Progress: ",str(round(float(e/max_terms)*100,2)),"% complete.", nx.info(self.graph))
 
                 iteration += 1
 
@@ -347,12 +349,11 @@ class make_request:
                             G.add_edge(sourceterms[0],targets[0],weight=edge['reliability'], key=edge['key'])
 
 
-#        Parallel(n_jobs=num_cores)(delayed(request.execute_query_inc(source,,connected=True))(i) for i in inputs)
         ## color according to db entry at least.
            
         edgesG = G.edges()
         nodesG = G.nodes(data=True)
-        print (nx.info(G))
+        print ("Final size: \n",nx.info(G))
 
         ## assign values to the object for further use
         
@@ -361,8 +362,7 @@ class make_request:
         self.graph_weights = [G[u][v]['weight'] for u,v in edgesG]
         self.graph = G        
         self.pos = nx.spring_layout(G)
-
-        return 0
+        return G
 
     def reset_graph(self):
 
@@ -436,68 +436,60 @@ class make_request:
         
         return
         
-def read_example_data(max):
+# def read_example_data(max):
+
+#     outlist = []
+#     outlist2 = []
+
+#     with open("data/cancer.list") as cl:
+#         for line in cl:
+#            outlist.append("UniProt:"+line.replace("\n",""))
+
+#     with open("data/alzheimer.list") as cl:
+#         for line in cl:
+#            outlist2.append("UniProt:"+line.replace("\n",""))
+
+#     return (",".join(outlist[1:max]),",".join(outlist2[1:max]))
+
+def read_example_datalist(whole=False):
 
     outlist = []
     outlist2 = []
+    filenames = ["./data/"+f for f in os.listdir("data")]
+    for f in filenames:
+        print ("Adding: "+f)
+        with open(f) as cl:
+            for line in cl:
+                outlist.append("UniProt:"+line.replace("\n",""))
 
-    with open("data/cancer.list") as cl:
-        for line in cl:
-           outlist.append("UniProt:"+line.replace("\n",""))
-
-    with open("data/alzheimer.list") as cl:
-        for line in cl:
-           outlist2.append("UniProt:"+line.replace("\n",""))
-
-    return (",".join(outlist[1:max]),",".join(outlist2[1:max]))
-
-def read_example_datalist(max):
-
-    outlist = []
-    outlist2 = []
-
-    with open("data/cancer.list") as cl:
-        for line in cl:
-           outlist.append("UniProt:"+line.replace("\n",""))
-
-    with open("data/alzheimer.list") as cl:
-        for line in cl:
-           outlist2.append("UniProt:"+line.replace("\n",""))
-
-    return (outlist[1:max],outlist2[1:max])
+    return (outlist,outlist2)        
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':    
 
+    source, target = read_example_datalist(whole=True)
 
-    ## A thypical workflow representation
-
-#    source, target = read_example_data(int(sys.argv[1]))
-
-    source, target = read_example_datalist(int(sys.argv[1]))
-
+    source = source
+    
     ## init a request
     
     request = make_request()
     
     ## this returns graph for further reduction use..
-    
- #   request.execute_query(source)
 
-    request.execute_query_inc(source,div=int(sys.argv[2]),connected=False)
-        
-#    request.trim_graph(int(sys.argv[2]))
-    request.draw_graph(labs=False)
+    result_graph = request.execute_query_inc(source,div=int(sys.argv[1]),connected=False)
 
-    ## do the rdf stuff
+    job_id = sys.argv[2]
+    print ("Writing pickle datadump..")
+    nx.write_gpickle(result_graph, "graph_datasets/biomine_dump"+job_id+".gpickle")
+
+    #request.draw_graph(labs=False)
     
-#    rdfpart = rm.rdfconverter(request.get_graph(),"data")
-#    rdfpart.return_target_n3("samples/dataset.n3")
-#    rdfpart.return_background_knowledge("BK/autogen.n3")
+    ## do the rdf graph generation and save the data!
+    
+    rdfpart = rm.rdfconverter(result_graph,"data")
+    rdfpart.return_target_n3("samples/dataset"+job_id+".n3")
+    rdfpart.return_background_knowledge("BK/autogen"+job_id+".n3")
     
     ## get rdf and run Hedwig!
 
-    
- #   request.execute_query_orto(source)
-  #  request.draw_graph_ortolog(labs=True)
-#    request.execute_query_orto(source)
