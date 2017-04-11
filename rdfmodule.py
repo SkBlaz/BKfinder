@@ -99,6 +99,11 @@ class rdfconverter:
         print ("Data transformed.")
         return 0
     
+    def return_target_n3_detailed(self, outfile):
+
+        ## this function takes individual edges and annotates them according to the key property!
+        ## this is a more detailed annotation, which can be further used for BK construction!
+        pass
     def rdf_get_graph(self):
         ## check if rdf graph is valid one
         return self.rdfgraph
