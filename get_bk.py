@@ -2,6 +2,7 @@
 #from joblib import Parallel, delayed
 #import multiprocessing## and transform it into a graph, which will be further on processed.
 
+import argparse
 import matplotlib.pyplot as plt
 import urllib.request
 import urllib.parse
@@ -12,6 +13,8 @@ import numpy as np
 import rdfmodule as rm
 import sys
 import os
+
+
 
 class make_request:
 
@@ -465,8 +468,19 @@ def read_example_datalist(whole=False):
     return (outlist,outlist2)        
 
 
-if __name__ == '__main__':    
+if __name__ == '__main__':
 
+    parser_init = argparse.ArgumentParser()
+    
+    parser_init.add_argument("--step_size", help="How large subgraphs are taken when building main graph")
+    parser_init.add_argument("--output_name", help="Custom job ID for saving graph")
+    parser_init.add_argument("--visualize", help="Basic network visualization with networkx module")
+    parser_init.add_argument("--ontology_output", help="Ontology mapping generation")
+    parser_init.add_argument("--py3plex", help="Multiplex network visualization")
+    parser_init.add_argument("--instructions", help="Load the bio identifier lists in separate files into data folder and run this tool at least with --step_size option")
+
+    parser = parser_init.parse_args()
+    
     source, target = read_example_datalist(whole=True)
 
     source = source
@@ -476,20 +490,22 @@ if __name__ == '__main__':
     request = make_request()
     
     ## this returns graph for further reduction use..
-
-    result_graph = request.execute_query_inc(source,div=int(sys.argv[1]),connected=False)
-
-    job_id = sys.argv[2]
-    print ("Writing pickle datadump..")
-    nx.write_gpickle(result_graph, "graph_datasets/biomine_dump"+job_id+".gpickle")
-
-    #request.draw_graph(labs=False)
     
-    ## do the rdf graph generation and save the data!
-    
-    rdfpart = rm.rdfconverter(result_graph,"data")
-    rdfpart.return_target_n3("samples/dataset"+job_id+".n3")
-    rdfpart.return_background_knowledge("BK/autogen"+job_id+".n3")
-    
-    ## get rdf and run Hedwig!
+    if(parser.step_size):
+
+        result_graph = request.execute_query_inc(source,div=int(parser.step_size),connected=False)
+
+        if (parser.output_name):
+            job_id = parser.output_name
+            print ("Writing pickle datadump..")
+            nx.write_gpickle(result_graph, "graph_datasets/biomine_dump"+job_id+".gpickle")
+
+            if (parser.ontology_output):
+                rdfpart = rm.rdfconverter(result_graph,"data")
+                rdfpart.return_target_n3("samples/dataset"+job_id+".n3")
+                rdfpart.return_background_knowledge("BK/autogen"+job_id+".n3")
+
+        if (parser.visualize): 
+            request.draw_graph(labs=False)
+
 
