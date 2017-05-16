@@ -12,15 +12,14 @@ from matplotlib.patches import Circle
 import random
 import matplotlib.pyplot as plt
 
-import colors # those are color ranges
-import bezier # those are bezier curves
-import polyfit
+from . import colors # those are color ranges
+from . import bezier # those are bezier curves
+from . import polyfit
 
 main_figure = plt.figure()
 shape_subplot = main_figure.add_subplot(111)
 
-
-def draw_multilayer_default(network_list, display=True, nodesize=2,alphalevel=0.13,rectanglex = 1,rectangley = 1,background_shape="circle",background_color="rainbow",networks_color="rainbow"):
+def draw_multilayer_default(network_list, display=True, nodesize=2,alphalevel=0.13,rectanglex = 1,rectangley = 1,background_shape="circle",background_color="rainbow",networks_color="rainbow",labels=False):
 
     if background_color == "default":
         
@@ -54,21 +53,33 @@ def draw_multilayer_default(network_list, display=True, nodesize=2,alphalevel=0.
     color = 0
     
     for network in network_list:
+
         degrees = nx.degree(network)
         positions = nx.get_node_attributes(network, 'pos')
+        
         for position in positions:
+            try:
                 positions[position][0] = positions[position][0]+start_location_network
                 positions[position][1] = positions[position][1]+start_location_network
-
+            except:                
+                pass
+                
         ## this is the default delay for matplotlib canvas
+        if labels != False:
+            try:
+                shape_subplot.text(start_location_network+0.5,start_location_network-0.5, labels[color])
+            except:
+                pass
+        
         if background_shape == "rectangle":
             shape_subplot.add_patch(Rectangle(
                 (start_location_background, start_location_background), rectanglex, rectangley,
                 alpha=alphalevel, linestyle="dotted", fill=True,facecolor=facecolor_list_background[color]
             ))
+
         elif background_shape == "circle":
             ## tukaj pride krogeci
-            shape_subplot.add_patch(Circle((start_location_background+0.5, start_location_background+0.5), 1.2, color=facecolor_list_background[color],alpha=alphalevel))
+            shape_subplot.add_patch(Circle((start_location_background+0.5, start_location_background+0.5), 0.7, color=facecolor_list_background[color],alpha=alphalevel))
             pass
         else:
             pass
@@ -85,7 +96,6 @@ def draw_multiplex_default(network_list,multi_edge_tuple,input_type="tuple",line
 
     #indices are correct network positions    
     network_positions = [nx.get_node_attributes(network, 'pos') for network in network_list]
-
     
     for el in multi_edge_tuple:
 
@@ -162,7 +172,7 @@ def generate_random_networks(number_of_networks):
         nx.set_node_attributes(tmp_graph,'pos',tmp_pos)
         network_list.append(tmp_graph)
 
-    return network_list
+    return network_list         
 
     
 if __name__ == "__main__":
@@ -171,10 +181,8 @@ if __name__ == "__main__":
     #    generate_random_multiedges(x,12,style="piramidal")
     generate_random_multiedges(x,80,style="curve2_bezier")
 
-
-    # network 1's 4 to network 6's 3 etc..
-    
-    #mel = [((1,1),(5,1))]
-    ##draw_multiplex_default(x,mel)
+    # network 1's 4 to network 6's 3 etc..    
+    # mel = [((1,1),(5,1))]
+    # draw_multiplex_default(x,mel)
     
     plt.show()
