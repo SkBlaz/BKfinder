@@ -19,14 +19,15 @@ def draw_bezier(total_size,p1,p2,mode="quadratic",inversion=False):
         if p1[0] < p1[1]:            
             x = ((1-space)**2)*p1[0]+2*(1-space)*space*x_delay+space**2*p1[1]
             y = (1-space)**2*p2[0]+2*(1-space)*space*y_delay+space**2*p2[1]
-            idx = np.argmin(np.abs(x - p2[0]))
-            idy = np.argmin(np.abs(y - p2[1]))
+            idx = np.argmin(np.abs(x - p2[1]))
+            idy = np.argmin(np.abs(y - p2[0]))
 
         elif p1[0] > p1[1]:
             x = ((1-space)**2)*p1[1]+2*(1-space)*space*x_delay+space**2*p1[0]
             y = (1-space)**2*p2[1]+2*(1-space)*space*y_delay+space**2*p2[0]
-            idx = np.argmin(np.abs(x - p2[0]))
-            idy = np.argmin(np.abs(y - p2[1]))
+            idx = np.argmin(np.abs(x - p2[1]))
+            idy = np.argmin(np.abs(y - p2[0]))
+            
         else:
             pass
         return (x[1:idy],y[1:idy])

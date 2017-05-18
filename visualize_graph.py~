@@ -1,0 +1,24 @@
+## this python code uses in house py3plex lib for complex network visualization
+
+import networkx as nx
+from collections import defaultdict
+import py3plex
+from py3plex import multilayer
+from multilayer import draw_multilayer_default
+
+def view_by_type(inputgraph):
+
+    input_graph = nx.read_gpickle(inputgraph)
+    type_segments = defaultdict(list)
+    
+    for node in input_graph.nodes(data=True):
+        type_segments[node[0].split("_")[0]].append(node[0])
+
+    networks = []
+    for k,v in type_segments.items():
+        networks.append(input_graph.subgraph(v))
+        
+    draw_multilayer_default(networks,display=False,background_shape="circle")
+    
+    
+view_by_type("./graph_datasets/biomine_dumptestgraph.gpickle")

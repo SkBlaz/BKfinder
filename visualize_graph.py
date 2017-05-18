@@ -11,23 +11,39 @@ def view_by_type(inputgraph,limit=False):
     type_segments = defaultdict(list)
     
     for node in input_graph.nodes(data=True):
-        type_segments[node[0].split("_")[0]].append(node[0])
-
+        type_segments[node[0].split("_")[0]].append(node[0])        
+    
     networks = []
     labs = []
+    
     for k,v in type_segments.items():
         if limit != False:
             tmp_graph = input_graph.subgraph(v[0:limit]) 
         else:
             tmp_graph = input_graph.subgraph(v)
             
-        if tmp_graph.number_of_edges() > 2:
-            labs.append(k)
-            tmp_pos=nx.spring_layout(tmp_graph)
-            nx.set_node_attributes(tmp_graph,'pos',tmp_pos)
-            networks.append(tmp_graph)
+        #if tmp_graph.number_of_edges() > 2:
+        labs.append(k)
+        tmp_pos=nx.spring_layout(tmp_graph)
+        nx.set_node_attributes(tmp_graph,'pos',tmp_pos)
+        networks.append(tmp_graph)
 
     print ("Visualizing..")
-    draw_multilayer_default(networks,background_shape="circle",display=True,labels=labs)
+    draw_multilayer_default(networks,background_shape="circle",display=False,labels=labs)
+
+    mx_edges = []
+
+    for e in input_graph.edges():
+        if e[0].split("_")[0] != e[1].split("_")[0]:
+
+            ## we have a multiplex edge!
+            layer1 = e[0].split("_")[0]
+            layer2 = e[1].split("_")[0]            
+            mx_edges.append((e[0],e[1]))
+            
     
-view_by_type("./graph_datasets/biomine_dumptestgraph.gpickle")
+    draw_multiplex_default(networks,mx_edges)
+
+    plt.show()
+    
+view_by_type("./graph_datasets/biomine_dumptestgraph.gpickle",limit=1000)

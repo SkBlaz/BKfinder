@@ -14,8 +14,6 @@ import rdfmodule as rm
 import sys
 import os
 
-
-
 class make_request:
 
     def __init__(self):

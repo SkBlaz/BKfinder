@@ -92,24 +92,47 @@ def draw_multilayer_default(network_list, display=True, nodesize=2,alphalevel=0.
     if display == True:
         plt.show()
 
-def draw_multiplex_default(network_list,multi_edge_tuple,input_type="tuple",linepoints="-.",alphachannel=0.3):
+def draw_multiplex_default(network_list,multi_edge_tuple,input_type="nodes",linepoints="-.",alphachannel=0.3):
 
-    #indices are correct network positions    
-    network_positions = [nx.get_node_attributes(network, 'pos') for network in network_list]
+    #indices are correct network positions
+
+    if input_type == "tuple":
+        network_positions = [nx.get_node_attributes(network, 'pos') for network in network_list]
     
-    for el in multi_edge_tuple:
+        for el in multi_edge_tuple:
 
-        p1 = [network_positions[el[0][0]][el[0][1]][0],network_positions[el[1][0]][el[1][1]][1]]
+            p1 = [network_positions[el[0][0]][el[0][1]][0],network_positions[el[1][0]][el[1][1]][1]]
 
-        p2 = [network_positions[el[0][0]][el[0][1]][1],network_positions[el[1][0]][el[1][1]][0]]
+            p2 = [network_positions[el[0][0]][el[0][1]][1],network_positions[el[1][0]][el[1][1]][0]]
 
-        ## miljon enih ifelse stavkov comes here..
+            ## miljon enih ifelse stavkov comes here..
+            print(p1,p2)
+            x,y = bezier.draw_bezier(len(network_list),p1,p2,mode="quadratic")
         
-        x,y = bezier.draw_bezier(len(network_list),p1,p2,mode="quadratic")
-        
-        # #plot the result
-        plt.plot(x,y,linestyle=linepoints,lw=1,alpha=alphachannel)
+            # #plot the result
+            plt.plot(x,y,linestyle=linepoints,lw=1,alpha=alphachannel)
 
+    elif input_type == "nodes":
+
+        network_positions = [nx.get_node_attributes(network, 'pos') for network in network_list]
+
+        global_positions = {}
+        global_layers = []
+        for position in network_positions:
+            for k,v in position.items():
+                global_positions[k]=v
+                global_layers.append(k.split("_")[0])
+        
+        for pair in multi_edge_tuple:
+            try:
+                p1 = [global_positions[str(pair[0])][0],global_positions[str(pair[1])][0]]
+                p2 = [global_positions[str(pair[0])][1],global_positions[str(pair[1])][1]]                                
+                x,y = bezier.draw_bezier(len(network_list),p1,p2,mode="quadratic")
+                plt.plot(x,y,linestyle=linepoints,lw=1,alpha=alphachannel)
+            except:
+                pass
+            
+        
 def generate_random_multiedges(network_list,random_edges,style="line",linepoints="-."):
 
     edge_subplot = main_figure.add_subplot(111)
@@ -161,7 +184,7 @@ def generate_random_multiedges(network_list,random_edges,style="line",linepoints
         except:
             pass
     
-
+        
 def generate_random_networks(number_of_networks):
 
     network_list = []
@@ -176,13 +199,15 @@ def generate_random_networks(number_of_networks):
 
     
 if __name__ == "__main__":
+
     x = generate_random_networks(8)
     draw_multilayer_default(x,display=False,background_shape="circle")
-    #    generate_random_multiedges(x,12,style="piramidal")
-    generate_random_multiedges(x,80,style="curve2_bezier")
 
-    # network 1's 4 to network 6's 3 etc..    
-    # mel = [((1,1),(5,1))]
-    # draw_multiplex_default(x,mel)
+    # generate_random_multiedges(x,12,style="piramidal")
+    # generate_random_multiedges(x,80,style="curve2_bezier")
+    # network 1's 4 to network 6's 3 etc..
+    
+    mel = [((1,1),(5,1))]
+    draw_multiplex_default(x,mel,input_type="tuple")
     
     plt.show()
