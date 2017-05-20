@@ -4,6 +4,11 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from collections import defaultdict
 from py3plex.multilayer import *
+import argparse
+
+parser_init = argparse.ArgumentParser()
+parser_init.add_argument("--input_graph", help="Load graph file")
+parser = parser_init.parse_args()
 
 def view_by_type(inputgraph,limit=False):
 
@@ -46,4 +51,4 @@ def view_by_type(inputgraph,limit=False):
 
     plt.show()
     
-view_by_type("./graph_datasets/biomine_dumptestgraph.gpickle",limit=1000)
+view_by_type(parser.input_graph,limit=1000)
