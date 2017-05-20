@@ -47,8 +47,8 @@ def view_by_type(inputgraph,limit=False):
             mx_edges.append((e[0],e[1]))
             
     
-    draw_multiplex_default(networks,mx_edges)
+    draw_multiplex_default(networks,mx_edges,alphachannel=0.5)
 
     plt.show()
     
-view_by_type(parser.input_graph,limit=1000)
+view_by_type(parser.input_graph)
