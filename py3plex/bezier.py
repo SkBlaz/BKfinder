@@ -3,7 +3,7 @@
 
 import numpy as np # this is used for vectorized bezier computation
 
-def draw_bezier(total_size,p1,p2,mode="quadratic",inversion=False,path_height=4):
+def draw_bezier(total_size,p1,p2,mode="quadratic",inversion=False,path_height=3):
 
     if mode == "quadratic":
         #draw quadratic polynome

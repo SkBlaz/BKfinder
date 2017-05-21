@@ -1,5 +1,5 @@
 
-colors_default = ["red","green","navy","orange","black","red","blue","green","yellow","gray"]
+colors_default = ["red","green","navy","orange","black","red","blue","green","yellow","gray"]*3
 
 colors_blue = []
 

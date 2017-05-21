@@ -19,11 +19,11 @@ from . import polyfit
 main_figure = plt.figure()
 shape_subplot = main_figure.add_subplot(111)
 
-def draw_multilayer_default(network_list, display=True, nodesize=2,alphalevel=0.13,rectanglex = 1,rectangley = 1,background_shape="circle",background_color="default",networks_color="default",labels=False):
+def draw_multilayer_default(network_list, display=True, nodesize=2,alphalevel=0.13,rectanglex = 1,rectangley = 1,background_shape="circle",background_color="rainbow",networks_color="rainbow",labels=False):
 
     if background_color == "default":
         
-        facecolor_list_background = colors.linear_gradient("#4286f4",n=len(network_list)+4)['hex']
+        facecolor_list_background = colors.linear_gradient("#4286f4",n=len(network_list))['hex']
 
     elif background_color == "rainbow":
         

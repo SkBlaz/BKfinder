@@ -504,10 +504,10 @@ def visualize_multiplex_biomine(input_graph,limit=False):
             mx_edges.append((e[0],e[1]))
             
     
-    draw_multiplex_default(networks,mx_edges,alphachannel=0.5)
+    draw_multiplex_default(networks,mx_edges,alphachannel=0.2)
 
-    plt.show()
- 
+#    plt.show()
+    plt.savefig('foo.png')
 
 if __name__ == '__main__':
 
@@ -520,7 +520,7 @@ if __name__ == '__main__':
     parser_init.add_argument("--py3plex", help="Multiplex network visualization")
     parser_init.add_argument("--instructions", help="Load the bio identifier lists in separate files into data folder and run this tool at least with --step_size option")
     parser_init.add_argument("--visualize_multiplex", help="Multiplex BioMine graph image generator..")
-
+    parser_init.add_argument("--output_image", help="Image outfile..")
     parser = parser_init.parse_args()
     
     source, target = read_example_datalist(whole=True)
@@ -552,6 +552,6 @@ if __name__ == '__main__':
 
         ##separate layers
         if (parser.visualize_multiplex):
-            visualize_multiplex_biomine(result_graph)
+            visualize_multiplex_biomine(result_graph,parser.output_image)
 
 
