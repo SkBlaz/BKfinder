@@ -13,6 +13,7 @@ import numpy as np
 import rdfmodule as rm
 import sys
 import os
+from py3plex.multilayer import * ## visualization
 
 class make_request:
 
@@ -465,6 +466,48 @@ def read_example_datalist(whole=False):
 
     return (outlist,outlist2)        
 
+def visualize_multiplex_biomine(input_graph,limit=False):
+
+    from collections import defaultdict
+    
+    type_segments = defaultdict(list)
+    
+    for node in input_graph.nodes(data=True):
+        type_segments[node[0].split("_")[0]].append(node[0])        
+    
+    networks = []
+    labs = []
+    
+    for k,v in type_segments.items():
+        if limit != False:
+            tmp_graph = input_graph.subgraph(v[0:limit]) 
+        else:
+            tmp_graph = input_graph.subgraph(v)
+            
+        #if tmp_graph.number_of_edges() > 2:
+        labs.append(k)
+        tmp_pos=nx.spring_layout(tmp_graph)
+        nx.set_node_attributes(tmp_graph,'pos',tmp_pos)
+        networks.append(tmp_graph)
+
+    print ("Visualizing..")
+    draw_multilayer_default(networks,background_shape="circle",display=False,labels=labs)
+
+    mx_edges = []
+
+    for e in input_graph.edges():
+        if e[0].split("_")[0] != e[1].split("_")[0]:
+
+            ## we have a multiplex edge!
+            layer1 = e[0].split("_")[0]
+            layer2 = e[1].split("_")[0]            
+            mx_edges.append((e[0],e[1]))
+            
+    
+    draw_multiplex_default(networks,mx_edges,alphachannel=0.5)
+
+    plt.show()
+ 
 
 if __name__ == '__main__':
 
@@ -476,6 +519,7 @@ if __name__ == '__main__':
     parser_init.add_argument("--ontology_output", help="Ontology mapping generation")
     parser_init.add_argument("--py3plex", help="Multiplex network visualization")
     parser_init.add_argument("--instructions", help="Load the bio identifier lists in separate files into data folder and run this tool at least with --step_size option")
+    parser_init.add_argument("--visualize_multiplex", help="Multiplex BioMine graph image generator..")
 
     parser = parser_init.parse_args()
     
@@ -505,5 +549,9 @@ if __name__ == '__main__':
 
         if (parser.visualize): 
             request.draw_graph(labs=False)
+
+        ##separate layers
+        if (parser.visualize_multiplex):
+            visualize_multiplex_biomine(result_graph)
 
 
