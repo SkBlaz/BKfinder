@@ -543,6 +543,7 @@ if __name__ == '__main__':
             nx.write_gpickle(result_graph, "graph_datasets/biomine_dump"+job_id+".gpickle")
 
             if (parser.ontology_output):
+                ### transform comes here..
                 rdfpart = rm.rdfconverter(result_graph,"data")
                 rdfpart.return_target_n3("samples/dataset"+job_id+".n3")
                 rdfpart.return_background_knowledge("BK/autogen"+job_id+".n3")
