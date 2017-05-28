@@ -18,6 +18,18 @@ class rdfconverter:
 
     def test(self):
         print ("Class called OK.")
+
+    def return_BK(self,outfile):
+        g = rdflib.graph.Graph()
+        KT = rdflib.Namespace('http://kt.ijs.si/hedwig#')
+        amp_uri = 'http://kt.ijs.si/ontology/hedwig#'
+        obo_uri = "http://purl.obolibrary.org/obo/"
+        AMP = rdflib.Namespace(amp_uri)        
+        ontology = defaultdict(list)
+        for node in self.nxgraph.nodes():
+            for node2 in self.nxgraph[node]:
+                ontology[ str(node).split(":")[1] ].append( str(node2).split(":")[1])
+        print (ontology)
         
     def return_background_knowledge(self, outfile):        
         
