@@ -74,25 +74,22 @@ def g2o(input_graph,degree_threshold,step_size):
     print(nx.info(outgraph))
     return outgraph
 
-
-
 if __name__ == '__main__':
 
     ## command line usage..
-    import rdfmodule as rm
+    import rdfmodule as rm    
     import argparse
     
     parser_init = argparse.ArgumentParser()
     parser_init.add_argument("--input_graph", help="Graph in gpickle format.")
     parser_init.add_argument("--percentile", help="Degree percentile.")
     parser_init.add_argument("--jump_size", help="Neighbourhood size.")
-    parser_init.add_argument("--job_id", help="RDF job id.")
-    parsed = parser_init.parse_args()
-        
-    G = nx.read_gpickle("graph_datasets/biomine_dumptestgraph.gpickle")
-    job_id = parsed.job_id
-    outgraph2 = g2o(G,parsed.percentile,parsed.jump_size)
-    rdfpart = rm.rdfconverter(outgraph2,"data")
+    parser_init.add_argument("--data_input_id", help="dataset.")
     
-    #rdfpart.return_target_n3("samples/dataset"+job_id+".n3")
-    #rdfpart.return_background_knowledge("BK/autogen"+job_id+".n3")
+    parsed = parser_init.parse_args()        
+    G = nx.read_gpickle(parsed.input_graph)
+    outgraph2 = g2o(G,parsed.percentile,parsed.jump_size)
+    rdfpart = rm.rdfconverter(outgraph2,"query")    
+    rdfpart.return_target_n3("samples/"+parsed.data_input_id)
+    otype = parsed.data_input_id.split(".")[1]
+    rdfpart.return_background_knowledge("BK/autogen"+parsed.data_input_id,otype)

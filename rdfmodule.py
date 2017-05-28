@@ -31,7 +31,7 @@ class rdfconverter:
                 ontology[ str(node).split(":")[1] ].append( str(node2).split(":")[1])
         print (ontology)
         
-    def return_background_knowledge(self, outfile):        
+    def return_background_knowledge(self, outfile,ontology_type):        
         
         ## construct the background knowledge..
         
@@ -42,7 +42,7 @@ class rdfconverter:
         AMP = rdflib.Namespace(amp_uri)        
         ontology = defaultdict(list)
         
-        terms = dict(nx.get_node_attributes(self.nxgraph, 'name'))
+#        terms = dict(nx.get_node_attributes(self.nxgraph, 'name'))
         
         for node in self.nxgraph.nodes():
             
@@ -63,7 +63,7 @@ class rdfconverter:
 
         self.rdfgraph = g
 
-        g.serialize(destination=outfile,format='n3')
+        g.serialize(destination=outfile,format=ontology_type)
 
         print ("BK constructed.")
         return 0
@@ -76,11 +76,7 @@ class rdfconverter:
         for file in filenames:
             with open(file) as f:
                 for ind,line in enumerate(f):
-                    if random == True:
-                        if ind % randint(1,30) == 0:
-                            target_dict[file].append( line.replace("\n","") )
-                    else:
-                        target_dict[file].append( line.replace("\n","") )                        
+                    target_dict[file].append( line.replace("\n","") )                        
 
         ## generate query sample sets
         
