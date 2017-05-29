@@ -59,7 +59,7 @@ class rdfconverter:
 
             for ex in ontology[example1]:
                 annotation_uri = rdflib.term.URIRef('%s%s' % (obo_uri, rdflib.Literal(ex)))
-                g.add((u, KT.is_a,annotation_uri ))
+                g.add((u, rdflib.RDFS.subClassOf,annotation_uri ))
 
         self.rdfgraph = g
 
