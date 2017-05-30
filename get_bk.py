@@ -77,178 +77,6 @@ class make_request:
         plt.show()
 
         return G
-    
-    def execute_query_orto(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0,omit='hsa'):
-        
-        
-        print ("Search executed..")
-        
-        ## decide on search type
-
-        if targetterms == None:
-            params = urllib.parse.urlencode({'database': self.databases['biomine'][0],
-                                             'sourceTerms': sourceterms,
-                                             'maxnodes': maxnodes,
-                                             'grouping': grouping,
-                                             'graph_type': 'json'}).encode("utf-8")
-        else:
-            params = urllib.parse.urlencode({'database': self.databases['biomine'][0],
-                                             'sourceTerms': sourceterms,
-                                             'targetTerms': targetterms,
-                                             'maxnodes': maxnodes,
-                                             'grouping': grouping,
-                                             'graph_type': 'json'}).encode("utf-8")
-
-        
-        json_graph =  json.loads(urllib.request.urlopen(self.bm_api, params).read().decode())['graph']
-        
-        ## save for possible further use..
-        print ("Data obtained, constructing the graph..")
-        nodes = json.loads(json_graph)['nodes']
-        edges = json.loads(json_graph)['links']
-        ## colors
-
-        ## lets create a graph..
-
-        G = nx.Graph()
-
-        #Go = nx.Graph()
-
-        
-        ## those are the names..
-        
-        labels1 = {}
-
-        for id,node in enumerate(nodes):
-
-
-            if node['organism'] != omit:
-
-                G.add_node(id, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'b')
-
-                labels1[id] = node['id']
-
-        for id,edge in enumerate(edges):
-            if edge['source'] in G.nodes() and edge['target'] in G.nodes():
-                G.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
-
-            if node['organism'] == omit:
-
-                G.add_node(id, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'r')
-
-                labels1[id] = node['id']
-
-        for id,edge in enumerate(edges):
-            
-            if edge['source'] in G.nodes() and edge['target'] in G.nodes():
-            
-                G.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
-            #Go.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
-
-                    
-        ## color according to db entry at least.
-
-        edgesG = G.edges()
-        nodesG = G.nodes(data=True)
-
-        
-
-        # ## assign values to the object for further use
-        self.graph_node_degree_ortolog = [int(u[1]['degree']) for u in nodesG]
-        self.graph_node_colors_ortolog = [u[1]['color'] for u in nodesG]
-        self.graph_weights_ortolog = [G[u][v]['weight'] for u,v in edgesG]
-        self.graph_ortolog = G        
-        self.labels_ortolog = labels1
-        self.pos_ortolog = nx.spring_layout(G)
-
-
-
-
-        ## assign values to the object for further use
-
-        self.graph_node_degree_ortolog = [int(u[1]['degree']) for u in nodesG]
-        self.graph_node_colors_ortolog = [u[1]['color'] for u in nodesG]
-        self.graph_weights_ortolog = [G[u][v]['weight'] for u,v in edgesG]
-        self.graph_ortolog = G        
-        self.labels_ortolog = labels1
-        self.pos_ortolog = nx.spring_layout(G)
-        self.pos = nx.circular_layout(G)
-
-        return G
-    
-    def execute_query(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0):
-        
-        
-        print ("Search executed..")
-        
-        ## decide on search type
-
-        if targetterms == None:
-            params = urllib.parse.urlencode({'database': self.databases['biomine'][0],
-                                             'sourceTerms': sourceterms,
-                                             'maxnodes': maxnodes,
-                                             'grouping': grouping,
-                                             'graph_type': 'json'}).encode("utf-8")
-        else:
-            params = urllib.parse.urlencode({'database': self.databases['biomine'][0],
-                                             'sourceTerms': sourceterms,
-                                             'targetTerms': targetterms,
-                                             'maxnodes': maxnodes,
-                                             'grouping': grouping,
-                                             'graph_type': 'json'}).encode("utf-8")
-
-        
-        json_graph =  json.loads(urllib.request.urlopen(self.bm_api, params).read().decode())['graph']
-        
-        ## save for possible further use..
-        print ("Data obtained, constructing the graph..")
-        nodes = json.loads(json_graph)['nodes']
-        edges = json.loads(json_graph)['links']
-        ## colors
-
-        ## lets create a graph..
-
-        G = nx.Graph()
-        #Go = nx.Graph()
-        
-        ## those are the names..
-        
-        labels1 = {}
-
-        for id,node in enumerate(nodes):
-
-            if node['organism'] == 'hsa':
-
-                G.add_node(id, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'r')
-
-            else:
-
-                #Go.add_node(id, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'g')
-                
-                G.add_node(id, name=node['id'], degree=node['degree'], spec=node['organism'], color = 'g')
-
-            labels1[id] = node['id']
-
-        for id,edge in enumerate(edges):
-
-            G.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
-            #Go.add_edge(int(edge['source']),int(edge['target']), weight = edge['reliability'])
-                    
-        ## color according to db entry at least.
-
-        edgesG = G.edges()
-        nodesG = G.nodes(data=True)
-        
-        ## assign values to the object for further use
-
-        self.graph_node_degree = [int(u[1]['degree']) for u in nodesG]
-        self.graph_node_colors = [u[1]['color'] for u in nodesG]
-        self.graph_weights = [G[u][v]['weight'] for u,v in edgesG]
-        self.graph = G        
-        self.labels = labels1
-        self.pos = nx.spring_layout(G)
-        #self.pos = nx.circular_layout(G)
-        print (nx.info(G))
 
     def execute_query_inc(self,sourceterms,targetterms=None, maxnodes=2000,grouping=0, div=4,connected=False):
 
@@ -291,6 +119,7 @@ class make_request:
                         json_graph =  json.loads(urllib.request.urlopen(self.bm_api, params).read().decode())['graph']
                 except:
                     print ("passing")
+                    json_graph = json.dumps({'nodes' : [],'links' : []})
                     pass
         
                 ## save for possible further use..
@@ -437,34 +266,15 @@ class make_request:
         nx.write_gml(G, gname+".gml")
         
         return
-        
-# def read_example_data(max):
 
-#     outlist = []
-#     outlist2 = []
-
-#     with open("data/cancer.list") as cl:
-#         for line in cl:
-#            outlist.append("UniProt:"+line.replace("\n",""))
-
-#     with open("data/alzheimer.list") as cl:
-#         for line in cl:
-#            outlist2.append("UniProt:"+line.replace("\n",""))
-
-#     return (",".join(outlist[1:max]),",".join(outlist2[1:max]))
-
-def read_example_datalist(whole=False):
+def read_example_datalist(datafile,whole=False):
 
     outlist = []
-    outlist2 = []
-    filenames = ["./data/"+f for f in os.listdir("data")]
-    for f in filenames:
-        print ("Adding: "+f)
-        with open(f) as cl:
-            for line in cl:
-                outlist.append("UniProt:"+line.replace("\n",""))
+    with open(datafile) as cl:
+        for line in cl:
+            outlist.append("UniProt:"+line.replace("\n",""))
 
-    return (outlist,outlist2)        
+    return (outlist)        
 
 def visualize_multiplex_biomine(input_graph,limit=False):
 
@@ -521,12 +331,10 @@ if __name__ == '__main__':
     parser_init.add_argument("--instructions", help="Load the bio identifier lists in separate files into data folder and run this tool at least with --step_size option")
     parser_init.add_argument("--visualize_multiplex", help="Multiplex BioMine graph image generator..")
     parser_init.add_argument("--output_image", help="Image outfile..")
+    parser_init.add_argument("--term_list", help="Image outfile..")
     parser = parser_init.parse_args()
     
-    source, target = read_example_datalist(whole=True)
-
-    source = source
-    
+    source = read_example_datalist(parser.term_list,whole=True)
     ## init a request
     
     request = make_request()

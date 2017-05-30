@@ -82,9 +82,8 @@ def g2o(input_graph,degree_threshold,step_size):
 def g2o_mst(input_graph):
 
     T = nx.minimum_spanning_tree(input_graph)
-#    print(len(list(nx.connected_components(G))))
+#   print(len(list(nx.connected_components(G))))
     test2 = T.to_directed()
-    cycles = len(list(nx.find_cycle(test2, orientation='ignore')))
     
     return test2
     
@@ -98,13 +97,15 @@ if __name__ == '__main__':
     parser_init.add_argument("--percentile", help="Degree percentile.")
     parser_init.add_argument("--jump_size", help="Neighbourhood size.")
     parser_init.add_argument("--ontology_id", help="dataset.")
+    parser_init.add_argument("--make_samples", help="dataset.")
     
     parsed = parser_init.parse_args()        
     G = nx.read_gpickle(parsed.input_graph)
     outgraph2 = g2o(G,parsed.percentile,parsed.jump_size)
-    g2o_mst(G)
+#   g2o_mst(G)
     if parsed.ontology_id:
-        rdfpart = rm.rdfconverter(outgraph2,"query")    
-        rdfpart.return_target_n3("samples/"+parsed.ontology_id)
+        rdfpart = rm.rdfconverter(outgraph2,"query")
+        if parsed.make_samples:
+            rdfpart.return_target_n3("samples/"+parsed.ontology_id)
         otype = parsed.ontology_id.split(".")[1]
         rdfpart.return_background_knowledge("BK/autogen"+parsed.ontology_id,otype)

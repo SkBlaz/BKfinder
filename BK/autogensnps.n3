@@ -1,0 +1,1424 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10196379> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10200473> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10227994> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10339567> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23607> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10514377> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10546591> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8314> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10571044> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9ULV8> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10591214> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10602037> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O35732> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10605003> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10656250> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P56817> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10673501> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:1111> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10676659> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10677332> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55755> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10677483> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10717241> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:1111> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10761933> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O14757> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10766248> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:81620> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10850427> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10851077> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10852899> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:9255> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10890433> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10894163> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10950930> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:57379> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10988280> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:11519> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:10995019> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O75081> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11007475> rdfs:subClassOf <http://purl.obolibrary.org/obo/Phenotype_MIM:605258> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11021803> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11083922> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P56817> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11087824> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22809> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11125146> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9H211> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11136710> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11157763> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11168587> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:9223> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11224496> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O75081> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11242107> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P49715> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11384645> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11390642> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O14757> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11466313> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11513855> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:6045> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11516562> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11535615> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O14757> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11544457> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:57379> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11559807> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11573086> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11668637> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11672613> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:81641> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11774469> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11818442> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11821419> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:1111> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11823486> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:863> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11865070> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q99496> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11950861> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11953458> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11969287> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q96QZ7> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:11999577> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12183412> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12183414> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O75081> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12202747> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9GZX7> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12206667> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P56817> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12237313> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12244092> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:1111> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12361598> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O43303> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12370419> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N163> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12406907> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12427738> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12434154> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12443882> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12446774> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:1111> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12473585> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12485996> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q92560> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12506336> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12551991> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12588868> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O14757> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12634402> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12646192> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:24171> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12653680> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12661007> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:1050> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12676962> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O14757> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12727877> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15519> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12741986> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12764198> rdfs:subClassOf <http://purl.obolibrary.org/obo/Phenotype_MIM:607832> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12773569> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:9223> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12815710> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:29392> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12887909> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12951058> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P35612> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:12960210> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:1350661> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:1350662> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:14500886> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:14517477> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:14553963> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:14583607> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:14585940> rdfs:subClassOf <http://purl.obolibrary.org/obo/Phenotype_MIM:608266> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:14672932> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9H211> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:14681223> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O14757> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:14769937> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9GZX7> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:14981268> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:29392> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15047868> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55835> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15057522> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:29392> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15096037> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15133502> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15166647> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15231665> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O75081> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15234325> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15257290> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9H211> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15280478> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15282206> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:1534408> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:468> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15451669> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15474006> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:11519> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15575056> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:1050> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15609993> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15613436> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:79577> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15628850> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15650047> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O14757> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15659650> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:1111> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15676213> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O75081> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15728854> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:11519> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15758076> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15793586> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q96SN8> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15824120> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15840518> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15974586> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O14757> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:15987683> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16052032> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22897> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16101277> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16116087> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16116486> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:79577> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16216591> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16303740> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:26469> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16466852> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16469741> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16472771> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16487440> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16530520> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:274> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16604465> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:11519> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16682970> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:80184> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16728578> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:1673322> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:81641> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:1675638> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16818694> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16861906> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:81620> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16904262> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:29392> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16909394> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:80184> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16966434> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:863> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:16989776> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:1705556> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17085480> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:81620> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17130827> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17188587> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y5K6> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17206602> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:29392> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17242304> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:81641> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17425515> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P56817> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17429617> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:29392> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17564967> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17564974> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:80184> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17617513> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:80184> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17636545> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17639062> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17655775> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17676042> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17764569> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55755> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:17854487> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18008160> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18042621> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55755> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18235501> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:57805> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18235502> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:57805> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18285836> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18332083> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22809> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18347014> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P35612> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18366676> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:1840603> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18451105> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O14757> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18452305> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18458088> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y2D1> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:1847461> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:468> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18510930> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O14757> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18634768> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:24171> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18660751> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P56817> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18694559> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O43303> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18701499> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22809> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18755853> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18757409> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8314> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18762988> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18950740> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:80184> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:18959617> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19074428> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19117993> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q92560> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19136632> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:79577> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19188440> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P51610> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19197159> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9UPV0> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19282672> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55755> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19543530> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55755> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19562339> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19597336> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19734625> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:29392> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:1977688> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19815555> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P51610> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19908113> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:19996063> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:81641> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20064928> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20139723> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55755> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20160719> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N163> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20354142> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P56817> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20460369> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:214444> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20522431> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9HC77> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:2059221> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:24171> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20598275> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22995> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20619386> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20622007> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20627074> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:214444> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20638753> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:29392> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20654631> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22809> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20683928> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:20851150> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:81641> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21092922> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:9255> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21150638> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:24171> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21346412> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55755> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21376765> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21473589> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21493627> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21512315> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55755> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21606488> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21642991> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q92560> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21856198> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9H211> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21874000> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q92560> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21874003> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q92560> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21879266> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:21976302> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9UPV0> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22040956> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22065384> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22079983> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22184239> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:1111> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22207755> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:79058> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22240721> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22307972> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22442021> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22809> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22446626> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N163> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22605569> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:500261> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22631614> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:29392> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22735644> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N163> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22885064> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O43303> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:22932899> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23106536> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:11519> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23127855> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:29392> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23206754> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23253480> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22897> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23322201> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23352644> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N163> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23411391> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:11519> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23488598> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23643324> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23644468> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23677132> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23840896> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:863> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23841676> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N163> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23867111> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:23874654> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55755> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:24063007> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:24126058> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N163> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:24273392> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N163> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:2428842> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:24379400> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y2D1> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:24411984> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:24421332> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O43303> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:24652215> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:24171> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:2468669> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:24703950> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8314> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:2473841> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:24962073> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N163> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:24997597> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O94986> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:25080371> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q92560> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:25081058> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:26469> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:25178484> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:25219368> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:25340499> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:25340510> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22897> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:2564389> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15684> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:2564851> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:2567164> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15684> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:25822988> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:25879366> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:25885470> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:25929234> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:26304236> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O43303> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:26482847> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q96SN8> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:26680512> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q92560> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:2901990> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:2903074> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:6149934> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7503937> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7505064> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7518447> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7533783> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7575576> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P49715> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7576235> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7647801> rdfs:subClassOf <http://purl.obolibrary.org/obo/Phenotype_MIM:164400> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7693552> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7894491> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7894493> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7902291> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7939630> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:7951322> rdfs:subClassOf <http://purl.obolibrary.org/obo/Phenotype_MIM:164400> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8102610> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8105105> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8475088> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:11519> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8554067> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8566798> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8634720> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8666379> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q13155> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8695832> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:19253> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8723683> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8776600> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8782822> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:274> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8798390> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8807330> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8810272> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P35612> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8875997> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q61152> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8887485> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8950995> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q99952> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8968716> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8972225> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:8977243> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q61152> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9010228> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9056417> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9097953> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9182667> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:274> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9195986> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9208847> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9211860> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9217161> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15519> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9223448> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:274> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9228018> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9265651> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:26469> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9289491> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9326610> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:841> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9367365> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9380701> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9395479> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9407100> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9418903> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:274> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9452074> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9482581> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9596646> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:863> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9603201> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:274> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9634079> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9647739> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q96QZ7> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9660449> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:7910> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9760198> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9765589> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:81641> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9811458> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9880531> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15519> .
+
+<http://purl.obolibrary.org/obo/Article_PubMed:9915821> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:1050> .
+
+<http://purl.obolibrary.org/obo/BiologicalProcess_GO:GO:0061395> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:468> .
+
+<http://purl.obolibrary.org/obo/BiologicalProcess_GO:GO:2000003> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:57805> .
+
+<http://purl.obolibrary.org/obo/CellularComponent_GO:GO:0005798> rdfs:subClassOf <http://purl.obolibrary.org/obo/CellularComponent_GO:GO:0070931> .
+
+<http://purl.obolibrary.org/obo/Domain_InterPro:IPR014939> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9H211> .
+
+<http://purl.obolibrary.org/obo/Domain_InterPro:IPR032054> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9H211> .
+
+<http://purl.obolibrary.org/obo/Domain_InterPro:IPR032321> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Family_InterPro:IPR013292> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O75081> .
+
+<http://purl.obolibrary.org/obo/Family_InterPro:IPR026201> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Family_InterPro:IPR027773> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P35612> .
+
+<http://purl.obolibrary.org/obo/Family_InterPro:IPR033207> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O43303> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:116685> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:81641> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:118> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:123169> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:79577> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:1278> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:948> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:14060> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:216274> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:14103> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:12633> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:1413> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:79959> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:146057> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22897> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:147463> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:1644> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:367> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:192255> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:29392> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:2064> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:26469> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:212392> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:216274> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:225659> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:22895> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:230904> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23821> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:23168> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q92541> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:23429> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:6045>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N488> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:234582> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:216274> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:23466> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:10336>,
+        <http://purl.obolibrary.org/obo/Gene_EntrezGene:6045>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:O95503> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:23492> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:6045>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:O95931> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:245007> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:863> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:2549> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:26469> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:255738> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:25798> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:26747> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:2969> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:317705> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22897> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:3290> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:948> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:354> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:367> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:3655> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:948> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:3674> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:948> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:3690> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:948> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:394> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:26469> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:3949> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:948> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:4071> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:4145> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:948> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:50619> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:51727> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:5430> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P24928> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:54623> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N7H5> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:55211> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:5566> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:5580> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:56749> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:216274> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:5803> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:2534> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:6310> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:6404> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:7006> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:26469> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:74201> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:216274> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:75580> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:863> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:801> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:81618> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:8237> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:6045>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:P51784> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:83990> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q9BX63> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:843> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:84333> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:6045>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q86SE9> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:84759> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:6045>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q9BSM1> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:8646> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:948> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:867> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:12402>,
+        <http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:3802>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:899> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:9738> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:9051> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:25> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:928> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:948> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:92999> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:863> .
+
+<http://purl.obolibrary.org/obo/GenomicContext_GenomicContext:hsa11q23.2-q23.3> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/GenomicContext_GenomicContext:hsa15q25-q26> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/GenomicContext_GenomicContext:mmu10_51.48_cM> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:216274> .
+
+<http://purl.obolibrary.org/obo/GenomicContext_GenomicContext:mmu11_65.18_cM> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:12189> .
+
+<http://purl.obolibrary.org/obo/GenomicContext_GenomicContext:mmu18_18.01_cM> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:30948> .
+
+<http://purl.obolibrary.org/obo/GenomicContext_GenomicContext:mmu1_13.25_cM> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:19253> .
+
+<http://purl.obolibrary.org/obo/GenomicContext_GenomicContext:mmu1_29.16_cM> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:12633> .
+
+<http://purl.obolibrary.org/obo/GenomicContext_GenomicContext:mmu5_8.11_cM> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:12491> .
+
+<http://purl.obolibrary.org/obo/GenomicContext_GenomicContext:mmu6_37.55_cM> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:11519> .
+
+<http://purl.obolibrary.org/obo/GenomicContext_GenomicContext:mmu9_24.72_cM> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:12402> .
+
+<http://purl.obolibrary.org/obo/GenomicContext_GenomicContext:mmu9_56.11_cM> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:74025> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:10910> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:57805> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:113707> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:274> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:11774> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:79959> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:1221> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:1266> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:468> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:2199> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:6045> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:31257> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:9223> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:31260> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:9255> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:32650> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:81620> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:32697> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:27031> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:3421> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8314> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:41550> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:79058> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:49533> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55755> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:5276> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:68163> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:290> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:73871> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:948> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:74543> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:863> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:74971> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:26469> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:7623> rdfs:subClassOf <http://purl.obolibrary.org/obo/Phenotype_MIM:605258> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:7652> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:7663> rdfs:subClassOf <http://purl.obolibrary.org/obo/Phenotype_MIM:607832> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:77213> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:216274> .
+
+<http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:8014> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:145001> rdfs:subClassOf <http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:11571>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:208540> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q7Z494> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:255200> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:260600> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:267010> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q7Z494> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:300068> rdfs:subClassOf <http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:28>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:P10275> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:312300> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P10275> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:313200> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P10275> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:604370> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:604387> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q7Z494> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:604416> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O43586> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:604432> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6IQ55> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:608393> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9HC77> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:608404> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:609054> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9BX63> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:610188> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:610189> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:610938> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:611134> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:611755> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:613563> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:613676> rdfs:subClassOf <http://purl.obolibrary.org/obo/GenomicContext_GenomicContext:hsa13q12.12-q12.13>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q9HC77> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:613804> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9H211> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:613805> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q99741> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:613823> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O94986> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:614320> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:614327> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q92560> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:614845> rdfs:subClassOf <http://purl.obolibrary.org/obo/HomologGroup_HomoloGene:51110>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q9UPV0> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:614852> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O94986> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:615991> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:A1L0T0> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:A4D1B1> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O00512> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O14530> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O14595> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P07288>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:P10275> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O14733> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15519> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O43687> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O60333> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q96QZ7> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O60884> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9GZX7> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O75496> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9H211> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O94868> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q92560> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O95219> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O95983> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O96028> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P10275> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P01106> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P04629> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P06729> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P08183> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q99496> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P08670> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P09467> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P10636> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P11308> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P10275> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P12004> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9H211> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P13521> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8WXE1> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P14868> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P17676> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P18848> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P18847> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P18848> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P19387> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P18848> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P20794> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P10275> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P22061> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q13155> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P23471> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P35612> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P24001> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P49715> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P28838> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P15144> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P30307> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:995> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P31689> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q9GZX7> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P32969> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P41002> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O43303> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P41208> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P45983> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P46940> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P47902> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P49715> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P48634> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P49716> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P18848> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P51805> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O75081> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P53567> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P18848> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P55085> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P62158> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O43303> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P98155> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q02750> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15519> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q03923> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q03989> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q06986> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P10275> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q13085> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q13191> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q13227> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P18848> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q13426> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q13496> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q13569> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9GZX7> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q14106> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q14254> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P56817> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q14566> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9H211> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q14790> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:841> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q15046> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q15293> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q15468> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O94986>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q9HC77> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q15652> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P10275> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q15811> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q2M1K9> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q3KNV8> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q99496> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q53HC0> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q9UPV0> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q5T7B8> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q5VZ18> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P10275> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q60722> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O54972> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q6NZY4> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q6P5X5> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q6PD62> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:9646>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q6PJG6> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q6UWZ7> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q86X95> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8BNX1> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P56817> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8BP00> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6A078> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8IW35> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8IXJ9> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8IYY4> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8IZQ1> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8N196> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8NBF2> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8NFH8> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8TBB5> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8TE02> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8TEB7> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8WUM4> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8WV28> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8WVC0> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q03164> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q92805> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P18848> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q92997> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6IQ55>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q9UPV0> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q96AE4> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q13155> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q96AT1> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q96EB6> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N163> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q96HA1> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q96JC9> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q96JH8> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q96JN8> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q96RK0> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9HC77> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q96RL1> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q96RU7> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P18848> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q99598> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q99816> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q99M15> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q61152> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9BWC9> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P18848> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9BYG5> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9C004> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P22681> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9CR95> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O08839> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9GZX5> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9H7Z6> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q99496> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9H869> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9HCP0> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9NNX1> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9NP86> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9NQ66> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9NTM9> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9NX95> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9NXN4> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9NYY3> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9HC77> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9UBD0> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9UBW5> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9UBY9> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9UKJ3> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9UNS1> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O14757> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9UPN4> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y252> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P10275> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y2D9> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22834>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:O75081> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y2H0> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O00499> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y467> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y4G8> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q96QZ7> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y592> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9UPV0> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y5U2> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y6A5> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9BZE9> .
+
+<http://purl.obolibrary.org/obo/Tissue_UniProt/tissue:TS-0049> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q08857> .
+
+<http://purl.obolibrary.org/obo/CellularComponent_GO:GO:0070931> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:117028> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:274> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:12189> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:672> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:12398> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:863> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:22995> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55835> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:23607> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y5K6> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:23821> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:23621> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:25> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:26469> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:2534> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:30948> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:274> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:500261> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:9223> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:74025> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:27031> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:7910> rdfs:subClassOf <http://purl.obolibrary.org/obo/Phenotype_MIM:248310> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:9738> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O43303> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:995> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:1111> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:248310> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P16671> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:608266> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O08839> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:117028> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O35732> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:12633> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O54972> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:12398> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P24928> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P55072> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P18848> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q03164> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q08857> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:12491> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q6A078> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:216274> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8N7H5> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q8WXE1> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9UPV0> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q92541> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q99741> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9H211> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q99952> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:26469>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:O43586> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9BZE9> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:79058>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:P55072> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9ULV8> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y5K6> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:12491> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:948> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:214444> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55755> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:27031> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22897>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:Q7Z494> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:367> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P10275> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:55835> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9HC77> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:57379> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9GZX7> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:79959> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8TAP6> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:841> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:164400> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:605258> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9GZX7> .
+
+<http://purl.obolibrary.org/obo/Phenotype_MIM:607832> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y5K6> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P15684> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:81641> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P51610> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P38398> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q96SN8> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:55755>,
+        <http://purl.obolibrary.org/obo/Phenotype_MIM:604804> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9Y2D1> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22809>,
+        <http://purl.obolibrary.org/obo/Protein_UniProt:P54253> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:1050> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P49715> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:12633> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:19253> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:26469> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:9255> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q13155> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q12904> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q61152> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:19253> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:468> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:P18848> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:57805> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q8N163> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:79577> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q6P1J9> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:81620> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q9H211> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:8314> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q92560> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:9223> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:Q96QZ7> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q99496> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:6045> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:24171> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Gene_EntrezGene:80184> rdfs:subClassOf <http://purl.obolibrary.org/obo/Protein_UniProt:O15078> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:O15519> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:8837> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:P35612> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:119> .
+
+<http://purl.obolibrary.org/obo/Protein_UniProt:Q9UPV0> rdfs:subClassOf <http://purl.obolibrary.org/obo/Gene_EntrezGene:22897> .
+

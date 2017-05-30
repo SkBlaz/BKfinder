@@ -1,0 +1,71 @@
+----------------------------------------
+Hedwig semantic pattern mining (anze.vavpetic@ijs.si)
+Version: 0.3.0
+Start: 2017-05-30T18:21:02.946771
+Time taken: 9.53 seconds
+Parameters:
+	adjust=fwer
+	FDR=0.05
+	target=None
+	nocache=True
+	format=n3
+	leaves=True
+	support=0.1
+	learner=heuristic
+	depth=5
+	optimalsubclass=False
+	beam=20
+	alpha=0.5
+	bk_dir=BK/
+	verbose=False
+	mode=subgroups
+	covered=None
+	output=OUTPUT/snps
+	score=lift
+	data=samples/snps.n3
+	uris=False
+	negations=False
+----------------------------------------
+'candidate_6'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/E9PJ28) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+	annotated_with(X, http://purl.obolibrary.org/obo/A0A068BFX7) [cov=2, pos=1, prec=0.500, lift=7.500, pval=0.125]
+	annotated_with(X, http://purl.obolibrary.org/obo/Q5XM85) [cov=3, pos=1, prec=0.333, lift=5.000, pval=0.188]
+'candidate_9'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/A0A0G3VRE1) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+	annotated_with(X, http://purl.obolibrary.org/obo/A0A068BI36) [cov=2, pos=1, prec=0.500, lift=7.500, pval=0.125]
+	annotated_with(X, http://purl.obolibrary.org/obo/K7EPC7) [cov=2, pos=1, prec=0.500, lift=7.500, pval=0.125]
+	annotated_with(X, http://purl.obolibrary.org/obo/B7ZLE9) [cov=3, pos=1, prec=0.333, lift=5.000, pval=0.188]
+'candidate_14'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/Q9BW66) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+	annotated_with(X, http://purl.obolibrary.org/obo/K4JWE8) [cov=2, pos=1, prec=0.500, lift=7.500, pval=0.125]
+'candidate_11'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/A0A024R1W0) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+'candidate_4'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/H7C4V7) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+	annotated_with(X, http://purl.obolibrary.org/obo/K4JWE8) [cov=2, pos=1, prec=0.500, lift=7.500, pval=0.125]
+'candidate_13'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/E9PI05) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+'candidate_12'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/E7EQH1) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+	annotated_with(X, http://purl.obolibrary.org/obo/B7ZLE9) [cov=3, pos=1, prec=0.333, lift=5.000, pval=0.188]
+'candidate_1'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/H3BR72) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+	annotated_with(X, http://purl.obolibrary.org/obo/K7EPC7) [cov=2, pos=1, prec=0.500, lift=7.500, pval=0.125]
+'candidate_0'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/A0A024R305) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+'candidate_3'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/M0R1A8) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+	annotated_with(X, http://purl.obolibrary.org/obo/A0A024RAI6) [cov=2, pos=1, prec=0.500, lift=7.500, pval=0.125]
+'candidate_2'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/E9PRU7) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+	annotated_with(X, http://purl.obolibrary.org/obo/H6TXS1) [cov=2, pos=1, prec=0.500, lift=7.500, pval=0.125]
+'candidate_5'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/Q96NW4) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+	annotated_with(X, http://purl.obolibrary.org/obo/X5DNC5) [cov=2, pos=1, prec=0.500, lift=7.500, pval=0.125]
+	annotated_with(X, http://purl.obolibrary.org/obo/B5MDT7) [cov=2, pos=1, prec=0.500, lift=7.500, pval=0.125]
+'candidate_10'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/A0A068BFW2) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]
+	annotated_with(X, http://purl.obolibrary.org/obo/R4GNJ5) [cov=2, pos=1, prec=0.500, lift=7.500, pval=0.125]
+	annotated_with(X, http://purl.obolibrary.org/obo/A0A068BFX7) [cov=2, pos=1, prec=0.500, lift=7.500, pval=0.125]
+'candidate_7'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/A0A075B719) [cov=1, pos=1, prec=1.000, lift=15.000, pval=0.063]

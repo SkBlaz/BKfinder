@@ -1,0 +1,185 @@
+@prefix ns1: <http://kt.ijs.si/hedwig#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://kt.ijs.si/ontology/hedwig#example0> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0K0QRF6> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/E9PMB7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A024R305> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A024RAG8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/E9PPA5> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/B1AL69> ] ;
+    ns1:class_label "candidate_0" .
+
+<http://kt.ijs.si/ontology/hedwig#example1> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/A0A068BEW5> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9BTH3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/K7EPC7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/H0YFP1> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/D3YPQ1> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/H3BR72> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/G4V4Z8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8TAM2> ] ;
+    ns1:class_label "candidate_1" .
+
+<http://kt.ijs.si/ontology/hedwig#example10> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/A0A068BFW2> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/K7ENE0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q2F3K2> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A024R3E8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P35612> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/E9PM65> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/H0Y5L8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A068BFX7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/C0JKD7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/F8W0V9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P15144> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9NQR3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/R4GNJ5> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P49715> ] ;
+    ns1:class_label "candidate_10" .
+
+<http://kt.ijs.si/ontology/hedwig#example11> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/A0A024RAI6> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/G3XAC3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/G4V4Z7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8IZK3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/X5DNC5> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q5XM85> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/E9PM65> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A068BI53> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/R4GNJ5> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/H6TXS1> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0U1RQX8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/M0QY57> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A024R1W0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/M0R0D5> ] ;
+    ns1:class_label "candidate_11" .
+
+<http://kt.ijs.si/ontology/hedwig#example12> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/E7EQH1> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/E9PKQ3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/D9IX64> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8IU58> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/H0Y8B8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q5XLT4> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/B7ZLE9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q4G0L2> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/H3BMZ0> ] ;
+    ns1:class_label "candidate_12" .
+
+<http://kt.ijs.si/ontology/hedwig#example13> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/J3QR12> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q569K4> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/C9J0U3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/C9JUQ8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/M0QY57> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A1C7CYY0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0F6TN19> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q5XM85> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/G8I0D8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/B5MDT7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/E9PI05> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A068BI36> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/B7ZLE9> ] ;
+    ns1:class_label "candidate_13" .
+
+<http://kt.ijs.si/ontology/hedwig#example14> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/Q9BW66> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/K4JWE8> ] ;
+    ns1:class_label "candidate_14" .
+
+<http://kt.ijs.si/ontology/hedwig#example2> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/E9PRU7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8IZK3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0A0MS86> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/H6TXS1> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A087WY91> ] ;
+    ns1:class_label "candidate_2" .
+
+<http://kt.ijs.si/ontology/hedwig#example3> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/Q96TC6> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A087WT52> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q5JTU8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/M0R1A8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q5YLB2> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/E7ENE0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A024R1Z8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q3LRH8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A024RAE9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/C9J4Q0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A068BFV9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q05BJ6> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/L8E8L4> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A024RAI6> ] ;
+    ns1:class_label "candidate_3" .
+
+<http://kt.ijs.si/ontology/hedwig#example4> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/Q05BZ9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/K4JWE8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/H7C4V7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A024R3Y3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A024R3F9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0U1RRM7> ] ;
+    ns1:class_label "candidate_4" .
+
+<http://kt.ijs.si/ontology/hedwig#example5> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0A1EAI1> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/C9JSU3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q64FK3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/B5MDT7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/X5DNC5> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0F7G9Q0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A068BDT9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/C9J299> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q05C46> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q96NW4> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/C9K0C9> ] ;
+    ns1:class_label "candidate_5" .
+
+<http://kt.ijs.si/ontology/hedwig#example6> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/J3QKX0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0G3FCF2> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A068BFX7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/E9PJ28> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q5XM85> ] ;
+    ns1:class_label "candidate_6" .
+
+<http://kt.ijs.si/ontology/hedwig#example7> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/O15078> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0K0PU93> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/E5RFJ3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8IYC8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/D2Y6K2> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A075B719> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8TAB0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/K7EJW3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q6P1J9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/E5RHH8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/H0YN33> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/G3V119> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A024RC61> ] ;
+    ns1:class_label "candidate_7" .
+
+<http://kt.ijs.si/ontology/hedwig#example8> a ns1:Example ;
+    ns1:class_label "candidate_8" .
+
+<http://kt.ijs.si/ontology/hedwig#example9> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/Q9UKJ6> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/E9PC22> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0G3VRE1> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0F6TMQ0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A068BI36> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/R4GND4> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/E7EUM2> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0F7G9S0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/B7ZLE9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/K7EPC7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/H0YC69> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A1C7CYY0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/H3BR24> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/D9IX63> ] ;
+    ns1:class_label "candidate_9" .
+
