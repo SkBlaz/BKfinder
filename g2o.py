@@ -41,8 +41,8 @@ def g2o(input_graph,degree_threshold,step_size):
 
 
     ## redefine hash for individual components
-    input_graph = next(nx.connected_component_subgraphs(input_graph))
-    degree_hash = input_graph.degree()
+    #input_graph = next(nx.connected_component_subgraphs(input_graph))
+    #degree_hash = input_graph.degree()
     
     outgraph = nx.DiGraph()    
     degree_list = [degree_hash[deg] for deg in degree_hash]
@@ -78,8 +78,6 @@ def g2o(input_graph,degree_threshold,step_size):
         return outgraph
     else:
         raise ValueError('Graph could not be converted to a DAG.')
-
-
 
 def g2o_mst(input_graph):
 

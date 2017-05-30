@@ -1,0 +1,963 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.obolibrary.org/obo/11122> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO14522> .
+
+<http://purl.obolibrary.org/obo/116496> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM63913>,
+        <http://purl.obolibrary.org/obo/TERMQ9BZQ8> .
+
+<http://purl.obolibrary.org/obo/19247> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM5781> .
+
+<http://purl.obolibrary.org/obo/19249> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ64512> .
+
+<http://purl.obolibrary.org/obo/19271> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ64455> .
+
+<http://purl.obolibrary.org/obo/19281> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ99M80> .
+
+<http://purl.obolibrary.org/obo/19777> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM8725>,
+        <http://purl.obolibrary.org/obo/TERMQ3TLD5> .
+
+<http://purl.obolibrary.org/obo/20459> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ64434> .
+
+<http://purl.obolibrary.org/obo/22123> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM5709> .
+
+<http://purl.obolibrary.org/obo/22902> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM360921>,
+        <http://purl.obolibrary.org/obo/TERM52822>,
+        <http://purl.obolibrary.org/obo/TERMQ7L099> .
+
+<http://purl.obolibrary.org/obo/25622> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM5781> .
+
+<http://purl.obolibrary.org/obo/256297> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM117034>,
+        <http://purl.obolibrary.org/obo/TERMQ7RTS3> .
+
+<http://purl.obolibrary.org/obo/26443> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM5687> .
+
+<http://purl.obolibrary.org/obo/284119> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM19285>,
+        <http://purl.obolibrary.org/obo/TERMQ6NZI2> .
+
+<http://purl.obolibrary.org/obo/28957> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9Y2Q9> .
+
+<http://purl.obolibrary.org/obo/306768> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ1RP77> .
+
+<http://purl.obolibrary.org/obo/310820> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ66H20> .
+
+<http://purl.obolibrary.org/obo/360161> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM10783> .
+
+<http://purl.obolibrary.org/obo/4752> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP51956> .
+
+<http://purl.obolibrary.org/obo/4780> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM18024> .
+
+<http://purl.obolibrary.org/obo/4790> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/5071> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM5701>,
+        <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/51491> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM306768> .
+
+<http://purl.obolibrary.org/obo/54534> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM57674>,
+        <http://purl.obolibrary.org/obo/TERMQ8N5N7> .
+
+<http://purl.obolibrary.org/obo/55520> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM114615>,
+        <http://purl.obolibrary.org/obo/TERMQ9H777> .
+
+<http://purl.obolibrary.org/obo/55615> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM109270>,
+        <http://purl.obolibrary.org/obo/TERM315189> .
+
+<http://purl.obolibrary.org/obo/5618> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM5781> .
+
+<http://purl.obolibrary.org/obo/5629> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ92786> .
+
+<http://purl.obolibrary.org/obo/5687> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM5071> .
+
+<http://purl.obolibrary.org/obo/5709> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO43242> .
+
+<http://purl.obolibrary.org/obo/5753> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ13882> .
+
+<http://purl.obolibrary.org/obo/5764> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM10783> .
+
+<http://purl.obolibrary.org/obo/5781> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ06124> .
+
+<http://purl.obolibrary.org/obo/5783> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ12923> .
+
+<http://purl.obolibrary.org/obo/5786> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP18433> .
+
+<http://purl.obolibrary.org/obo/5795> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ12913> .
+
+<http://purl.obolibrary.org/obo/5802> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ13332> .
+
+<http://purl.obolibrary.org/obo/58155> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM310820>,
+        <http://purl.obolibrary.org/obo/TERMQ9UKA9> .
+
+<http://purl.obolibrary.org/obo/58490> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM70470>,
+        <http://purl.obolibrary.org/obo/TERMQ9NQG5> .
+
+<http://purl.obolibrary.org/obo/60528> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM282826> .
+
+<http://purl.obolibrary.org/obo/6091> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM19876>,
+        <http://purl.obolibrary.org/obo/TERMQ9Y6N7> .
+
+<http://purl.obolibrary.org/obo/6095> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP35398> .
+
+<http://purl.obolibrary.org/obo/6133> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM20005>,
+        <http://purl.obolibrary.org/obo/TERMP32969> .
+
+<http://purl.obolibrary.org/obo/6239> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ92766> .
+
+<http://purl.obolibrary.org/obo/6279> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP05109> .
+
+<http://purl.obolibrary.org/obo/6280> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP06702> .
+
+<http://purl.obolibrary.org/obo/64896> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP41777> .
+
+<http://purl.obolibrary.org/obo/6574> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM2889>,
+        <http://purl.obolibrary.org/obo/TERMQ8WUM9> .
+
+<http://purl.obolibrary.org/obo/68750> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ3UH06> .
+
+<http://purl.obolibrary.org/obo/72373> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9D7U0> .
+
+<http://purl.obolibrary.org/obo/79657> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9H6T3> .
+
+<http://purl.obolibrary.org/obo/8000> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM72373>,
+        <http://purl.obolibrary.org/obo/TERMO43653> .
+
+<http://purl.obolibrary.org/obo/8725> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO94763> .
+
+<http://purl.obolibrary.org/obo/8819> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM9611> .
+
+<http://purl.obolibrary.org/obo/9025> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM361815>,
+        <http://purl.obolibrary.org/obo/TERM58230> .
+
+<http://purl.obolibrary.org/obo/9221> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM64896>,
+        <http://purl.obolibrary.org/obo/TERMQ14978> .
+
+<http://purl.obolibrary.org/obo/9611> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO75376> .
+
+<http://purl.obolibrary.org/obo/A2RRP1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9P2E9> .
+
+<http://purl.obolibrary.org/obo/A3KN83> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NQG5> .
+
+<http://purl.obolibrary.org/obo/A6MDD2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ60673> .
+
+<http://purl.obolibrary.org/obo/D3DWI6> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO43653> .
+
+<http://purl.obolibrary.org/obo/O00487> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMA2A3K4> .
+
+<http://purl.obolibrary.org/obo/O00533> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/O00584> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ05823> .
+
+<http://purl.obolibrary.org/obo/O14522> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRR4> .
+
+<http://purl.obolibrary.org/obo/O14684> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/O15297> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMA2A3K4> .
+
+<http://purl.obolibrary.org/obo/O15318> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15160>,
+        <http://purl.obolibrary.org/obo/TERMQ5VXU1> .
+
+<http://purl.obolibrary.org/obo/O15399> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/O15446> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO95602> .
+
+<http://purl.obolibrary.org/obo/O43159> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP30876> .
+
+<http://purl.obolibrary.org/obo/O43242> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/O43395> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8N5F7> .
+
+<http://purl.obolibrary.org/obo/O43567> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/O43653> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ05823> .
+
+<http://purl.obolibrary.org/obo/O43865> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/O54724> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM19285> .
+
+<http://purl.obolibrary.org/obo/O60551> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ13610> .
+
+<http://purl.obolibrary.org/obo/O60779> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8WUM9> .
+
+<http://purl.obolibrary.org/obo/O60930> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRR4> .
+
+<http://purl.obolibrary.org/obo/O75116> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/O75446> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/O75475> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/O75792> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/O75832> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/O76064> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM9025>,
+        <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/O89026> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP18052> .
+
+<http://purl.obolibrary.org/obo/O94763> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/O94855> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/O94903> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8WUM9> .
+
+<http://purl.obolibrary.org/obo/O94979> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987>,
+        <http://purl.obolibrary.org/obo/TERMQ96T51> .
+
+<http://purl.obolibrary.org/obo/O95168> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP56181> .
+
+<http://purl.obolibrary.org/obo/O95456> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP56181> .
+
+<http://purl.obolibrary.org/obo/O95602> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/O95707> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/O95758> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO75376> .
+
+<http://purl.obolibrary.org/obo/O95997> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P01178> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P02743> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P05109> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P05387> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P05423> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/P06702> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838>,
+        <http://purl.obolibrary.org/obo/TERMQ6PGN9> .
+
+<http://purl.obolibrary.org/obo/P07225> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15067> .
+
+<http://purl.obolibrary.org/obo/P08579> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ15437> .
+
+<http://purl.obolibrary.org/obo/P08621> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/P08922> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRR4> .
+
+<http://purl.obolibrary.org/obo/P09651> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P0C263> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ13882> .
+
+<http://purl.obolibrary.org/obo/P10153> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO75376> .
+
+<http://purl.obolibrary.org/obo/P10155> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ92932> .
+
+<http://purl.obolibrary.org/obo/P13591> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P14206> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP51410> .
+
+<http://purl.obolibrary.org/obo/P14685> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9CQR6> .
+
+<http://purl.obolibrary.org/obo/P15880> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15067> .
+
+<http://purl.obolibrary.org/obo/P16333> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P16471> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P17563> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ64512> .
+
+<http://purl.obolibrary.org/obo/P17706> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P17812> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P18031> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P18052> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ64434> .
+
+<http://purl.obolibrary.org/obo/P18433> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP51956>,
+        <http://purl.obolibrary.org/obo/TERMQ06124> .
+
+<http://purl.obolibrary.org/obo/P19474> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P19793> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P20618> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P20962> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP29474> .
+
+<http://purl.obolibrary.org/obo/P21246> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM5764>,
+        <http://purl.obolibrary.org/obo/TERMP49247> .
+
+<http://purl.obolibrary.org/obo/P22234> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987>,
+        <http://purl.obolibrary.org/obo/TERMQ969U7> .
+
+<http://purl.obolibrary.org/obo/P22626> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P22736> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P23468> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/P23526> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P25786> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P25787> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P25789> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P25815> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P26045> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP08575> .
+
+<http://purl.obolibrary.org/obo/P26599> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P27918> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP08575> .
+
+<http://purl.obolibrary.org/obo/P28072> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9UBS8> .
+
+<http://purl.obolibrary.org/obo/P28074> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P29034> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8IXU6> .
+
+<http://purl.obolibrary.org/obo/P29350> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP08575> .
+
+<http://purl.obolibrary.org/obo/P30414> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P30419> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15160> .
+
+<http://purl.obolibrary.org/obo/P31939> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P31949> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838>,
+        <http://purl.obolibrary.org/obo/TERMQ96BU1> .
+
+<http://purl.obolibrary.org/obo/P32969> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P34925> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P35228> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P35235> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ64434> .
+
+<http://purl.obolibrary.org/obo/P35236> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P35398> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P35998> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P36578> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P40306> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P41440> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO76082>,
+        <http://purl.obolibrary.org/obo/TERMQ8WUM9> .
+
+<http://purl.obolibrary.org/obo/P41499> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM25622> .
+
+<http://purl.obolibrary.org/obo/P43378> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO95197>,
+        <http://purl.obolibrary.org/obo/TERMQ06124> .
+
+<http://purl.obolibrary.org/obo/P43699> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9Y6N7> .
+
+<http://purl.obolibrary.org/obo/P46777> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P47736> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/P48556> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838>,
+        <http://purl.obolibrary.org/obo/TERMQ6UVJ0> .
+
+<http://purl.obolibrary.org/obo/P48651> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ969K3> .
+
+<http://purl.obolibrary.org/obo/P49406> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9Y6N7> .
+
+<http://purl.obolibrary.org/obo/P49768> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P51410> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9QUM9> .
+
+<http://purl.obolibrary.org/obo/P51991> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/P55036> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P56181> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P56182> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P57060> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP25815> .
+
+<http://purl.obolibrary.org/obo/P57096> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP97436> .
+
+<http://purl.obolibrary.org/obo/P58294> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP01178> .
+
+<http://purl.obolibrary.org/obo/P59895> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM360161> .
+
+<http://purl.obolibrary.org/obo/P60468> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P60602> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO95298> .
+
+<http://purl.obolibrary.org/obo/P60891> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P60900> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P61218> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P62070> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ15437> .
+
+<http://purl.obolibrary.org/obo/P62191> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P62244> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P62280> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15067> .
+
+<http://purl.obolibrary.org/obo/P62753> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P62888> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P62910> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/P62917> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P78345> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/P78346> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8IUD6> .
+
+<http://purl.obolibrary.org/obo/P82650> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/P82912> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987>,
+        <http://purl.obolibrary.org/obo/TERMQ9H1U9> .
+
+<http://purl.obolibrary.org/obo/P85299> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM55615>,
+        <http://purl.obolibrary.org/obo/TERMP62753> .
+
+<http://purl.obolibrary.org/obo/Q00577> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP09651> .
+
+<http://purl.obolibrary.org/obo/Q01196> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q01973> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q01974> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ04912> .
+
+<http://purl.obolibrary.org/obo/Q02878> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q03393> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q04912> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q05209> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q0ZGT2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q12857> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q12913> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q12923> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMA2A3K4> .
+
+<http://purl.obolibrary.org/obo/Q12968> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ06124> .
+
+<http://purl.obolibrary.org/obo/Q12986> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q13129> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMA2A3K4> .
+
+<http://purl.obolibrary.org/obo/Q13151> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q13200> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q13308> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q13332> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ6UWB4>,
+        <http://purl.obolibrary.org/obo/TERMQ9H7J1>,
+        <http://purl.obolibrary.org/obo/TERMQ9NRR4> .
+
+<http://purl.obolibrary.org/obo/Q13405> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRR4> .
+
+<http://purl.obolibrary.org/obo/Q13464> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q13469> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q13635> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q13761> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q13882> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q13905> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP29474> .
+
+<http://purl.obolibrary.org/obo/Q14151> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO75376> .
+
+<http://purl.obolibrary.org/obo/Q14542> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q14596> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q14671> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP30876> .
+
+<http://purl.obolibrary.org/obo/Q14684> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q14934> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q14978> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q14997> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q15008> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q15233> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q15287> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987>,
+        <http://purl.obolibrary.org/obo/TERMQ8N5U6> .
+
+<http://purl.obolibrary.org/obo/Q15397> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q15424> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO75376> .
+
+<http://purl.obolibrary.org/obo/Q15678> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP08575>,
+        <http://purl.obolibrary.org/obo/TERMQ9H4B6> .
+
+<http://purl.obolibrary.org/obo/Q16236> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM4780>,
+        <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q16401> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q16825> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMA2A3K4> .
+
+<http://purl.obolibrary.org/obo/Q3B726> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q3UH06> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP97436>,
+        <http://purl.obolibrary.org/obo/TERMQ64434> .
+
+<http://purl.obolibrary.org/obo/Q3UW53> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM63913> .
+
+<http://purl.obolibrary.org/obo/Q4FJW1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ60765> .
+
+<http://purl.obolibrary.org/obo/Q4KLN8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM361815> .
+
+<http://purl.obolibrary.org/obo/Q504Y0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15160>,
+        <http://purl.obolibrary.org/obo/TERMQ8WUX1> .
+
+<http://purl.obolibrary.org/obo/Q5FVG6> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM315189> .
+
+<http://purl.obolibrary.org/obo/Q5FVJ0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM360921> .
+
+<http://purl.obolibrary.org/obo/Q5JSZ5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO75376> .
+
+<http://purl.obolibrary.org/obo/Q5JTH9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q5K651> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8N6D2> .
+
+<http://purl.obolibrary.org/obo/Q5TBB1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9UBE0> .
+
+<http://purl.obolibrary.org/obo/Q5VTL8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP30414> .
+
+<http://purl.obolibrary.org/obo/Q5VZM2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928>,
+        <http://purl.obolibrary.org/obo/TERMQ76FK4> .
+
+<http://purl.obolibrary.org/obo/Q5W0B1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62917> .
+
+<http://purl.obolibrary.org/obo/Q5XPI4> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q60673> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP18052> .
+
+<http://purl.obolibrary.org/obo/Q60765> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ60673> .
+
+<http://purl.obolibrary.org/obo/Q60795> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM18024> .
+
+<http://purl.obolibrary.org/obo/Q61136> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ3TLD5> .
+
+<http://purl.obolibrary.org/obo/Q63HN8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP31939> .
+
+<http://purl.obolibrary.org/obo/Q64305> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM117034> .
+
+<http://purl.obolibrary.org/obo/Q64455> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ64434> .
+
+<http://purl.obolibrary.org/obo/Q64512> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ64434> .
+
+<http://purl.obolibrary.org/obo/Q68DV7> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q6NUJ5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP57060> .
+
+<http://purl.obolibrary.org/obo/Q6NZI2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q6P087> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q6P1L8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO95298> .
+
+<http://purl.obolibrary.org/obo/Q6P2Q9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987>,
+        <http://purl.obolibrary.org/obo/TERMQ15020> .
+
+<http://purl.obolibrary.org/obo/Q6P3R8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ6ZWH5> .
+
+<http://purl.obolibrary.org/obo/Q6P4R8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q6PEW0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9HAT0> .
+
+<http://purl.obolibrary.org/obo/Q6SPF0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9Y3Z3> .
+
+<http://purl.obolibrary.org/obo/Q6T4R5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRF8> .
+
+<http://purl.obolibrary.org/obo/Q6ZWH5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15297> .
+
+<http://purl.obolibrary.org/obo/Q7L099> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ15437> .
+
+<http://purl.obolibrary.org/obo/Q7L4I2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ15424> .
+
+<http://purl.obolibrary.org/obo/Q7L523> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q7RTS3> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ99801> .
+
+<http://purl.obolibrary.org/obo/Q7Z769> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9BXP2> .
+
+<http://purl.obolibrary.org/obo/Q7Z7A4> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q80WA4> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ66H20> .
+
+<http://purl.obolibrary.org/obo/Q80Y81> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ922K7> .
+
+<http://purl.obolibrary.org/obo/Q812A5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM109270> .
+
+<http://purl.obolibrary.org/obo/Q86UD0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ13610> .
+
+<http://purl.obolibrary.org/obo/Q86VV8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO14522> .
+
+<http://purl.obolibrary.org/obo/Q86X76> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q86YD1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO43242> .
+
+<http://purl.obolibrary.org/obo/Q8BHB0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP35235> .
+
+<http://purl.obolibrary.org/obo/Q8CGS5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM282826> .
+
+<http://purl.obolibrary.org/obo/Q8IUD6> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP49247> .
+
+<http://purl.obolibrary.org/obo/Q8IVM8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8WUM9> .
+
+<http://purl.obolibrary.org/obo/Q8IXA5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9HAT0> .
+
+<http://purl.obolibrary.org/obo/Q8IXU6> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ13610> .
+
+<http://purl.obolibrary.org/obo/Q8IXW5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q8IY84> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q8IYW5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q8IZ73> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP06454>,
+        <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q8K3Z0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8BHB0> .
+
+<http://purl.obolibrary.org/obo/Q8N0W4> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q8N122> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q8N2Y8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ7L099> .
+
+<http://purl.obolibrary.org/obo/Q8N488> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9Y6N7> .
+
+<http://purl.obolibrary.org/obo/Q8N5F7> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q8N5N7> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ13610> .
+
+<http://purl.obolibrary.org/obo/Q8N697> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8WUM9> .
+
+<http://purl.obolibrary.org/obo/Q8N6D2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q8NA29> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q8NC42> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q8NC96> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8N4Q0> .
+
+<http://purl.obolibrary.org/obo/Q8NCN4> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q8NDX1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q8NEJ9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP30876> .
+
+<http://purl.obolibrary.org/obo/Q8NG04> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8WUM9> .
+
+<http://purl.obolibrary.org/obo/Q8TB72> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRR4> .
+
+<http://purl.obolibrary.org/obo/Q8TDP1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP30414> .
+
+<http://purl.obolibrary.org/obo/Q8TF17> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP23468> .
+
+<http://purl.obolibrary.org/obo/Q8VC56> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM58230> .
+
+<http://purl.obolibrary.org/obo/Q8VEB6> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ922K7> .
+
+<http://purl.obolibrary.org/obo/Q8WTT2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q8WU17> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q8WV60> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ13610> .
+
+<http://purl.obolibrary.org/obo/Q8WVD3> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ13610> .
+
+<http://purl.obolibrary.org/obo/Q8WWR8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRA2> .
+
+<http://purl.obolibrary.org/obo/Q8WXD0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q8WXF1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP30876> .
+
+<http://purl.obolibrary.org/obo/Q8WYR4> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ92834> .
+
+<http://purl.obolibrary.org/obo/Q91V35> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP18052> .
+
+<http://purl.obolibrary.org/obo/Q922K7> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ64434> .
+
+<http://purl.obolibrary.org/obo/Q92503> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15244>,
+        <http://purl.obolibrary.org/obo/TERMQ15437> .
+
+<http://purl.obolibrary.org/obo/Q92541> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q92622> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q92626> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ04912> .
+
+<http://purl.obolibrary.org/obo/Q92729> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRR4> .
+
+<http://purl.obolibrary.org/obo/Q92737> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ06124> .
+
+<http://purl.obolibrary.org/obo/Q92766> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMA2A3K4> .
+
+<http://purl.obolibrary.org/obo/Q92786> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRR4> .
+
+<http://purl.obolibrary.org/obo/Q92834> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15067> .
+
+<http://purl.obolibrary.org/obo/Q92932> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP49247> .
+
+<http://purl.obolibrary.org/obo/Q969K3> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP49247> .
+
+<http://purl.obolibrary.org/obo/Q96A35> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q96AG3> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9ULL5> .
+
+<http://purl.obolibrary.org/obo/Q96BH1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9UBS8> .
+
+<http://purl.obolibrary.org/obo/Q96BI1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q96C34> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ14596> .
+
+<http://purl.obolibrary.org/obo/Q96CW6> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q96D59> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ96G75> .
+
+<http://purl.obolibrary.org/obo/Q96DW6> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60779> .
+
+<http://purl.obolibrary.org/obo/Q96E14> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9H9A7> .
+
+<http://purl.obolibrary.org/obo/Q96EP0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP09234>,
+        <http://purl.obolibrary.org/obo/TERMQ9UBS8> .
+
+<http://purl.obolibrary.org/obo/Q96EQ8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q96EU6> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRR4> .
+
+<http://purl.obolibrary.org/obo/Q96G75> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ92503> .
+
+<http://purl.obolibrary.org/obo/Q96GQ5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP08575> .
+
+<http://purl.obolibrary.org/obo/Q96HE9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ68DV7> .
+
+<http://purl.obolibrary.org/obo/Q96IV0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q96JT2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q96NL0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP49247> .
+
+<http://purl.obolibrary.org/obo/Q96P16> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q96PU5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60828>,
+        <http://purl.obolibrary.org/obo/TERMQ15437> .
+
+<http://purl.obolibrary.org/obo/Q96QR8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP09651> .
+
+<http://purl.obolibrary.org/obo/Q96S44> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP29474> .
+
+<http://purl.obolibrary.org/obo/Q96S79> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ06124> .
+
+<http://purl.obolibrary.org/obo/Q96T23> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q96TC7> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP17706> .
+
+<http://purl.obolibrary.org/obo/Q99500> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP29474> .
+
+<http://purl.obolibrary.org/obo/Q99590> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP30876> .
+
+<http://purl.obolibrary.org/obo/Q99729> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRR4> .
+
+<http://purl.obolibrary.org/obo/Q99801> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO75376> .
+
+<http://purl.obolibrary.org/obo/Q99808> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q99942> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q99952> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP08575> .
+
+<http://purl.obolibrary.org/obo/Q99M80> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ64434> .
+
+<http://purl.obolibrary.org/obo/Q99MH6> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9CQR6> .
+
+<http://purl.obolibrary.org/obo/Q9BQ48> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP30876> .
+
+<http://purl.obolibrary.org/obo/Q9BQ52> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM60528>,
+        <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q9BRP8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62753> .
+
+<http://purl.obolibrary.org/obo/Q9BSK2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ99808> .
+
+<http://purl.obolibrary.org/obo/Q9BST9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP29474> .
+
+<http://purl.obolibrary.org/obo/Q9BT67> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q9BV68> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987>,
+        <http://purl.obolibrary.org/obo/TERMQ86X10> .
+
+<http://purl.obolibrary.org/obo/Q9BVG9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9Y6Y8> .
+
+<http://purl.obolibrary.org/obo/Q9BWH6> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q9BXP2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15067> .
+
+<http://purl.obolibrary.org/obo/Q9BY78> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ13610> .
+
+<http://purl.obolibrary.org/obo/Q9BYT8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP49247> .
+
+<http://purl.obolibrary.org/obo/Q9BZD2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9BZE2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928>,
+        <http://purl.obolibrary.org/obo/TERMP78381> .
+
+<http://purl.obolibrary.org/obo/Q9BZQ4> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q9BZQ8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9BZD2> .
+
+<http://purl.obolibrary.org/obo/Q9C0K1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15160> .
+
+<http://purl.obolibrary.org/obo/Q9CQR6> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ64434>,
+        <http://purl.obolibrary.org/obo/TERMQ9QUM9> .
+
+<http://purl.obolibrary.org/obo/Q9CSU0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9QUM9> .
+
+<http://purl.obolibrary.org/obo/Q9D394> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM52822> .
+
+<http://purl.obolibrary.org/obo/Q9GZS1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q9H2J7> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9Y6N7> .
+
+<http://purl.obolibrary.org/obo/Q9H2X9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15067> .
+
+<http://purl.obolibrary.org/obo/Q9H3S7> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP08575> .
+
+<http://purl.obolibrary.org/obo/Q9H6T3> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q9H6Y7> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO60260> .
+
+<http://purl.obolibrary.org/obo/Q9H714> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ68DV7>,
+        <http://purl.obolibrary.org/obo/TERMQ9C002> .
+
+<http://purl.obolibrary.org/obo/Q9H777> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q9H8H0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8N4Q0> .
+
+<http://purl.obolibrary.org/obo/Q9H9A7> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP08575> .
+
+<http://purl.obolibrary.org/obo/Q9H9Y6> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9HAT0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP25786> .
+
+<http://purl.obolibrary.org/obo/Q9HAU8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15160> .
+
+<http://purl.obolibrary.org/obo/Q9HAZ2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO75376> .
+
+<http://purl.obolibrary.org/obo/Q9HB90> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9Y265> .
+
+<http://purl.obolibrary.org/obo/Q9HD43> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP08575>,
+        <http://purl.obolibrary.org/obo/TERMQ9HC98> .
+
+<http://purl.obolibrary.org/obo/Q9NP64> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q9NQC3> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q9NQG5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9NQR8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ1RP77> .
+
+<http://purl.obolibrary.org/obo/Q9NQX5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9Y6N7> .
+
+<http://purl.obolibrary.org/obo/Q9NRF8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9NTX7> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9NVU0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP24928> .
+
+<http://purl.obolibrary.org/obo/Q9NVW2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9NWF9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9UBS8> .
+
+<http://purl.obolibrary.org/obo/Q9NWS8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ13129> .
+
+<http://purl.obolibrary.org/obo/Q9NWU5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9NZ71> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9P2E9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q9UBE0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9UBT2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9UGH3> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8WUM9> .
+
+<http://purl.obolibrary.org/obo/Q9UHI7> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ8WUM9> .
+
+<http://purl.obolibrary.org/obo/Q9UHR5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15067> .
+
+<http://purl.obolibrary.org/obo/Q9UHW9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15067> .
+
+<http://purl.obolibrary.org/obo/Q9UJV8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15067> .
+
+<http://purl.obolibrary.org/obo/Q9UKA9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRR4> .
+
+<http://purl.obolibrary.org/obo/Q9UL46> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM5721>,
+        <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9ULJ8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO75376> .
+
+<http://purl.obolibrary.org/obo/Q9ULL5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9UBS8> .
+
+<http://purl.obolibrary.org/obo/Q9UP95> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15067> .
+
+<http://purl.obolibrary.org/obo/Q9Y248> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9NRR4> .
+
+<http://purl.obolibrary.org/obo/Q9Y252> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9Y265> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q9Y291> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO95298> .
+
+<http://purl.obolibrary.org/obo/Q9Y2Q9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15160> .
+
+<http://purl.obolibrary.org/obo/Q9Y2R2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q9Y314> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP29474> .
+
+<http://purl.obolibrary.org/obo/Q9Y3B9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP30876> .
+
+<http://purl.obolibrary.org/obo/Q9Y3C1> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERM51491>,
+        <http://purl.obolibrary.org/obo/TERMO15160> .
+
+<http://purl.obolibrary.org/obo/Q9Y3C5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP19838> .
+
+<http://purl.obolibrary.org/obo/Q9Y3E5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9Y3I0> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMO15160> .
+
+<http://purl.obolibrary.org/obo/Q9Y3V2> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9UBT2> .
+
+<http://purl.obolibrary.org/obo/Q9Y3Z3> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ9UBS8> .
+
+<http://purl.obolibrary.org/obo/Q9Y4G8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ96PU5> .
+
+<http://purl.obolibrary.org/obo/Q9Y4L5> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP62987> .
+
+<http://purl.obolibrary.org/obo/Q9Y6S9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMP61218> .
+
+<http://purl.obolibrary.org/obo/Q9Y6Y8> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ06124> .
+
+<http://purl.obolibrary.org/obo/Q9Z1H9> rdfs:subClassOf <http://purl.obolibrary.org/obo/TERMQ66H20> .
+

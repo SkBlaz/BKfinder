@@ -41,25 +41,31 @@ class rdfconverter:
         obo_uri = "http://purl.obolibrary.org/obo/"
         AMP = rdflib.Namespace(amp_uri)        
         ontology = defaultdict(list)
-        
-#        terms = dict(nx.get_node_attributes(self.nxgraph, 'name'))
-        
-        for node in self.nxgraph.nodes():
+
+        for edge in self.nxgraph.edges():
+            u = rdflib.term.URIRef('%s%s' % (obo_uri, edge[0]))
+            annotation_uri = rdflib.term.URIRef('%s%s' % (obo_uri, rdflib.Literal(edge[1])))
+            g.add((annotation_uri, rdflib.RDFS.subClassOf,u))
             
-            for node2 in self.nxgraph.neighbors(node):
-                ontology[ str(node).split(":")[1] ].append( str(node2).split(":")[1])
+#        terms = dict(nx.get_node_attributes(self.nxgraph, 'name'))
+
+
+        # for node in self.nxgraph.nodes():
+            
+        #     for node2 in self.nxgraph.neighbors(node):
+        #         ontology[ str(node).split(":")[1] ].append( str(node2).split(":")[1])
                 
-        for id, example1 in enumerate(ontology.keys()):
+        # for id, example1 in enumerate(ontology.keys()):
 
-            # Write to rdf graph                         
+        #     # Write to rdf graph                         
 
-            u = rdflib.term.URIRef('%sTERM%s' % (obo_uri, example1))
+        #     u = rdflib.term.URIRef('%sTERM%s' % (obo_uri, example1))
 
-            #g.add((u, rdflib.RDF.type, KT.is_a))
+        #     #g.add((u, rdflib.RDF.type, KT.is_a))
 
-            for ex in ontology[example1]:
-                annotation_uri = rdflib.term.URIRef('%s%s' % (obo_uri, rdflib.Literal(ex)))
-                g.add((u, rdflib.RDFS.subClassOf,annotation_uri ))
+        #     for ex in ontology[example1]:
+        #         annotation_uri = rdflib.term.URIRef('%s%s' % (obo_uri, rdflib.Literal(ex)))
+        #         g.add((annotation_uri, rdflib.RDFS.subClassOf,u))
 
         self.rdfgraph = g
 
