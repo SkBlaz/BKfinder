@@ -1,7 +1,5 @@
 ## this is the G2o implementation, where an undirected graph is transofmed into a DAG.
 
-
-
 import networkx as nx
 import numpy as np
 
@@ -11,7 +9,7 @@ def g2o(input_graph,degree_threshold,step_size):
     
     ### first, remove cycles
     degree_hash = input_graph.degree()
-    t1 = nx.triangles(input_graph)    
+    #t1 = nx.triangles(input_graph)    
     G=input_graph
     result_triplets=[]
     crossed=set()    
@@ -35,12 +33,16 @@ def g2o(input_graph,degree_threshold,step_size):
         sorted_keys = sorted(list(triplet_degrees.keys()))
         if len(sorted_keys) == 3:
             try:            
-                input_graph.remove_edge(triplet_degrees[sorted_keys[0]],triplet_degrees[sorted_keys[1]])                
+                input_graph.remove_edge(triplet_degrees[sorted_keys[0]],triplet_degrees[sorted_keys[1]])
+                #input_graph.remove_node(triplet_degrees[sorted_keys[0]])
             except:
                 ## not all keys exist
                 pass
 
-    ## definitions for the second part of the process
+
+    ## redefine hash for individual components
+    input_graph = next(nx.connected_component_subgraphs(input_graph))
+    degree_hash = input_graph.degree()
     
     outgraph = nx.DiGraph()    
     degree_list = [degree_hash[deg] for deg in degree_hash]
@@ -72,12 +74,32 @@ def g2o(input_graph,degree_threshold,step_size):
                         outgraph.add_edge(neigh,start_node)
 
     print(nx.info(outgraph))
-    return outgraph
+    if nx.is_directed_acyclic_graph(outgraph):
+        return outgraph
+    else:
+        raise ValueError('Graph could not be converted to a DAG.')
 
+
+
+def g2o_mst(input_graph):
+
+    T = nx.minimum_spanning_tree(input_graph)
+    test2 = T.to_directed()
+    cycles = len(list(nx.find_cycle(test2, orientation='ignore')))
+    
+    # while cycles > 0:
+    #     for edge in nx.find_cycle(test2, orientation='ignore'):
+    #         test2.remove_edge(edge[0],edge[1])
+    #         print(list(nx.find_cycle(test2, orientation='ignore')))
+    #     cycles = len(list(nx.find_cycle(test2, orientation='ignore')))
+    #     print(cycles)
+    
+    return test2
+    
 if __name__ == '__main__':
 
     ## command line usage..
-    import rdfmodule as rm    
+    #import rdfmodule as rm    
     import argparse
     
     parser_init = argparse.ArgumentParser()
@@ -89,7 +111,9 @@ if __name__ == '__main__':
     parsed = parser_init.parse_args()        
     G = nx.read_gpickle(parsed.input_graph)
     outgraph2 = g2o(G,parsed.percentile,parsed.jump_size)
-    rdfpart = rm.rdfconverter(outgraph2,"query")    
-    rdfpart.return_target_n3("samples/"+parsed.data_input_id)
-    otype = parsed.data_input_id.split(".")[1]
-    rdfpart.return_background_knowledge("BK/autogen"+parsed.data_input_id,otype)
+    #g2o_mst(G)
+    if parsed.data_input_id:
+        rdfpart = rm.rdfconverter(outgraph2,"query")    
+        rdfpart.return_target_n3("samples/"+parsed.data_input_id)
+        otype = parsed.data_input_id.split(".")[1]
+        rdfpart.return_background_knowledge("BK/autogen"+parsed.data_input_id,otype)
