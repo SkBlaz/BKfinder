@@ -17,6 +17,7 @@ def g2o(input_graph,degree_threshold,step_size):
         crossed.add(node)    
         done_count=set()    
         neighbours=set(G[node])
+        
         for neigh in neighbours:
             if neigh in crossed:    
                 continue    
@@ -34,7 +35,6 @@ def g2o(input_graph,degree_threshold,step_size):
         if len(sorted_keys) == 3:
             try:            
                 input_graph.remove_edge(triplet_degrees[sorted_keys[0]],triplet_degrees[sorted_keys[1]])
-                #input_graph.remove_node(triplet_degrees[sorted_keys[0]])
             except:
                 ## not all keys exist
                 pass
@@ -87,33 +87,24 @@ def g2o_mst(input_graph):
     test2 = T.to_directed()
     cycles = len(list(nx.find_cycle(test2, orientation='ignore')))
     
-    # while cycles > 0:
-    #     for edge in nx.find_cycle(test2, orientation='ignore'):
-    #         test2.remove_edge(edge[0],edge[1])
-    #         print(list(nx.find_cycle(test2, orientation='ignore')))
-    #     cycles = len(list(nx.find_cycle(test2, orientation='ignore')))
-    #     print(cycles)
-    
     return test2
     
 if __name__ == '__main__':
 
-    ## command line usage..
-    #import rdfmodule as rm    
+    import rdfmodule as rm    
     import argparse
     
     parser_init = argparse.ArgumentParser()
     parser_init.add_argument("--input_graph", help="Graph in gpickle format.")
     parser_init.add_argument("--percentile", help="Degree percentile.")
     parser_init.add_argument("--jump_size", help="Neighbourhood size.")
-    parser_init.add_argument("--data_input_id", help="dataset.")
+    parser_init.add_argument("--ontology_id", help="dataset.")
     
     parsed = parser_init.parse_args()        
     G = nx.read_gpickle(parsed.input_graph)
     outgraph2 = g2o(G,parsed.percentile,parsed.jump_size)
-    #g2o_mst(G)
-    if parsed.data_input_id:
+    if parsed.ontology_id:
         rdfpart = rm.rdfconverter(outgraph2,"query")    
-        rdfpart.return_target_n3("samples/"+parsed.data_input_id)
-        otype = parsed.data_input_id.split(".")[1]
-        rdfpart.return_background_knowledge("BK/autogen"+parsed.data_input_id,otype)
+        rdfpart.return_target_n3("samples/"+parsed.ontology_id)
+        otype = parsed.ontology_id.split(".")[1]
+        rdfpart.return_background_knowledge("BK/autogen"+parsed.ontology_id,otype)
