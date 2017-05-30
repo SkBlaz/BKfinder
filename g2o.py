@@ -82,6 +82,7 @@ def g2o(input_graph,degree_threshold,step_size):
 def g2o_mst(input_graph):
 
     T = nx.minimum_spanning_tree(input_graph)
+#    print(len(list(nx.connected_components(G))))
     test2 = T.to_directed()
     cycles = len(list(nx.find_cycle(test2, orientation='ignore')))
     
@@ -101,6 +102,7 @@ if __name__ == '__main__':
     parsed = parser_init.parse_args()        
     G = nx.read_gpickle(parsed.input_graph)
     outgraph2 = g2o(G,parsed.percentile,parsed.jump_size)
+    g2o_mst(G)
     if parsed.ontology_id:
         rdfpart = rm.rdfconverter(outgraph2,"query")    
         rdfpart.return_target_n3("samples/"+parsed.ontology_id)

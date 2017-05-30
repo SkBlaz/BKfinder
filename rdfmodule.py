@@ -40,7 +40,7 @@ class rdfconverter:
         amp_uri = 'http://kt.ijs.si/ontology/hedwig#'
         obo_uri = "http://purl.obolibrary.org/obo/"
         AMP = rdflib.Namespace(amp_uri)        
-        ontology = defaultdict(list)
+        #ontology = defaultdict(list)
 
         for edge in self.nxgraph.edges():
             u = rdflib.term.URIRef('%s%s' % (obo_uri, edge[0]))
