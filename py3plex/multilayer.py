@@ -92,7 +92,7 @@ def draw_multilayer_default(network_list, display=True, nodesize=2,alphalevel=0.
     if display == True:
         plt.show()
 
-def draw_multiplex_default(network_list,multi_edge_tuple,input_type="nodes",linepoints="-.",alphachannel=0.3):
+def draw_multiplex_default(network_list,multi_edge_tuple,input_type="nodes",linepoints="-.",alphachannel=0.3,linecolor="black"):
 
     #indices are correct network positions
 
@@ -110,7 +110,7 @@ def draw_multiplex_default(network_list,multi_edge_tuple,input_type="nodes",line
             x,y = bezier.draw_bezier(len(network_list),p1,p2,mode="quadratic")
         
             # #plot the result
-            plt.plot(x,y,linestyle=linepoints,lw=1,alpha=alphachannel)
+            plt.plot(x,y,linestyle=linepoints,lw=1,alpha=alphachannel,color=linecolor)
 
     elif input_type == "nodes":
 
@@ -128,7 +128,7 @@ def draw_multiplex_default(network_list,multi_edge_tuple,input_type="nodes",line
                 p1 = [global_positions[str(pair[0])][0],global_positions[str(pair[1])][0]]
                 p2 = [global_positions[str(pair[0])][1],global_positions[str(pair[1])][1]]                                
                 x,y = bezier.draw_bezier(len(network_list),p1,p2,mode="quadratic")
-                plt.plot(x,y,linestyle=linepoints,lw=1,alpha=alphachannel)
+                plt.plot(x,y,linestyle=linepoints,lw=1,alpha=alphachannel,color=linecolor)
             except:
                 pass
             

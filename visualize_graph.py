@@ -34,7 +34,7 @@ def view_by_type(inputgraph,limit=False):
         networks.append(tmp_graph)
 
     print ("Visualizing..")
-    draw_multilayer_default(networks,background_shape="circle",display=False,labels=labs)
+    draw_multilayer_default(networks,background_shape="circle",display=False,labels=labs,networks_color="black")
 
     mx_edges = []
 
@@ -47,7 +47,7 @@ def view_by_type(inputgraph,limit=False):
             mx_edges.append((e[0],e[1]))
             
     
-    draw_multiplex_default(networks,mx_edges,alphachannel=0.5)
+    draw_multiplex_default(networks,mx_edges,alphachannel=0.2,linepoints="-")
 
     plt.show()
     
