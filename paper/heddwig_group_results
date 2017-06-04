@@ -1,31 +1,3 @@
-----------------------------------------
-Hedwig semantic pattern mining (anze.vavpetic@ijs.si)
-Version: 0.3.0
-Start: 2017-06-04T18:05:54.386233
-Time taken: 2.23 seconds
-Parameters:
-	adjust=fwer
-	FDR=0.05
-	target=None
-	nocache=True
-	format=n3
-	leaves=True
-	support=0.1
-	learner=heuristic
-	depth=5
-	optimalsubclass=False
-	beam=20
-	alpha=1.0
-	bk_dir=BK/
-	verbose=False
-	mode=subgroups
-	covered=None
-	output=OUTPUT/snps
-	score=lift
-	data=samples/snps.n3
-	uris=False
-	negations=False
-----------------------------------------
 'query/part:2'(X) <--
 	annotated_with(X, http://purl.obolibrary.org/obo/MEN1) [cov=1, pos=1, prec=1.000, lift=6.000, pval=0.143]
 'query/part:3'(X) <--
@@ -41,3 +13,6 @@ Parameters:
 	annotated_with(X, http://purl.obolibrary.org/obo/WRN) [cov=1, pos=1, prec=1.000, lift=6.000, pval=0.143]
 'query/part:5'(X) <--
 	annotated_with(X, http://purl.obolibrary.org/obo/ERLEC1;OS9) [cov=1, pos=1, prec=1.000, lift=6.000, pval=0.143]
+4.19user 0.64system 0:04.21elapsed 114%CPU (0avgtext+0avgdata 66192maxresident)k
+0inputs+968outputs (0major+34930minor)pagefaults 0swaps
+

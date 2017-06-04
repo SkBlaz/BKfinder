@@ -25,7 +25,7 @@ def g2o(input_graph,degree_threshold,step_size):
             for both in neighbours.intersection(G[neigh]):
                 if both in crossed or both in done_count:    
                     continue    
-                result_triplets.append( (node,neigh,both) )
+                result_triplets.append( (node,neigh,both))
 
     for triplet in result_triplets:
         
@@ -62,16 +62,26 @@ def g2o(input_graph,degree_threshold,step_size):
         to_process.insert(0,node)
     
     while len(to_process) != 0:
-        start_node = to_process.pop()
-        if start_node not in already_processed:
-            already_processed.append(start_node)
-            for neigh in set(input_graph[start_node]):
-                if neigh not in already_processed and neigh not in to_process:
-                    to_process.insert(0,neigh)
-                    if degree_hash[neigh] < degree_hash[start_node]:
-                        outgraph.add_edge(start_node,neigh)                        
-                    else:
-                        outgraph.add_edge(neigh,start_node)
+        for step in (range(0,int(step_size))):
+            ## go to a specific depth
+            if len(to_process) != 0:
+                start_node = to_process.pop()
+            else:
+                break
+            if start_node not in already_processed:
+                already_processed.append(start_node)
+                for neigh in set(input_graph[start_node]):
+                    if neigh not in already_processed and neigh not in candidate_hotspots:
+                        ## Querying
+                        if step > 0:
+                            to_process.append(neigh)
+                        else:
+                            to_process.insert(0,neigh)
+                        ## Edge construction step    
+                        if degree_hash[neigh] < degree_hash[start_node]:
+                            outgraph.add_edge(start_node,neigh)
+                        else:
+                            outgraph.add_edge(neigh,start_node)
 
     print(nx.info(outgraph))
     if nx.is_directed_acyclic_graph(outgraph):
@@ -95,13 +105,13 @@ if __name__ == '__main__':
     parser_init = argparse.ArgumentParser()
     parser_init.add_argument("--input_graph", help="Graph in gpickle format.")
     parser_init.add_argument("--percentile", help="Degree percentile.")
-    parser_init.add_argument("--jump_size", help="Neighbourhood size.")
+    parser_init.add_argument("--step_size", help="Neighbourhood size.")
     parser_init.add_argument("--ontology_id", help="dataset.")
     parser_init.add_argument("--make_samples", help="dataset.")
     
     parsed = parser_init.parse_args()        
     G = nx.read_gpickle(parsed.input_graph)
-    outgraph2 = g2o(G,parsed.percentile,parsed.jump_size)
+    outgraph2 = g2o(G,parsed.percentile,parsed.step_size)
 #   g2o_mst(G)
     if parsed.ontology_id:
         rdfpart = rm.rdfconverter(outgraph2,"query")

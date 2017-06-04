@@ -5,7 +5,6 @@ import argparse
 import rdflib
 
 def return_subgroup(infile,repetitions,outfolder,max_size):
-
         
     with open(infile, 'r') as myfile:
         data=myfile.read().split('\n')
