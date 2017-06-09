@@ -3,7 +3,7 @@
 import networkx as nx
 import numpy as np
 
-def g2o(input_graph,degree_threshold,step_size=1,heuristic="degree"):
+def g2o(input_graph,degree_threshold,step_size,heuristic="degree"):
 
     ## heuristic selection
     if heuristic == "degree":
