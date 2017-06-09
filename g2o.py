@@ -14,6 +14,14 @@ def g2o(input_graph,degree_threshold,step_size,heuristic="degree"):
         heuristic_hash = nx.eigenvector_centrality_numpy(input_graph)
     elif heuristic == "communicability":
         heuristic_hash = nx.communicability_centrality(input_graph)
+    elif heuristic == "flow_betweenness":
+        heuristic_hash = nx.current_flow_betweenness_centrality(input_graph)
+    elif heuristic == "closeness":
+        heuristic_hash = nx.closeness_centrality(input_graph)
+    elif heuristic == "betweenness":
+        heuristic_hash = nx.betweenness_centrality(input_graph)
+    elif heuristic == "katz":
+        heuristic_hash = nx.katz_centrality_numpy(input_graph)
     else:        
         raise ValueError("Please select a valid heuristic..")
 
