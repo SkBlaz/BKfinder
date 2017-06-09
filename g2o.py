@@ -22,8 +22,6 @@ def g2o(input_graph,degree_threshold,step_size,heuristic="degree"):
         heuristic_hash = nx.closeness_centrality(input_graph)
     elif heuristic == "betweenness":
         heuristic_hash = nx.betweenness_centrality(input_graph)
-    elif heuristic == "katz":
-        heuristic_hash = nx.katz_centrality_numpy(input_graph)
     else:        
         raise ValueError("Please select a valid heuristic..")
 
@@ -120,7 +118,7 @@ if __name__ == '__main__':
     parser_init.add_argument("--input_graph", help="Graph in gpickle format.")
     parser_init.add_argument("--percentile", help="Degree percentile.")
     parser_init.add_argument("--step_size", help="Neighbourhood size.")
-    parser_init.add_argument("--heuristic", help="dataset.")
+    parser_init.add_argument("--heuristic", help="possible options: degree, pagerank_numpy, pagerank_scipy, katz, eigenvector_centrality_numpy, flow_betweenness, communicability, pagerank_scipy")
     parser_init.add_argument("--ontology_id", help="dataset.")
     parser_init.add_argument("--make_samples", help="dataset.")
     
