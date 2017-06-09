@@ -1,7 +1,7 @@
 
 ## this is an example run script for a thypical workflow
 
-if [ "$1" == "--execute"  ]
+if [ "$1" == "--execute"  ] ## permutations + learning graph
 then
     
     python3 get_bk.py --step_size 10 --output_name $2 --term_list $3   ## looks into data folder
@@ -20,7 +20,7 @@ then
     rm -rvf OUTPUT/*
     rm -rvf query/*
 
-elif [ "$1" == "--learn" ]
+elif [ "$1" == "--learn" ] ## this learns from permutations
 then
     python3 g2o.py --input_graph "graph_datasets/"$2".gpickle" --percentile 95 --ontology_id $2.n3 --step_size 1 ## samples and BK folders
 
@@ -31,7 +31,7 @@ then
 
     #    rm -rvf samples/*
 
-elif [ "$1" == "--learn_custom" ]
+elif [ "$1" == "--learn_custom" ] ### this learns from different size bins
 then
 
     bash run_biomine_hedwig_pipeline.sh --clean

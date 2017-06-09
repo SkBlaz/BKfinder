@@ -3,13 +3,21 @@
 import networkx as nx
 import numpy as np
 
-def g2o(input_graph,degree_threshold,step_size):
+def g2o(input_graph,degree_threshold,step_size=1,heuristic="degree"):
 
-    #print(nx.info(input_graph))
-    
-    ### first, remove cycles
-    degree_hash = input_graph.degree()
-    #t1 = nx.triangles(input_graph)    
+    ## heuristic selection
+    if heuristic == "degree":
+        heuristic_hash = input_graph.degree()
+    elif heuristic == "pagerank":
+        heuristic_hash = nx.pagerank_numpy(input_graph, alpha=0.9)  
+    elif heuristic == "eigenvector":
+        heuristic_hash = nx.eigenvector_centrality_numpy(input_graph)
+    elif heuristic == "communicability":
+        heuristic_hash = nx.communicability_centrality(input_graph)
+    else:        
+        raise ValueError("Please select a valid heuristic..")
+
+    ## first identify the triplets
     G=input_graph
     result_triplets=[]
     crossed=set()    
@@ -27,10 +35,11 @@ def g2o(input_graph,degree_threshold,step_size):
                     continue    
                 result_triplets.append( (node,neigh,both))
 
+    ## remove triplets in some manner
     for triplet in result_triplets:
         
         ## get the node degrees
-        triplet_degrees = {degree_hash[node] : node for node in triplet}
+        triplet_degrees = {heuristic_hash[node] : node for node in triplet}
         sorted_keys = sorted(list(triplet_degrees.keys()))
         if len(sorted_keys) == 3:
             try:            
@@ -39,15 +48,11 @@ def g2o(input_graph,degree_threshold,step_size):
                 ## not all keys exist
                 pass
 
-
-    ## redefine hash for individual components
-    #input_graph = next(nx.connected_component_subgraphs(input_graph))
-    #degree_hash = input_graph.degree()
     
     outgraph = nx.DiGraph()    
-    degree_list = [degree_hash[deg] for deg in degree_hash]
+    degree_list = [heuristic_hash[deg] for deg in heuristic_hash]
     threshold_degree = np.percentile(degree_list,degree_threshold)
-    candidate_hotspots = [node for node,value  in degree_hash.items() if value > threshold_degree]
+    candidate_hotspots = [node for node,value  in heuristic_hash.items() if value > threshold_degree]
 
     print("Nodes to begin the iteration: ",len(candidate_hotspots))
 
@@ -78,7 +83,7 @@ def g2o(input_graph,degree_threshold,step_size):
                         else:
                             to_process.insert(0,neigh)
                         ## Edge construction step    
-                        if degree_hash[neigh] < degree_hash[start_node]:
+                        if heuristic_hash[neigh] < heuristic_hash[start_node]:
                             outgraph.add_edge(start_node,neigh)
                         else:
                             outgraph.add_edge(neigh,start_node)
@@ -92,7 +97,6 @@ def g2o(input_graph,degree_threshold,step_size):
 def g2o_mst(input_graph):
 
     T = nx.minimum_spanning_tree(input_graph)
-#   print(len(list(nx.connected_components(G))))
     test2 = T.to_directed()
     
     return test2
@@ -106,16 +110,16 @@ if __name__ == '__main__':
     parser_init.add_argument("--input_graph", help="Graph in gpickle format.")
     parser_init.add_argument("--percentile", help="Degree percentile.")
     parser_init.add_argument("--step_size", help="Neighbourhood size.")
+    parser_init.add_argument("--heuristic", help="dataset.")
     parser_init.add_argument("--ontology_id", help="dataset.")
     parser_init.add_argument("--make_samples", help="dataset.")
     
     parsed = parser_init.parse_args()        
     G = nx.read_gpickle(parsed.input_graph)
-    outgraph2 = g2o(G,parsed.percentile,parsed.step_size)
-#   g2o_mst(G)
+    outgraph2 = g2o(G,parsed.percentile,parsed.step_size,parsed.heuristic)
     if parsed.ontology_id:
-        rdfpart = rm.rdfconverter(outgraph2,"query")
+        rdfpart = rm.rdfconverter(outgraph2,"query") ## query is the folder with lists
         if parsed.make_samples:
-            rdfpart.return_target_n3("samples/"+parsed.ontology_id)
+            rdfpart.return_target_n3("samples/"+parsed.ontology_id) ## target folder
         otype = parsed.ontology_id.split(".")[1]
         rdfpart.return_background_knowledge("BK/autogen"+parsed.ontology_id,otype)
