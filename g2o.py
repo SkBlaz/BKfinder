@@ -9,7 +9,9 @@ def g2o(input_graph,degree_threshold,step_size,heuristic="degree"):
     if heuristic == "degree":
         heuristic_hash = input_graph.degree()
     elif heuristic == "pagerank":
-        heuristic_hash = nx.pagerank_numpy(input_graph, alpha=0.9)  
+        heuristic_hash = nx.pagerank_numpy(input_graph, alpha=0.9)
+    elif heuristic == "pagerank_scipy":
+        heuristic_hash = nx.pagerank_scipy(input_graph, alpha=0.9)
     elif heuristic == "eigenvector":
         heuristic_hash = nx.eigenvector_centrality_numpy(input_graph)
     elif heuristic == "communicability":
