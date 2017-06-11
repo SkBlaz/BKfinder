@@ -10,10 +10,14 @@ call(["rm", "-rvf","query/*"])
 
 parser_init = argparse.ArgumentParser()
 parser_init.add_argument("--bins", help="Bin split..")
+parser_init.add_argument("--sample_name", help="sample name..")
+parser_init.add_argument("--go_terms", help="sample name..")
+
 parsed = parser_init.parse_args()
     
 termnames = "graph_datasets/datafile.tsv"
 term_list = defaultdict(list)
+go_list = defaultdict(list)
 
 with open(termnames) as tf:
     for line in tf:
@@ -35,15 +39,34 @@ for k,v in term_list.items():
 sorted_array = np.sort(all_lengths, axis=None)
 three_parts = np.array_split(sorted_array, int(parsed.bins))
 
+## those are the query terms
+
+if parsed.go_terms:
+    with open('data/uniprot_GO_map.txt') as mp:
+        for line in mp:
+            try:
+                uni, go = line.split()
+                if "|" not in go:
+                    go_list[uni].append(go)
+            except:
+                pass
+
 for idx,part in enumerate(three_parts):
     current_outname = "part:"+str(idx)
     current_termlist = []
     for k,val in term_list.items():        
         for el in val:
-            if int(el) in list(part):                
-               current_termlist.append(k)
+            if int(el) in list(part):
+                for term in go_list[k]:
+                    current_termlist.append(term)
+
     f = open("query/"+current_outname, 'w')
     f.write("\n".join(set(current_termlist)))
     f.close() 
 
 
+## now transform query folder stuff to .n3
+
+import rdfmodule as rm
+rdfpart = rm.rdfconverter(None,"query")
+rdfpart.return_target_n3("samples/"+parsed.sample_name+".n3")

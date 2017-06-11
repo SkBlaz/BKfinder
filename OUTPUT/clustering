@@ -1,0 +1,41 @@
+----------------------------------------
+Hedwig semantic pattern mining (anze.vavpetic@ijs.si)
+Version: 0.3.0
+Start: 2017-06-11T21:36:41.091272
+Time taken: 0.49 seconds
+Parameters:
+	adjust=none
+	FDR=0.05
+	target=None
+	nocache=False
+	format=n3
+	leaves=True
+	support=0.0
+	learner=heuristic
+	depth=5
+	optimalsubclass=False
+	beam=10
+	alpha=1.0
+	bk_dir=BK/autogenclustering.n3
+	verbose=False
+	mode=subgroups
+	covered=None
+	output=OUTPUT/clustering
+	score=lift
+	data=samples/clustering.n3
+	uris=False
+	negations=False
+----------------------------------------
+'query/1cluster'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/32697) [cov=1, pos=1, prec=1.000, lift=4.000, pval=0.200]
+'query/2cluster'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/10577921) [cov=1, pos=1, prec=1.000, lift=4.000, pval=0.200]
+'query/3cluster'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/4172) [cov=1, pos=1, prec=1.000, lift=4.000, pval=0.200]
+'query/0cluster'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/9289491) [cov=1, pos=1, prec=1.000, lift=4.000, pval=0.200]
+	annotated_with(X, http://purl.obolibrary.org/obo/9811458) [cov=1, pos=1, prec=1.000, lift=4.000, pval=0.200]
+	annotated_with(X, http://purl.obolibrary.org/obo/15824120) [cov=1, pos=1, prec=1.000, lift=4.000, pval=0.200]
+	annotated_with(X, http://purl.obolibrary.org/obo/9056417) [cov=1, pos=1, prec=1.000, lift=4.000, pval=0.200]
+	annotated_with(X, http://purl.obolibrary.org/obo/51073) [cov=1, pos=1, prec=1.000, lift=4.000, pval=0.200]
+	annotated_with(X, http://purl.obolibrary.org/obo/Q66GS9) [cov=1, pos=1, prec=1.000, lift=4.000, pval=0.200]

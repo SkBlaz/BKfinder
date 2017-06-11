@@ -4,7 +4,7 @@ import numpy as np
 from g2o import *
 import time
 import sys
-
+    
 heuristics = ["degree","pagerank_scipy","eigenvector","communicability","closeness","betweenness"]
 input_graphs = ["graph_datasets/snps.gpickle","graph_datasets/biominetestgraph.gpickle"]
 

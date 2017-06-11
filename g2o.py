@@ -101,13 +101,6 @@ def g2o(input_graph,degree_threshold,step_size,heuristic="degree"):
         return outgraph
     else:
         raise ValueError('Graph could not be converted to a DAG.')
-
-def g2o_mst(input_graph):
-
-    T = nx.minimum_spanning_tree(input_graph)
-    test2 = T.to_directed()
-    
-    return test2
     
 if __name__ == '__main__':
 
@@ -124,6 +117,7 @@ if __name__ == '__main__':
     
     parsed = parser_init.parse_args()        
     G = nx.read_gpickle(parsed.input_graph)
+    
     outgraph2 = g2o(G,parsed.percentile,parsed.step_size,parsed.heuristic)
     if parsed.ontology_id:
         rdfpart = rm.rdfconverter(outgraph2,"query") ## query is the folder with lists

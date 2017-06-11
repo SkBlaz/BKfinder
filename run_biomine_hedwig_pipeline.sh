@@ -42,6 +42,25 @@ then
     ## the point here is, this works..
     ## 
     
+elif [ "$1" == "--hedwig_only" ]
+then
+    python2 hedwig/hedwig $2 $3 -o OUTPUT/$4 -l -A 1 -C ## output folder
+    cat OUTPUT/$4 
+
+
+elif [ "$1" == "--clusters" ]
+then
+
+    bash run_biomine_hedwig_pipeline.sh --clean
+
+    python3 similarity_clustering.py --input_graph graph_datasets/snpsstep1.gpickle --input_nodelist data/snps_clean.list --number_clusters $2 --output_folder query    
+    
+    ## do this when query is already there..
+    python3 g2o.py --input_graph graph_datasets/snpsstep1.gpickle --percentile 90 --step_size 1 --heuristic degree --ontology_id clustering.n3 --make_samples t
+
+    python2 hedwig/hedwig BK/autogenclustering.n3 samples/clustering.n3 -o OUTPUT/clustering -l -A 1 --adjust=none --support=0 --beam=10
+    cat OUTPUT/clustering
+    
     
 fi
      

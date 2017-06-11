@@ -338,7 +338,8 @@ if __name__ == '__main__':
     ## init a request
     
     request = make_request()
-    
+
+    print(source)
     ## this returns graph for further reduction use..
     
     if(parser.step_size):

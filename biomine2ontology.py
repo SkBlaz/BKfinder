@@ -1,0 +1,39 @@
+## this script converts biomine grpah to ontology:
+
+import networkx as nx
+import argparse
+import rdflib
+
+def b2o(graph_input,output_ontology):
+
+    ## construct the background knowledge..
+        
+        g = rdflib.graph.Graph()
+        KT = rdflib.Namespace('http://kt.ijs.si/hedwig#')
+        amp_uri = 'http://kt.ijs.si/ontology/hedwig#'
+        obo_uri = "http://purl.obolibrary.org/obo/"
+        AMP = rdflib.Namespace(amp_uri)        
+
+        for edge in graph_input.edges(data=True):
+            
+            u = rdflib.term.URIRef('%s%s' % (obo_uri, edge[0].split(":")[1]))
+            annotation_uri = rdflib.term.URIRef('%s%s' % (obo_uri, rdflib.Literal(edge[1].split(":")[1])))
+
+            if edge[2]['key'] == "refers_to":
+                g.add((annotation_uri,rdflib.RDFS.subClassOf,u))
+
+        ## serialize the graph    
+        g.serialize(destination=output_ontology,format="n3")
+
+        print("Finished with BK conversion..")
+
+if __name__ == '__main__':
+
+    parser_init = argparse.ArgumentParser()
+
+    parser_init.add_argument("--input_graph", help="Graph in gpickle format.")
+    parser_init.add_argument("--output_ontology", help="Output graph ontology")
+    
+    parsed = parser_init.parse_args()        
+    G = nx.read_gpickle(parsed.input_graph)
+    b2o(G,parsed.output_ontology)
