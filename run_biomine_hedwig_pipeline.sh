@@ -60,7 +60,20 @@ then
 
     python2 hedwig/hedwig BK/autogenclustering.n3 samples/clustering.n3 -o OUTPUT/clustering -l -A 1 --adjust=none --support=0 --beam=10
     cat OUTPUT/clustering
-        
+
+
+elif [ "$1" == "--community" ]
+then
+
+    ## get background knowledge
+
+    python3 community_clustering.py --input_graph graph_datasets/snpsstep1.gpickle --input_nodelist data/snps_clean.list --ontology_id samples/community_samples.n3 --nc 2 --input_mapping data/goa_human.gaf
+
+    ## get mappings    
+    python2 hedwig/hedwig BK/uniprot.n3 samples/community_samples.n3 -o OUTPUT/community_rules -l --adjust=none --support=0.1 --beam=5
+
+    cat OUTPUT/community_rules
+     
 fi
      
 # python3 obo2n3.py --input_obo ~/Documents/go.obo --output_n3 BK/uniprot.n3

@@ -1,7 +1,7 @@
 ### this algorithm is capable of community clustering
 
 
-import community
+#import community
 import networkx as nx
 import argparse
 import rdflib
@@ -9,7 +9,7 @@ from collections import defaultdict
 
 def community_cluster(G, termlist,ncom):
 
-    communities = nx.k_clique_communities(G, 6)
+    communities = nx.k_clique_communities(G, ncom)
     return communities
 
 if __name__ == '__main__':
