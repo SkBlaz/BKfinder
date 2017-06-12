@@ -60,7 +60,10 @@ then
 
     python2 hedwig/hedwig BK/autogenclustering.n3 samples/clustering.n3 -o OUTPUT/clustering -l -A 1 --adjust=none --support=0 --beam=10
     cat OUTPUT/clustering
-    
-    
+        
 fi
      
+# python3 obo2n3.py --input_obo ~/Documents/go.obo --output_n3 BK/uniprot.n3
+# sudo python2 hedwig/hedwig BK/uniprot.n3 samples/mappedONTO.n3 -o OUTPUT/kclique -l --adjust=none --support=0 --beam=50
+
+

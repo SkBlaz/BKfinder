@@ -10,14 +10,21 @@ def graph_cluster(input_graph,tlist,cl_num):
 
     outdict = defaultdict(list)
     graph_nodes = input_graph.nodes()
-    distance_matrix = nx.floyd_warshall_numpy(input_graph,nodelist=tlist,weight='reliability')
-
+    distance_matrix = nx.floyd_warshall_numpy(input_graph,nodelist=tlist)#,weight='reliability')
     distance_matrix[distance_matrix == np.inf] = len(graph_nodes)
-    print("Clustering part..")    
-    clustering_algorithm = KMeans(n_clusters=int(cl_num), max_iter=600).fit(distance_matrix)
-    predictions = clustering_algorithm.predict(distance_matrix)
-    for gn, pred in  zip(graph_nodes,predictions):
-        outdict[pred].append(gn)
+    print("Clustering part..")
+    prediction_aggregator = []
+    for j in range(0,40,1):
+        clustering_algorithm = KMeans(n_clusters=int(cl_num)).fit(distance_matrix)
+        predictions = clustering_algorithm.predict(distance_matrix)
+        prediction_aggregator.append(predictions)
+
+    predictions = np.mean(prediction_aggregator, axis=0)
+    print(predictions)
+    
+    # for gn, pred in  zip(graph_nodes,predictions):
+    #     print(gn,pred)        
+    #     outdict[pred].append(gn)
     
     
     return outdict

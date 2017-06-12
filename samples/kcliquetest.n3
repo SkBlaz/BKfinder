@@ -1,0 +1,79 @@
+@prefix ns1: <http://kt.ijs.si/hedwig#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://kt.ijs.si/ontology/hedwig#example0> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/Q9NQ48> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8TAM2> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q96RK4> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q6ZW61> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8N3I7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q96QF0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9BXC9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8NFJ9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A8MTZ0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q3SYG4> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8IWZ6> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9H0F7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q15154> ] ;
+    ns1:class_label "query/1cluster" .
+
+<http://kt.ijs.si/ontology/hedwig#example1> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/P18848> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P18847> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P01100> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P49715> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P35638> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P17676> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q96RU7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P53567> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P05412> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P49716> ] ;
+    ns1:class_label "query/3cluster" .
+
+<http://kt.ijs.si/ontology/hedwig#example2> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/Q96MT8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q96SN8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9HC77> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/O94986> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q66GS9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q96RT8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/O43303> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8TEP8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9UPN4> ] ;
+    ns1:class_label "query/2cluster" .
+
+<http://kt.ijs.si/ontology/hedwig#example3> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/P62750> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q96A35> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q5T653> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/ENSP00000463847> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P32969> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9BYC8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P62829> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9P015> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9P0J6> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9P0M9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/P42766> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/O75394> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9BQ48> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9NRX2> ] ;
+    ns1:class_label "query/4cluster" .
+
+<http://kt.ijs.si/ontology/hedwig#example4> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/Q562F6> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9H900> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9BS16> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8N0S6> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q7L2Z9> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8WVK7> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q96BT3> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q6P0N0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9H3R5> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9H081> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/O95229> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q8NG31> ] ;
+    ns1:class_label "query/0cluster" .
+
