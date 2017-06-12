@@ -1,0 +1,31 @@
+@prefix ns1: <http://kt.ijs.si/hedwig#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://kt.ijs.si/ontology/hedwig#example0> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/B1AL69> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0G3VQ57> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/K4JTS0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q6P671> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/J3QRW3> ] ;
+    ns1:class_label "candidate_0" .
+
+<http://kt.ijs.si/ontology/hedwig#example1> a ns1:Example ;
+    ns1:annotated_with [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0A1EAI1> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0K0PUK0> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0G3VQ57> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A4D1B1> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/F8WEY5> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A6H8X1> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/H3BQN1> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0A0MS86> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A068BI53> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q9BX63> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0H3WBE8> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A0A0G3VRE1> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/A8MU58> ],
+        [ ns1:annotation <http://purl.obolibrary.org/obo/Q5YLB2> ] ;
+    ns1:class_label "candidate_1" .
+

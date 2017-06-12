@@ -35,7 +35,7 @@ if __name__ == '__main__':
         u = rdflib.term.URIRef('%s%s' % (obo_uri, k))
         for item in v:
             annotation_uri = rdflib.term.URIRef('%s%s' % (obo_uri, rdflib.Literal(item)))
-            g.add((u, rdflib.RDFS.subClassOf,annotation_uri))
+            g.add((annotation_uri, rdflib.RDFS.subClassOf,u))
         
         
     g.serialize(destination=parsed.output_n3,format="n3")

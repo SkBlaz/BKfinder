@@ -65,12 +65,18 @@ then
 elif [ "$1" == "--community" ]
 then
 
-    ## get background knowledge
+    cd data
+    #wget http://purl.obolibrary.org/obo/go/go-basic.obo
+    cd ..
 
+    echo "Generating background knowledge"
+    python3 obo2n3.py --input_obo data/go-basic.obo  --output_n3 BK/uniprot.n3
+    
+    echo "Subgroup identification"    
     python3 community_clustering.py --input_graph graph_datasets/snpsstep1.gpickle --input_nodelist data/snps_clean.list --ontology_id samples/community_samples.n3 --nc 2 --input_mapping data/goa_human.gaf
-
-    ## get mappings    
-    python2 hedwig/hedwig BK/uniprot.n3 samples/community_samples.n3 -o OUTPUT/community_rules -l --adjust=none --support=0.1 --beam=5
+    
+    echo "Hedwig run.."
+    python2 hedwig/hedwig BK/ samples/community_samples.n3 -o OUTPUT/community_rules -l --adjust=none --support=0.1 --beam=50
 
     cat OUTPUT/community_rules
      
