@@ -76,7 +76,7 @@ then
     python3 community_clustering.py --input_graph graph_datasets/snpsstep1.gpickle --input_nodelist data/snps_clean.list --ontology_id samples/community_samples.n3 --nc 2 --input_mapping data/goa_human.gaf
     
     echo "Hedwig run.."
-    python2 hedwig/hedwig BK/ samples/community_samples.n3 -o OUTPUT/community_rules -l --adjust=none --support=0.1 --beam=50
+    python2 hedwig/hedwig BK/ samples/test2.n3 -o OUTPUT/community_rules -l --adjust=none --support=0.1 --beam=50
 
     cat OUTPUT/community_rules
      

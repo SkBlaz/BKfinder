@@ -6,14 +6,15 @@ import networkx as nx
 import argparse
 import rdflib
 from collections import defaultdict
+import itertools
 
 def community_cluster(G, termlist,ncom):
 
     communities = nx.k_clique_communities(G, ncom)
+    communities = itertools.islice(communities,4)
     return communities
 
 if __name__ == '__main__':
-
 
     parser_init = argparse.ArgumentParser()
     parser_init.add_argument("--input_graph", help="Graph in gpickle format.")
