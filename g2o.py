@@ -114,11 +114,15 @@ if __name__ == '__main__':
     parser_init.add_argument("--heuristic", help="possible options: degree, pagerank_numpy, pagerank_scipy, katz, eigenvector_centrality_numpy, flow_betweenness, communicability, pagerank_scipy")
     parser_init.add_argument("--ontology_id", help="dataset.")
     parser_init.add_argument("--make_samples", help="dataset.")
+    parser_init.add_argument("--output_graph", help="dataset.")
     
     parsed = parser_init.parse_args()        
     G = nx.read_gpickle(parsed.input_graph)
-    
+
+    if parsed.output_graph:
+        nx.write_gpickle(result_graph, "graph_datasets/"+job_id+".gpickle")
     outgraph2 = g2o(G,parsed.percentile,parsed.step_size,parsed.heuristic)
+
     if parsed.ontology_id:
         rdfpart = rm.rdfconverter(outgraph2,"query") ## query is the folder with lists
         if parsed.make_samples:

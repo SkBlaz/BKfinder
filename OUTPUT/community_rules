@@ -1,0 +1,43 @@
+----------------------------------------
+Hedwig semantic pattern mining (anze.vavpetic@ijs.si)
+Version: 0.3.0
+Start: 2017-06-14T08:50:25.692891
+Time taken: 277.89 seconds
+Parameters:
+	adjust=none
+	FDR=0.05
+	target=None
+	nocache=False
+	format=n3
+	leaves=True
+	support=0.1
+	learner=heuristic
+	depth=5
+	optimalsubclass=False
+	beam=50
+	alpha=0.05
+	bk_dir=BK/
+	verbose=False
+	mode=subgroups
+	covered=None
+	output=OUTPUT/community_rules
+	score=lift
+	data=samples/community3.n3
+	uris=False
+	negations=False
+----------------------------------------
+'1_community'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0031989) [cov=1, pos=1, prec=1.000, lift=4.000, pval=0.200]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0038044) [cov=2, pos=1, prec=0.500, lift=2.000, pval=0.400]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0006987) [cov=2, pos=1, prec=0.500, lift=2.000, pval=0.400]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0032021) [cov=3, pos=1, prec=0.333, lift=1.333, pval=1.000]
+'0_community'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:1904487) [cov=1, pos=1, prec=1.000, lift=4.000, pval=0.200]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0019702) [cov=2, pos=1, prec=0.500, lift=2.000, pval=0.400]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0038044) [cov=2, pos=1, prec=0.500, lift=2.000, pval=0.400]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0032021) [cov=3, pos=1, prec=0.333, lift=1.333, pval=1.000]
+'2_community'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0019708) [cov=1, pos=1, prec=1.000, lift=4.000, pval=0.200]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0019702) [cov=2, pos=1, prec=0.500, lift=2.000, pval=0.400]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0006987) [cov=2, pos=1, prec=0.500, lift=2.000, pval=0.400]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0032021) [cov=3, pos=1, prec=0.333, lift=1.333, pval=1.000]

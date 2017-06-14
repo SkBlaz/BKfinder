@@ -73,12 +73,12 @@ then
     python3 obo2n3.py --input_obo data/go-basic.obo  --output_n3 BK/uniprot.n3
     
     echo "Subgroup identification"    
-    python3 community_clustering.py --input_graph graph_datasets/snpsstep1.gpickle --input_nodelist data/snps_clean.list --ontology_id samples/community_samples.n3 --nc 2 --input_mapping data/goa_human.gaf
+    python3 community_clustering.py --input_graph graph_datasets/snpsstep1.gpickle --input_nodelist data/snps_clean.list --ontology_id samples/louvain.n3 --input_mapping data/goa_human.gaf
     
     echo "Hedwig run.."
-    python2 hedwig/hedwig BK/ samples/test2.n3 -o OUTPUT/community_rules -l --adjust=none --support=0.1 --beam=50
+    python2 hedwig/hedwig BK/ samples/louvain.n3 -o OUTPUT/community_rules_louvain -l --adjust=none --beam=50
 
-    cat OUTPUT/community_rules
+    cat OUTPUT/community_rules_louvain
      
 fi
      

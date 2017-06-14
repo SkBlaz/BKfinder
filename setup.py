@@ -1,28 +1,28 @@
-import os
 from setuptools import setup
 
-# Utility function to read the README file.
-# Used for the long_description.  It's nice, because now 1) we have a top level
-# README file and 2) it's easier to type in the README file than to put a raw
-# string in below ...
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
-
 setup(
-    name = "an_example_pypi_project",
-    version = "0.0.4",
-    author = "Andrew Carter",
-    author_email = "andrewjcarter@gmail.com",
-    description = ("An demonstration of how to create, document, and publish "
-                                   "to the cheese shop a5 pypi.org."),
-    license = "BSD",
-    keywords = "example documentation tutorial",
-    url = "http://packages.python.org/an_example_pypi_project",
-    packages=['an_example_pypi_project', 'tests'],
-    long_description=read('README'),
+    name="python-louvain",
+    version="0.3",
+    author="Thomas Aynaud",
+    author_email="thomas.aynaud@lip6.fr",
+    description="Louvain algorithm for community detection",
+    license="BSD",
+    url="http://perso.crans.org/aynaud/communities/",
     classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Topic :: Utilities",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 2.7",
         "License :: OSI Approved :: BSD License",
+        "Development Status :: 4 - Beta",
     ],
+
+    packages=['community'],
+    install_requires=[
+        "networkx",
+    ],
+
+    entry_points={
+        'console_scripts': [
+            'community = community:main',
+        ]
+    }
 )
