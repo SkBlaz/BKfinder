@@ -4,17 +4,13 @@ import argparse
 from collections import defaultdict
 import rdflib
 
-if __name__ == '__main__':
-    
-    parser_init = argparse.ArgumentParser()
-    parser_init.add_argument("--input_obo", help="Graph in gpickle format.")
-    parser_init.add_argument("--output_n3", help="Graph in gpickle format.")
-    parsed = parser_init.parse_args()
+
+def obo2n3(obofile,n3out):
 
     ontology = defaultdict(list)
     current_term = ""
         
-    with open(parsed.input_obo) as obo:
+    with open(obofile) as obo:
         for line in obo:            
             parts = line.split()
             try:
@@ -38,4 +34,14 @@ if __name__ == '__main__':
             g.add((annotation_uri, rdflib.RDFS.subClassOf,u))
         
         
-    g.serialize(destination=parsed.output_n3,format="n3")
+    g.serialize(destination=n3out,format="n3")
+    
+
+if __name__ == '__main__':
+    
+    parser_init = argparse.ArgumentParser()
+    parser_init.add_argument("--input_obo", help="Graph in gpickle format.")
+    parser_init.add_argument("--output_n3", help="Graph in gpickle format.")
+    parsed = parser_init.parse_args()
+    obo2n3(parsed.input_obo,parsed.output_n3)
+    

@@ -3,7 +3,6 @@
 #import multiprocessing## and transform it into a graph, which will be further on processed.
 
 import argparse
-import matplotlib.pyplot as plt
 import urllib.request
 import urllib.parse
 import json
@@ -13,7 +12,7 @@ import numpy as np
 import rdfmodule as rm
 import sys
 import os
-from py3plex.multilayer import * ## visualization
+
 
 class make_request:
 
@@ -321,6 +320,9 @@ def visualize_multiplex_biomine(input_graph,limit=False):
 
 if __name__ == '__main__':
 
+    import matplotlib.pyplot as plt
+    from py3plex.multilayer import * ## visualization
+    
     parser_init = argparse.ArgumentParser()
     
     parser_init.add_argument("--step_size", help="How large subgraphs are taken when building main graph")

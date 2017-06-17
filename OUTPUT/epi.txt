@@ -1,0 +1,76 @@
+----------------------------------------
+Hedwig semantic pattern mining (anze.vavpetic@ijs.si)
+Version: 0.3.0
+Start: 2017-06-17T08:42:30.498446
+Time taken: 339.94 seconds
+Parameters:
+	adjust=none
+	FDR=0.05
+	target=None
+	nocache=False
+	format=n3
+	leaves=True
+	support=0.1
+	learner=heuristic
+	depth=5
+	optimalsubclass=False
+	beam=50
+	alpha=0.05
+	bk_dir=BK/
+	verbose=False
+	mode=subgroups
+	covered=None
+	output=OUTPUT/epi.txt
+	score=lift
+	data=samples/epiSamples.n3
+	uris=False
+	negations=False
+----------------------------------------
+'1_community'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0038046) [cov=2, pos=1, prec=0.500, lift=2.500, pval=0.333]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0004059) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0038053) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0004843) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0006987) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0035729) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0071949) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+'0_community'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0043866) [cov=2, pos=1, prec=0.500, lift=2.500, pval=0.333]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0004051) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0060223) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0038053) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0006987) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0060225) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0071949) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+'4_community'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0005986) [cov=2, pos=1, prec=0.500, lift=2.500, pval=0.333]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0019708) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0004059) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0060223) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0006987) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0060225) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0035729) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+'3_community'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0061690) [cov=2, pos=1, prec=0.500, lift=2.500, pval=0.333]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0019708) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0004051) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0004843) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0060225) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0035729) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0071949) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+'2_community'(X) <--
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0019706) [cov=1, pos=1, prec=1.000, lift=5.000, pval=0.167]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0005986) [cov=2, pos=1, prec=0.500, lift=2.500, pval=0.333]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0043866) [cov=2, pos=1, prec=0.500, lift=2.500, pval=0.333]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0038046) [cov=2, pos=1, prec=0.500, lift=2.500, pval=0.333]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0061690) [cov=2, pos=1, prec=0.500, lift=2.500, pval=0.333]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0019708) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0004059) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0004051) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0060223) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0038053) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0004843) [cov=3, pos=1, prec=0.333, lift=1.667, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0035729) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0006987) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0060225) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]
+	annotated_with(X, http://purl.obolibrary.org/obo/GO:0071949) [cov=4, pos=1, prec=0.250, lift=1.250, pval=1.000]

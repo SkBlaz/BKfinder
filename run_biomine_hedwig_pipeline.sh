@@ -79,7 +79,27 @@ then
     python2 hedwig/hedwig BK/ samples/louvain.n3 -o OUTPUT/community_rules_louvain -l --adjust=none --beam=50
 
     cat OUTPUT/community_rules_louvain
-     
+
+
+
+elif [ "$1" == "--complete_run" ]
+then
+
+    cd data
+    #wget http://purl.obolibrary.org/obo/go/go-basic.obo
+    cd ..
+
+    python3 get_bk.py --step_size 10 --output_name $2 --term_list $3   ## looks into data folder
+    
+    echo "Generating background knowledge"
+    python3 obo2n3.py --input_obo data/go-basic.obo  --output_n3 BK/uniprot.n3
+    
+    echo "Subgroup identification"    
+    python3 community_clustering.py --input_graph graph_datasets/$4 --input_nodelist data/$3 --ontology_id samples/$5 --input_mapping data/goa_human.gaf
+    
+    echo "Hedwig run.."
+    python2 hedwig/hedwig BK/ samples/$5 -o OUTPUT/$6 -l --adjust=none --beam=50
+
 fi
      
 # python3 obo2n3.py --input_obo ~/Documents/go.obo --output_n3 BK/uniprot.n3
