@@ -1,7 +1,7 @@
 ## this will be the python interface for command line execution..
 
 ###### example
-#python3 CBSD.py --step_size 10 --knowledge_graph graph_datasets/epigenetics.gpickle --term_list data/epigenetics.list --ontology_BK data/go-basic.obo --output_BK BK/uniprot.n3 --n3_samples samples/epiSamples.n3 --gaf_mapping data/goa_human.gaf --rule_output OUTPUT/epi.txt
+#python3 CBSD.py --step_size 1 --knowledge_graph graph_datasets/snpsstep1.gpickle --term_list data/snps_clean.list --ontology_BK data/go-basic.obo --output_BK BK/uniprot.n3 --n3_samples samples/lovSamples.n3 --gaf_mapping data/goa_human.gaf --rule_output OUTPUT/louvain2.txt
 ######
 
 from get_bk import *

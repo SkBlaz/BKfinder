@@ -36,6 +36,13 @@ def community_cluster_n3(input_graph, termlist_infile,mapping_file, output_n3):
             parts = line.strip().split()
             termlist.append(parts[0])
 
+    for k,v in predictions.items():
+        term = k.split(":")[1]
+        for te in termlist:
+            if te == term:
+                outterm = term+" "+v
+                print(outterm, file="community_map.txt")
+
     g = rdflib.graph.Graph()
     KT = rdflib.Namespace('http://kt.ijs.si/hedwig#')
     amp_uri = 'http://kt.ijs.si/ontology/hedwig#'
