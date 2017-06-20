@@ -1,0 +1,279 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (release 20170413)
+Annotation Version and Release Date:	GO Ontology database  Released 2017-05-25
+Analyzed List:	upload_1 (Homo sapiens)
+Reference List:	Homo sapiens (all genes in database)
+Bonferroni correction:	true
+Bonferroni count:	8492
+GO biological process complete	Homo sapiens - REFLIST (20972)	upload_1 (151)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (P-value)
+peptidyl-lysine deacetylation (GO:0034983)	7	7	.05	+	 > 100	1.16E-09
+peptidyl-arginine methylation, to asymmetrical-dimethyl arginine (GO:0019919)	4	4	.03	+	 > 100	2.29E-04
+histone H3-K36 methylation (GO:0010452)	7	7	.05	+	 > 100	1.16E-09
+N-terminal peptidyl-lysine acetylation (GO:0018076)	3	3	.02	+	 > 100	1.38E-02
+C-5 methylation of cytosine (GO:0090116)	3	3	.02	+	 > 100	1.38E-02
+histone H3-K9 dimethylation (GO:0036123)	3	3	.02	+	 > 100	1.38E-02
+histone H3-K36 dimethylation (GO:0097676)	3	3	.02	+	 > 100	1.38E-02
+peptidyl-lysine dimethylation (GO:0018027)	12	11	.09	+	 > 100	2.73E-16
+peptidyl-lysine monomethylation (GO:0018026)	8	7	.06	+	 > 100	2.93E-09
+histone H3-K27 demethylation (GO:0071557)	5	4	.04	+	 > 100	5.55E-04
+DNA methylation on cytosine (GO:0032776)	5	4	.04	+	 > 100	5.55E-04
+histone H3-K9 demethylation (GO:0033169)	14	11	.10	+	 > 100	1.47E-15
+maintenance of chromatin silencing (GO:0006344)	4	3	.03	+	 > 100	3.24E-02
+histone lysine demethylation (GO:0070076)	28	21	.20	+	 > 100	8.12E-32
+peptidyl-arginine omega-N-methylation (GO:0035247)	8	6	.06	+	 > 100	3.72E-07
+histone H3-K4 demethylation (GO:0034720)	8	6	.06	+	 > 100	3.72E-07
+histone demethylation (GO:0016577)	30	22	.22	+	 > 100	2.89E-33
+histone H3 deacetylation (GO:0070932)	21	15	.15	+	99.21	1.37E-21
+negative regulation of histone H3-K9 trimethylation (GO:1900113)	7	5	.05	+	99.21	2.07E-05
+response to fungicide (GO:0060992)	7	5	.05	+	99.21	2.07E-05
+protein demethylation (GO:0006482)	32	22	.23	+	95.49	1.18E-32
+protein dealkylation (GO:0008214)	32	22	.23	+	95.49	1.18E-32
+histone H4 deacetylation (GO:0070933)	9	6	.06	+	92.59	7.49E-07
+histone H4-R3 methylation (GO:0043985)	6	4	.04	+	92.59	1.14E-03
+negative regulation of histone H3-K9 methylation (GO:0051573)	12	8	.09	+	92.59	5.04E-10
+peptidyl-arginine N-methylation (GO:0035246)	12	8	.09	+	92.59	5.04E-10
+histone H3-K9 modification (GO:0061647)	14	9	.10	+	89.28	1.81E-11
+histone arginine methylation (GO:0034969)	11	7	.08	+	88.38	2.68E-08
+histone H3-K9 methylation (GO:0051567)	10	6	.07	+	83.33	1.40E-06
+histone H3-K36 demethylation (GO:0070544)	10	6	.07	+	83.33	1.40E-06
+peptidyl-arginine methylation (GO:0018216)	16	8	.12	+	69.44	4.91E-09
+positive regulation of chromatin silencing (GO:0031937)	8	4	.06	+	69.44	3.58E-03
+negative regulation of histone methylation (GO:0031061)	20	10	.14	+	69.44	5.86E-12
+regulation of histone H3-K9 methylation (GO:0051570)	24	12	.17	+	69.44	6.93E-15
+regulation of histone H3-K9 trimethylation (GO:1900112)	12	6	.09	+	69.44	4.13E-06
+methylation-dependent chromatin silencing (GO:0006346)	11	5	.08	+	63.13	1.94E-04
+protein deacetylation (GO:0006476)	60	27	.43	+	62.50	6.72E-36
+histone H4-K20 methylation (GO:0034770)	9	4	.06	+	61.73	5.70E-03
+histone methylation (GO:0016571)	86	38	.62	+	61.37	7.76E-52
+histone lysine methylation (GO:0034968)	68	30	.49	+	61.27	4.94E-40
+histone deacetylation (GO:0016575)	58	25	.42	+	59.87	1.58E-32
+chromatin silencing at rDNA (GO:0000183)	12	5	.09	+	57.87	2.97E-04
+protein deacylation (GO:0035601)	65	27	.47	+	57.69	5.67E-35
+macromolecule deacylation (GO:0098732)	66	27	.48	+	56.82	8.51E-35
+demethylation (GO:0070988)	59	24	.42	+	56.50	1.68E-30
+nucleosome disassembly (GO:0006337)	18	7	.13	+	54.01	8.07E-07
+chromatin disassembly (GO:0031498)	18	7	.13	+	54.01	8.07E-07
+peptidyl-lysine methylation (GO:0018022)	80	31	.58	+	53.82	9.05E-40
+histone H3-K27 methylation (GO:0070734)	11	4	.08	+	50.50	1.26E-02
+protein-DNA complex disassembly (GO:0032986)	20	7	.14	+	48.61	1.67E-06
+regulation of chromatin silencing (GO:0031935)	22	7	.16	+	44.19	3.21E-06
+protein methylation (GO:0006479)	130	40	.94	+	42.73	1.28E-48
+peptidyl-arginine modification (GO:0018195)	26	8	.19	+	42.73	2.25E-07
+protein alkylation (GO:0008213)	130	40	.94	+	42.73	1.28E-48
+regulation of androgen receptor signaling pathway (GO:0060765)	26	8	.19	+	42.73	2.25E-07
+histone modification (GO:0016570)	346	102	2.49	+	40.94	8.43E-139
+negative regulation of chromatin organization (GO:1905268)	49	14	.35	+	39.68	1.80E-14
+regulation of DNA methylation (GO:0044030)	21	6	.15	+	39.68	1.13E-04
+negative regulation of histone modification (GO:0031057)	40	11	.29	+	38.19	1.30E-10
+ATP-dependent chromatin remodeling (GO:0043044)	63	17	.45	+	37.48	9.33E-18
+negative regulation of gene expression, epigenetic (GO:0045814)	84	22	.60	+	36.38	1.45E-23
+peptidyl-lysine trimethylation (GO:0018023)	27	7	.19	+	36.01	1.31E-05
+covalent chromatin modification (GO:0016569)	465	120	3.35	+	35.84	2.10E-163
+chromatin silencing (GO:0006342)	67	16	.48	+	33.17	1.02E-15
+chromatin remodeling (GO:0006338)	149	33	1.07	+	30.76	1.00E-34
+peptidyl-lysine modification (GO:0018205)	286	63	2.06	+	30.59	1.86E-71
+histone H3-K4 methylation (GO:0051568)	32	7	.23	+	30.38	4.16E-05
+regulation of histone methylation (GO:0031060)	64	14	.46	+	30.38	6.89E-13
+histone H4 acetylation (GO:0043967)	52	11	.37	+	29.38	2.16E-09
+histone acetylation (GO:0016573)	103	21	.74	+	28.32	3.94E-20
+peptidyl-lysine acetylation (GO:0018394)	110	22	.79	+	27.78	4.68E-21
+beta-catenin-TCF complex assembly (GO:1904837)	30	6	.22	+	27.78	9.07E-04
+macromolecule methylation (GO:0043414)	226	45	1.63	+	27.65	5.02E-47
+chromatin organization (GO:0006325)	648	127	4.67	+	27.22	3.09E-161
+internal peptidyl-lysine acetylation (GO:0018393)	108	21	.78	+	27.01	1.04E-19
+DNA methylation (GO:0006306)	47	9	.34	+	26.60	8.02E-07
+DNA alkylation (GO:0006305)	47	9	.34	+	26.60	8.02E-07
+internal protein amino acid acetylation (GO:0006475)	113	21	.81	+	25.81	2.60E-19
+positive regulation of gene expression, epigenetic (GO:0045815)	55	10	.40	+	25.25	1.17E-07
+DNA methylation or demethylation (GO:0044728)	62	11	.45	+	24.64	1.41E-08
+protein acetylation (GO:0006473)	129	22	.93	+	23.69	1.39E-19
+regulation of gene expression, epigenetic (GO:0040029)	208	35	1.50	+	23.37	5.09E-33
+positive regulation of histone methylation (GO:0031062)	36	6	.26	+	23.15	2.61E-03
+methylation (GO:0032259)	299	48	2.15	+	22.30	3.47E-46
+negative regulation of chromosome organization (GO:2001251)	110	17	.79	+	21.46	9.15E-14
+regulation of chromatin organization (GO:1902275)	163	24	1.17	+	20.45	3.58E-20
+DNA modification (GO:0006304)	83	12	.60	+	20.08	1.41E-08
+regulation of histone modification (GO:0031056)	136	19	.98	+	19.40	6.36E-15
+protein acylation (GO:0043543)	159	22	1.14	+	19.22	1.16E-17
+positive regulation of chromatin organization (GO:1905269)	92	12	.66	+	18.12	4.60E-08
+regulation of intracellular steroid hormone receptor signaling pathway (GO:0033143)	70	9	.50	+	17.86	2.51E-05
+chromosome organization (GO:0051276)	1009	127	7.26	+	17.48	5.36E-137
+cellular response to UV (GO:0034644)	72	9	.52	+	17.36	3.20E-05
+regulation of signal transduction by p53 class mediator (GO:1901796)	170	20	1.22	+	16.34	1.93E-14
+positive regulation of histone modification (GO:0031058)	85	10	.61	+	16.34	7.57E-06
+gene silencing (GO:0016458)	145	17	1.04	+	16.28	8.11E-12
+chromatin assembly or disassembly (GO:0006333)	150	17	1.08	+	15.74	1.40E-11
+response to cocaine (GO:0042220)	53	6	.38	+	15.72	2.41E-02
+circadian regulation of gene expression (GO:0032922)	55	6	.40	+	15.15	2.97E-02
+nucleosome organization (GO:0034728)	144	14	1.04	+	13.50	3.60E-08
+cellular response to light stimulus (GO:0071482)	94	9	.68	+	13.30	3.09E-04
+regulation of chromosome organization (GO:0033044)	300	28	2.16	+	12.96	8.08E-19
+response to estradiol (GO:0032355)	130	11	.94	+	11.75	3.20E-05
+peptidyl-amino acid modification (GO:0018193)	871	72	6.27	+	11.48	1.64E-53
+DNA recombination (GO:0006310)	226	18	1.63	+	11.06	7.57E-10
+positive regulation of chromosome organization (GO:2001252)	155	12	1.12	+	10.75	1.64E-05
+regulation of DNA binding (GO:0051101)	110	8	.79	+	10.10	1.39E-02
+response to UV (GO:0009411)	131	9	.94	+	9.54	4.89E-03
+protein-DNA complex subunit organization (GO:0071824)	223	15	1.61	+	9.34	9.88E-07
+cellular response to radiation (GO:0071478)	149	10	1.07	+	9.32	1.40E-03
+DNA metabolic process (GO:0006259)	777	51	5.59	+	9.12	1.28E-30
+protein deubiquitination (GO:0016579)	286	18	2.06	+	8.74	3.65E-08
+negative regulation of organelle organization (GO:0010639)	322	20	2.32	+	8.63	2.75E-09
+double-strand break repair (GO:0006302)	163	10	1.17	+	8.52	3.16E-03
+DNA repair (GO:0006281)	489	30	3.52	+	8.52	2.32E-15
+protein modification by small protein removal (GO:0070646)	302	18	2.17	+	8.28	8.82E-08
+negative regulation of nucleic acid-templated transcription (GO:1903507)	1160	68	8.35	+	8.14	2.33E-40
+negative regulation of RNA biosynthetic process (GO:1902679)	1162	68	8.37	+	8.13	2.59E-40
+negative regulation of transcription, DNA-templated (GO:0045892)	1117	65	8.04	+	8.08	5.89E-38
+regulation of muscle cell differentiation (GO:0051147)	172	10	1.24	+	8.07	5.12E-03
+negative regulation of transcription from RNA polymerase II promoter (GO:0000122)	772	44	5.56	+	7.92	3.57E-23
+negative regulation of RNA metabolic process (GO:0051253)	1205	68	8.68	+	7.84	2.57E-39
+rhythmic process (GO:0048511)	288	16	2.07	+	7.72	3.62E-06
+regulation of binding (GO:0051098)	325	18	2.34	+	7.69	2.88E-07
+regulation of protein binding (GO:0043393)	185	10	1.33	+	7.51	9.81E-03
+regulation of response to DNA damage stimulus (GO:2001020)	171	9	1.23	+	7.31	4.22E-02
+regulation of DNA metabolic process (GO:0051052)	385	20	2.77	+	7.21	6.71E-08
+negative regulation of nucleobase-containing compound metabolic process (GO:0045934)	1357	70	9.77	+	7.16	2.96E-38
+negative regulation of cellular macromolecule biosynthetic process (GO:2000113)	1318	67	9.49	+	7.06	8.64E-36
+cellular response to DNA damage stimulus (GO:0006974)	731	37	5.26	+	7.03	4.76E-17
+negative regulation of macromolecule biosynthetic process (GO:0010558)	1389	70	10.00	+	7.00	1.33E-37
+cellular response to oxygen levels (GO:0071453)	199	10	1.43	+	6.98	1.87E-02
+negative regulation of cellular biosynthetic process (GO:0031327)	1466	70	10.56	+	6.63	4.24E-36
+DNA conformation change (GO:0071103)	254	12	1.83	+	6.56	3.35E-03
+response to toxic substance (GO:0009636)	212	10	1.53	+	6.55	3.25E-02
+negative regulation of biosynthetic process (GO:0009890)	1487	70	10.71	+	6.54	1.05E-35
+transcription, DNA-templated (GO:0006351)	2586	111	18.62	+	5.96	3.49E-63
+nucleic acid-templated transcription (GO:0097659)	2587	111	18.63	+	5.96	3.64E-63
+RNA biosynthetic process (GO:0032774)	2597	111	18.70	+	5.94	5.46E-63
+negative regulation of gene expression (GO:0010629)	1597	67	11.50	+	5.83	1.03E-30
+macromolecule modification (GO:0043412)	3394	141	24.44	+	5.77	5.56E-94
+organelle organization (GO:0006996)	3097	127	22.30	+	5.70	2.78E-76
+cellular protein modification process (GO:0006464)	3118	121	22.45	+	5.39	1.97E-67
+protein modification process (GO:0036211)	3118	121	22.45	+	5.39	1.97E-67
+regulation of transcription from RNA polymerase II promoter (GO:0006357)	1908	74	13.74	+	5.39	1.00E-32
+nucleobase-containing compound biosynthetic process (GO:0034654)	2944	112	21.20	+	5.28	1.66E-58
+negative regulation of cellular component organization (GO:0051129)	607	23	4.37	+	5.26	8.39E-07
+heterocycle biosynthetic process (GO:0018130)	3014	112	21.70	+	5.16	1.99E-57
+aromatic compound biosynthetic process (GO:0019438)	3017	112	21.72	+	5.16	2.21E-57
+positive regulation of nucleic acid-templated transcription (GO:1903508)	1378	51	9.92	+	5.14	3.26E-19
+positive regulation of transcription, DNA-templated (GO:0045893)	1378	51	9.92	+	5.14	3.26E-19
+positive regulation of RNA biosynthetic process (GO:1902680)	1379	51	9.93	+	5.14	3.37E-19
+negative regulation of nitrogen compound metabolic process (GO:0051172)	2249	82	16.19	+	5.06	1.23E-35
+response to nutrient levels (GO:0031667)	416	15	3.00	+	5.01	3.50E-03
+regulation of transcription, DNA-templated (GO:0006355)	3627	130	26.11	+	4.98	3.60E-72
+positive regulation of RNA metabolic process (GO:0051254)	1429	51	10.29	+	4.96	1.61E-18
+response to radiation (GO:0009314)	421	15	3.03	+	4.95	4.06E-03
+regulation of nucleic acid-templated transcription (GO:1903506)	3651	130	26.29	+	4.95	8.25E-72
+organic cyclic compound biosynthetic process (GO:1901362)	3152	112	22.69	+	4.94	2.22E-55
+regulation of RNA biosynthetic process (GO:2001141)	3659	130	26.35	+	4.93	1.09E-71
+heart development (GO:0007507)	479	17	3.45	+	4.93	7.07E-04
+negative regulation of protein modification process (GO:0031400)	596	21	4.29	+	4.89	2.12E-05
+positive regulation of nucleobase-containing compound metabolic process (GO:0045935)	1684	58	12.12	+	4.78	3.86E-21
+regulation of RNA metabolic process (GO:0051252)	3777	130	27.19	+	4.78	5.84E-70
+regulation of sequence-specific DNA binding transcription factor activity (GO:0051090)	378	13	2.72	+	4.78	3.56E-02
+negative regulation of cellular metabolic process (GO:0031324)	2405	82	17.32	+	4.74	1.70E-33
+negative regulation of macromolecule metabolic process (GO:0010605)	2444	83	17.60	+	4.72	6.03E-34
+response to extracellular stimulus (GO:0009991)	446	15	3.21	+	4.67	8.28E-03
+positive regulation of gene expression (GO:0010628)	1720	57	12.38	+	4.60	7.70E-20
+cellular response to organic cyclic compound (GO:0071407)	488	16	3.51	+	4.55	4.92E-03
+cellular protein metabolic process (GO:0044267)	3698	121	26.63	+	4.54	6.83E-59
+RNA metabolic process (GO:0016070)	3434	112	24.73	+	4.53	1.77E-51
+positive regulation of macromolecule biosynthetic process (GO:0010557)	1628	53	11.72	+	4.52	1.16E-17
+regulation of cellular macromolecule biosynthetic process (GO:2000112)	4063	132	29.25	+	4.51	7.60E-69
+cellular nitrogen compound biosynthetic process (GO:0044271)	3455	112	24.88	+	4.50	3.34E-51
+cellular macromolecule biosynthetic process (GO:0034645)	3659	118	26.35	+	4.48	1.14E-55
+cellular response to stress (GO:0033554)	1561	50	11.24	+	4.45	4.76E-16
+regulation of nucleobase-containing compound metabolic process (GO:0019219)	4141	132	29.82	+	4.43	8.57E-68
+macromolecule biosynthetic process (GO:0009059)	3723	118	26.81	+	4.40	7.82E-55
+regulation of macromolecule biosynthetic process (GO:0010556)	4169	132	30.02	+	4.40	2.02E-67
+nucleic acid metabolic process (GO:0090304)	3956	124	28.48	+	4.35	2.50E-59
+negative regulation of metabolic process (GO:0009892)	2688	83	19.35	+	4.29	6.68E-31
+regulation of cellular biosynthetic process (GO:0031326)	4362	132	31.41	+	4.20	6.39E-65
+positive regulation of biosynthetic process (GO:0009891)	1791	54	12.90	+	4.19	1.36E-16
+gene expression (GO:0010467)	3722	112	26.80	+	4.18	7.72E-48
+positive regulation of transcription from RNA polymerase II promoter (GO:0045944)	1064	32	7.66	+	4.18	4.67E-08
+regulation of biosynthetic process (GO:0009889)	4432	132	31.91	+	4.14	4.83E-64
+positive regulation of cellular biosynthetic process (GO:0031328)	1761	52	12.68	+	4.10	2.25E-15
+regulation of organelle organization (GO:0033043)	1190	35	8.57	+	4.08	7.19E-09
+regulation of gene expression (GO:0010468)	4544	132	32.72	+	4.03	1.15E-62
+oxidation-reduction process (GO:0055114)	951	27	6.85	+	3.94	9.52E-06
+positive regulation of organelle organization (GO:0010638)	611	17	4.40	+	3.86	1.98E-02
+nucleobase-containing compound metabolic process (GO:0006139)	4512	124	32.49	+	3.82	1.24E-52
+protein metabolic process (GO:0019538)	4411	121	31.76	+	3.81	3.60E-50
+response to organic cyclic compound (GO:0014070)	885	24	6.37	+	3.77	2.14E-04
+heterocycle metabolic process (GO:0046483)	4685	124	33.73	+	3.68	9.95E-51
+cellular aromatic compound metabolic process (GO:0006725)	4722	124	34.00	+	3.65	2.48E-50
+protein modification by small protein conjugation or removal (GO:0070647)	999	26	7.19	+	3.61	1.19E-04
+central nervous system development (GO:0007417)	885	23	6.37	+	3.61	9.25E-04
+cellular biosynthetic process (GO:0044249)	4655	118	33.52	+	3.52	3.59E-44
+organic cyclic compound metabolic process (GO:1901360)	4945	124	35.60	+	3.48	5.25E-48
+organic substance biosynthetic process (GO:1901576)	4742	118	34.14	+	3.46	2.68E-43
+biosynthetic process (GO:0009058)	4809	118	34.63	+	3.41	1.23E-42
+negative regulation of cellular protein metabolic process (GO:0032269)	1023	25	7.37	+	3.39	7.77E-04
+cellular component organization (GO:0016043)	5242	127	37.74	+	3.36	1.42E-48
+cellular nitrogen compound metabolic process (GO:0034641)	5120	124	36.86	+	3.36	2.92E-46
+response to lipid (GO:0033993)	831	20	5.98	+	3.34	2.17E-02
+cellular response to oxygen-containing compound (GO:1901701)	874	21	6.29	+	3.34	1.22E-02
+cellular component organization or biogenesis (GO:0071840)	5457	129	39.29	+	3.28	6.92E-49
+positive regulation of macromolecule metabolic process (GO:0010604)	2892	68	20.82	+	3.27	1.28E-16
+cell cycle (GO:0007049)	1333	31	9.60	+	3.23	5.33E-05
+regulation of nitrogen compound metabolic process (GO:0051171)	5811	135	41.84	+	3.23	4.29E-53
+negative regulation of protein metabolic process (GO:0051248)	1087	25	7.83	+	3.19	2.41E-03
+regulation of macromolecule metabolic process (GO:0060255)	6010	137	43.27	+	3.17	6.77E-54
+cellular response to endogenous stimulus (GO:0071495)	1053	24	7.58	+	3.17	5.06E-03
+embryo development (GO:0009790)	923	21	6.65	+	3.16	2.85E-02
+regulation of primary metabolic process (GO:0080090)	5976	135	43.03	+	3.14	1.58E-51
+regulation of cellular metabolic process (GO:0031323)	6029	135	43.41	+	3.11	4.92E-51
+positive regulation of nitrogen compound metabolic process (GO:0051173)	2814	63	20.26	+	3.11	8.72E-14
+organonitrogen compound metabolic process (GO:1901564)	5458	122	39.30	+	3.10	6.96E-41
+positive regulation of metabolic process (GO:0009893)	3129	69	22.53	+	3.06	1.95E-15
+response to abiotic stimulus (GO:0009628)	1089	24	7.84	+	3.06	9.13E-03
+regulation of protein modification process (GO:0031399)	1680	37	12.10	+	3.06	5.65E-06
+positive regulation of cellular metabolic process (GO:0031325)	2917	64	21.00	+	3.05	1.13E-13
+regulation of cell cycle (GO:0051726)	1019	22	7.34	+	3.00	3.75E-02
+response to oxygen-containing compound (GO:1901700)	1410	30	10.15	+	2.96	6.98E-04
+regulation of metabolic process (GO:0019222)	6533	137	47.04	+	2.91	3.81E-49
+negative regulation of cellular process (GO:0048523)	4291	89	30.90	+	2.88	5.51E-21
+cellular macromolecule metabolic process (GO:0044260)	6946	142	50.01	+	2.84	1.48E-52
+nervous system development (GO:0007399)	2205	44	15.88	+	2.77	1.94E-06
+response to endogenous stimulus (GO:0009719)	1264	25	9.10	+	2.75	3.62E-02
+regulation of cellular component organization (GO:0051128)	2321	45	16.71	+	2.69	2.85E-06
+negative regulation of biological process (GO:0048519)	4778	90	34.40	+	2.62	2.62E-18
+macromolecule metabolic process (GO:0043170)	7685	144	55.33	+	2.60	1.82E-49
+response to stress (GO:0006950)	3263	58	23.49	+	2.47	7.62E-08
+positive regulation of cellular process (GO:0048522)	4808	82	34.62	+	2.37	6.61E-13
+regulation of cellular protein metabolic process (GO:0032268)	2436	41	17.54	+	2.34	1.22E-03
+nitrogen compound metabolic process (GO:0006807)	8534	142	61.45	+	2.31	2.53E-40
+animal organ development (GO:0048513)	2961	48	21.32	+	2.25	2.18E-04
+cellular metabolic process (GO:0044237)	8936	142	64.34	+	2.21	1.30E-37
+positive regulation of biological process (GO:0048518)	5400	85	38.88	+	2.19	1.56E-11
+primary metabolic process (GO:0044238)	9069	142	65.30	+	2.17	9.60E-37
+organic substance metabolic process (GO:0071704)	9416	144	67.80	+	2.12	3.50E-37
+regulation of protein metabolic process (GO:0051246)	2684	41	19.33	+	2.12	1.57E-02
+cell differentiation (GO:0030154)	3462	52	24.93	+	2.09	5.59E-04
+cellular developmental process (GO:0048869)	3534	53	25.45	+	2.08	4.09E-04
+metabolic process (GO:0008152)	9878	146	71.12	+	2.05	4.06E-37
+single-organism developmental process (GO:0044767)	5350	79	38.52	+	2.05	1.61E-08
+system development (GO:0048731)	4156	61	29.92	+	2.04	4.61E-05
+multicellular organism development (GO:0007275)	4745	69	34.16	+	2.02	2.92E-06
+developmental process (GO:0032502)	5436	79	39.14	+	2.02	3.84E-08
+anatomical structure development (GO:0048856)	5073	72	36.53	+	1.97	2.67E-06
+regulation of cellular process (GO:0050794)	10473	137	75.41	+	1.82	5.60E-23
+single-multicellular organism process (GO:0044707)	5539	72	39.88	+	1.81	1.52E-04
+regulation of biological process (GO:0050789)	11142	138	80.22	+	1.72	1.25E-20
+biological regulation (GO:0065007)	11745	140	84.56	+	1.66	1.02E-19
+multicellular organismal process (GO:0032501)	6633	77	47.76	+	1.61	5.18E-03
+cellular response to stimulus (GO:0051716)	6204	72	44.67	+	1.61	1.83E-02
+response to stimulus (GO:0050896)	7844	84	56.48	+	1.49	3.50E-02
+single-organism cellular process (GO:0044763)	9841	102	70.86	+	1.44	2.14E-03
+cellular process (GO:0009987)	14882	144	107.15	+	1.34	1.82E-10
+single-organism process (GO:0044699)	12686	119	91.34	+	1.30	1.08E-02
+biological_process (GO:0008150)	17272	146	124.36	+	1.17	5.17E-04
+localization (GO:0051179)	5375	16	38.70	-	.41	2.93E-02
+establishment of localization (GO:0051234)	4499	9	32.39	-	.28	1.19E-03
+transport (GO:0006810)	4368	6	31.45	-	 < 0.2	2.39E-05
+Unclassified (UNCLASSIFIED)	3700	5	26.64	-	 < 0.2	0.00E00
