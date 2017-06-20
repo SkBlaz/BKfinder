@@ -9,7 +9,7 @@ from collections import defaultdict
 import itertools
 import community
 
-def community_cluster_n3(input_graph, termlist_infile,mapping_file, output_n3):
+def community_cluster_n3(input_graph, termlist_infile,mapping_file, output_n3,map_folder):
 
     G = nx.read_gpickle(input_graph)
     Gx = nx.Graph()
@@ -36,12 +36,16 @@ def community_cluster_n3(input_graph, termlist_infile,mapping_file, output_n3):
             parts = line.strip().split()
             termlist.append(parts[0])
 
+    community_map = []
     for k,v in predictions.items():
         term = k.split(":")[1]
         for te in termlist:
             if te == term:
-                outterm = term+" "+v
-                print(outterm, file="community_map.txt")
+                outterm = term+" "+str(v)
+                community_map.append(outterm)
+    with open(map_folder, 'w') as f:
+        f.write("\n".join(community_map))
+
 
     g = rdflib.graph.Graph()
     KT = rdflib.Namespace('http://kt.ijs.si/hedwig#')
